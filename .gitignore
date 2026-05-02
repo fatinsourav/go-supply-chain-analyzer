@@ -1,0 +1,16 @@
+# Output data
+data/output/
+data/dataset.txt
+
+# Binary
+go-supply-chain-analyzer
+
+# Environment
+configs/config.env
+
+# SQLite
+*.db
+
+# OS
+.DS_Store
+Thumbs.db
