@@ -54,7 +54,7 @@ strategy.BitSquatting,
 
 for _, m := range modules {
 owner := extractOwner(m)
-if owner == "" {
+if owner == "" || len(owner) < 4 {
 continue
 }
 

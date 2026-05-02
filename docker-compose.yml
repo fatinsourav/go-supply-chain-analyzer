@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  analyzer:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ./data:/app/data
+      - ./configs:/app/configs
+    environment:
+      - DATASET_PATH=/app/data/dataset_combined.txt
+      - DB_PATH=/app/data/output/analyzer.db
+      - CSV_OUTPUT_PATH=/app/data/output
+      - GOMOD_FETCH_LIMIT=5000
