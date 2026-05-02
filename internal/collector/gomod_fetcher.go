@@ -12,6 +12,7 @@ import (
 type GoModFetcher struct {
 proxyURL   string
 httpClient *http.Client
+fetchLimit int
 }
 
 type Dependency struct {
@@ -25,9 +26,10 @@ Version      string
 Dependencies []Dependency
 }
 
-func NewGoModFetcher(proxyURL string) *GoModFetcher {
+func NewGoModFetcher(proxyURL string, fetchLimit int) *GoModFetcher {
 return &GoModFetcher{
-proxyURL: proxyURL,
+proxyURL:   proxyURL,
+fetchLimit: fetchLimit,
 httpClient: &http.Client{
 Timeout: 15 * time.Second,
 },
@@ -35,13 +37,11 @@ Timeout: 15 * time.Second,
 }
 
 func (f *GoModFetcher) FetchGoMod(modulePath, version string) (*GoModInfo, error) {
-// Clean version for proxy request
-cleanVersion := cleanVersion(version)
-
+cleanVer := cleanVersion(version)
 url := fmt.Sprintf("%s/%s/@v/%s.mod",
 f.proxyURL,
 strings.ToLower(modulePath),
-cleanVersion,
+cleanVer,
 )
 
 resp, err := f.httpClient.Get(url)
@@ -61,27 +61,30 @@ return nil, fmt.Errorf("reading go.mod body: %w", err)
 
 deps := parseGoMod(string(body))
 
-slog.Debug("Fetched go.mod",
-"module", modulePath,
-"version", cleanVersion,
-"dependencies", len(deps),
-)
-
 return &GoModInfo{
 ModulePath:   modulePath,
-Version:      cleanVersion,
+Version:      cleanVer,
 Dependencies: deps,
 }, nil
 }
 
-// FetchGoModBatch fetches go.mod for multiple modules
-// with rate limiting to avoid proxy throttling
 func (f *GoModFetcher) FetchGoModBatch(modules []ModuleInfo) []GoModInfo {
 var results []GoModInfo
 seen := make(map[string]bool)
 
+limit := f.fetchLimit
+if limit <= 0 || limit > len(modules) {
+limit = len(modules)
+}
+
+slog.Info("Starting go.mod fetch", "limit", limit, "total_modules", len(modules))
+
+fetched := 0
 for i, m := range modules {
-// Skip duplicates — only fetch each unique module once
+if fetched >= limit {
+break
+}
+
 if seen[m.Path] {
 continue
 }
@@ -93,41 +96,35 @@ slog.Warn("Failed to fetch go.mod",
 "module", m.Path,
 "err", err,
 )
+fetched++
 continue
 }
 
 results = append(results, *info)
+fetched++
 
-// Progress logging every 50 modules
-if (i+1)%50 == 0 {
+if (i+1)%500 == 0 {
 slog.Info("go.mod fetch progress",
-"fetched", len(results),
-"total", len(modules),
+"fetched", fetched,
+"limit", limit,
 )
 }
 
-// Rate limiting — be respectful to the proxy
 time.Sleep(200 * time.Millisecond)
 }
 
-slog.Info("go.mod fetch complete",
-"total_fetched", len(results),
-)
-
+slog.Info("go.mod fetch complete", "total_fetched", len(results))
 return results
 }
 
-// parseGoMod parses require directives from a go.mod file
 func parseGoMod(content string) []Dependency {
 var deps []Dependency
 lines := strings.Split(content, "\n")
-
 inRequireBlock := false
 
 for _, line := range lines {
 line = strings.TrimSpace(line)
 
-// Handle require block
 if line == "require (" {
 inRequireBlock = true
 continue
@@ -137,7 +134,6 @@ inRequireBlock = false
 continue
 }
 
-// Handle single line require
 if strings.HasPrefix(line, "require ") {
 parts := strings.Fields(line)
 if len(parts) >= 3 {
@@ -149,19 +145,13 @@ Version:    parts[2],
 continue
 }
 
-// Handle lines inside require block
 if inRequireBlock && line != "" && !strings.HasPrefix(line, "//") {
 parts := strings.Fields(line)
 if len(parts) >= 2 {
-// Skip indirect dependencies marker
-modulePath := parts[0]
-version := parts[1]
-if modulePath != "" && version != "" {
 deps = append(deps, Dependency{
-ModulePath: modulePath,
-Version:    version,
+ModulePath: parts[0],
+Version:    parts[1],
 })
-}
 }
 }
 }
@@ -169,13 +159,9 @@ Version:    version,
 return deps
 }
 
-// cleanVersion ensures version is usable for proxy API
 func cleanVersion(version string) string {
-// Handle pseudo-versions and incompatible versions
 if version == "" {
 return "latest"
 }
-// Remove +incompatible suffix for proxy requests
-version = strings.TrimSuffix(version, "+incompatible")
-return version
+return strings.TrimSuffix(version, "+incompatible")
 }

@@ -14,3 +14,4 @@ configs/config.env
 # OS
 .DS_Store
 Thumbs.db
+data/dataset*.txt

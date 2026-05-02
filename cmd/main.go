@@ -18,12 +18,10 @@ import (
 )
 
 func main() {
-// Setup structured logging
 slog.SetDefault(slog.New(slog.NewTextHandler(os.Stdout, &slog.HandlerOptions{
 Level: slog.LevelInfo,
 })))
 
-// Load config
 if err := godotenv.Load("configs/config.env"); err != nil {
 slog.Warn("Could not load config.env, using defaults")
 }
@@ -32,12 +30,12 @@ dbPath := getEnv("DB_PATH", "./data/output/analyzer.db")
 outputPath := getEnv("CSV_OUTPUT_PATH", "./data/output")
 datasetPath := getEnv("DATASET_PATH", "./data/dataset.txt")
 levenshteinThreshold := getEnvInt("LEVENSHTEIN_THRESHOLD", 2)
-updateThreshold := getEnvFloat("UPDATE_FREQUENCY_THRESHOLD", 5.0)
+updateThreshold := getEnvFloat("UPDATE_FREQUENCY_THRESHOLD", 3.0)
 concentrationThreshold := getEnvInt("CONCENTRATION_THRESHOLD", 3)
+gomodFetchLimit := getEnvInt("GOMOD_FETCH_LIMIT", 5000)
 
 slog.Info("Starting Go Supply Chain Analyzer")
 
-// Initialize storage
 db, err := storage.NewDB(dbPath)
 if err != nil {
 slog.Error("Failed to initialize database", "err", err)
@@ -45,29 +43,41 @@ os.Exit(1)
 }
 defer db.Close()
 
-// Step 1: Load dataset
+// Step 1: Load ALL raw entries including duplicates for version analysis
 slog.Info("Loading dataset", "path", datasetPath)
-modules, err := loadDataset(datasetPath)
+allEntries, err := loadDataset(datasetPath)
 if err != nil {
 slog.Error("Failed to load dataset", "err", err)
 os.Exit(1)
 }
-slog.Info("Dataset loaded", "count", len(modules))
+slog.Info("Dataset loaded", "count", len(allEntries))
 
-// Step 2: Preprocess
+// Step 2: Build version map BEFORE deduplication
+versionMap := buildVersionMap(allEntries)
+slog.Info("Version map built", "unique_modules", len(versionMap))
+
+// Step 3: Preprocess
 prep := pipeline.NewPreprocessor()
-processed := prep.Process(modules)
+processed := prep.Process(allEntries)
 modulePaths := prep.ExtractPaths(processed)
 
-// Step 3: Store modules
+// Step 4: Store modules using batch transaction
+var batchModules []storage.Module
 for _, m := range processed {
-if err := db.InsertModule(m.Path, m.Version, m.Timestamp, m.Domain, m.Owner, m.Repo); err != nil {
-slog.Warn("Failed to insert module", "path", m.Path, "err", err)
+batchModules = append(batchModules, storage.Module{
+Path:      m.Path,
+Version:   m.Version,
+Timestamp: m.Timestamp,
+Domain:    m.Domain,
+Owner:     m.Owner,
+Repo:      m.Repo,
+})
 }
+if err := db.InsertModulesBatch(batchModules); err != nil {
+slog.Error("Failed to batch insert modules", "err", err)
+os.Exit(1)
 }
 slog.Info("Modules stored", "count", len(processed))
-
-// Step 4: Pattern Detection
 
 // Pattern 1: Naming Similarity
 slog.Info("Running Pattern 1: Naming Similarity")
@@ -92,7 +102,6 @@ slog.Info("Pattern 2 complete", "findings", len(ambiguityResults))
 // Pattern 3: Suspicious Update Behavior
 slog.Info("Running Pattern 3: Suspicious Update Behavior")
 updateDetector := detectors.NewUpdateBehaviorDetector(updateThreshold)
-versionMap := buildVersionMap(processed)
 updateCount := 0
 for modulePath, versions := range versionMap {
 if len(versions) < 2 {
@@ -100,9 +109,18 @@ continue
 }
 result := updateDetector.Detect(modulePath, versions)
 if result != nil {
-db.InsertRiskPattern(result.ModulePath, "suspicious_update", result.Severity,
-detectors.FormatUpdateDetails(result))
+db.InsertRiskPattern(
+result.ModulePath,
+"suspicious_update",
+result.Severity,
+detectors.FormatUpdateDetails(result),
+)
 updateCount++
+slog.Info("Suspicious update detected",
+"module", modulePath,
+"versions", len(versions),
+"releases_per_day", result.ReleasesPerDay,
+)
 }
 }
 slog.Info("Pattern 3 complete", "findings", updateCount)
@@ -110,7 +128,7 @@ slog.Info("Pattern 3 complete", "findings", updateCount)
 // Pattern 4: Dependency Concentration Risk
 slog.Info("Running Pattern 4: Dependency Concentration Risk")
 proxyURL := getEnv("PROXY_URL", "https://proxy.golang.org")
-gomodFetcher := collector.NewGoModFetcher(proxyURL)
+gomodFetcher := collector.NewGoModFetcher(proxyURL, gomodFetchLimit)
 gomodInfos := gomodFetcher.FetchGoModBatch(processed)
 
 graph := detectors.NewDependencyGraph()
@@ -128,7 +146,7 @@ detectors.FormatConcentrationDetails(r))
 }
 slog.Info("Pattern 4 complete", "findings", len(concentrationResults))
 
-// Step 5: Export results
+// Export results
 slog.Info("Exporting results")
 exp := exporter.NewExporter(outputPath)
 
@@ -145,7 +163,6 @@ slog.Info("Analysis complete",
 )
 }
 
-// loadDataset reads the Go Module Index JSON lines format
 func loadDataset(path string) ([]collector.ModuleInfo, error) {
 f, err := os.Open(path)
 if err != nil {
@@ -155,6 +172,9 @@ defer f.Close()
 
 var modules []collector.ModuleInfo
 scanner := bufio.NewScanner(f)
+buf := make([]byte, 1024*1024)
+scanner.Buffer(buf, len(buf))
+
 for scanner.Scan() {
 line := strings.TrimSpace(scanner.Text())
 if line == "" {
@@ -191,7 +211,6 @@ Repo:      repo,
 return modules, scanner.Err()
 }
 
-// buildVersionMap groups versions by module path for update behavior detection
 func buildVersionMap(modules []collector.ModuleInfo) map[string][]detectors.VersionEntry {
 versionMap := make(map[string][]detectors.VersionEntry)
 for _, m := range modules {

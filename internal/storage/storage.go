@@ -139,3 +139,20 @@ return versions, nil
 func (db *DB) Close() error {
 return db.conn.Close()
 }
+
+func (db *DB) InsertModulesBatch(modules []Module) error {
+tx, err := db.conn.Begin()
+if err != nil {
+return err
+}
+defer tx.Rollback()
+
+stmt, err := tx.Prepare(
+"INSERT OR IGNORE INTO modules (path, version, timestamp, domain, owner, repo) VALUES (?, ?, ?, ?, ?, ?)",
+)
+if err != nil {
+return err
+}
+defer stmt.Close()
+return tx.Commit()
+}
