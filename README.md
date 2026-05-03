@@ -45,6 +45,16 @@ Go Module Index, enabling longitudinal analysis of how risk patterns evolve over
 | Concentration Risk | 21 | 651 | +3,000% |
 | **Total** | **866** | **1,459** | **+68%** |
 
+### Combined Dataset Results (285,895 modules, 2019-2025)
+
+| Pattern | Findings | Prevalence Rate |
+|---------|----------|-----------------|
+| Naming Similarity | 3,688 | 1.29% |
+| Source Ambiguity | 1,864 | 0.65% |
+| Suspicious Update Behavior | 0 | 0.00% |
+| Concentration Risk | 71 | 0.02% |
+| **Total** | **5,623** | **1.97%** |
+
 ### Notable Concentration Risk Findings (2019)
 
 | Module | Dependents | Severity |
@@ -209,7 +219,7 @@ Results are written to data/output/:
     {
       "generated_at": "2026-05-02T23:45:29+02:00",
       "total_modules": 50000,
-      "total_risks": 866,
+      "total_risks": 5623,
       "by_pattern": {
         "concentration_risk": 21,
         "naming_similarity": 415,
