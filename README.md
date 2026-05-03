@@ -268,3 +268,15 @@ Results are written to data/output/:
 ## License
 
 MIT License
+
+## Disclaimer
+
+This tool was developed solely for academic research purposes as part of a Master's thesis in Information Security at Stockholm University. It is intended to measure and analyze software supply chain risk patterns in the Go ecosystem using publicly available metadata.
+
+**The author is not responsible for any misuse of this tool or its findings.** This tool does not exploit vulnerabilities, execute malicious code, or perform any harmful operations. It only analyzes publicly available metadata from the Go Module Index and Go Proxy API.
+
+The findings produced by this tool are intended to raise awareness of potential supply chain risks and support academic research. They should not be used to target, attack, or harm any individual, organization, or software project.
+
+By using this tool, you agree to use it responsibly and ethically, in compliance with applicable laws and regulations.
+
+For responsible disclosure of any security concerns identified using this tool, please follow the appropriate responsible disclosure guidelines of the relevant platform or organization.
