@@ -154,5 +154,12 @@ if err != nil {
 return err
 }
 defer stmt.Close()
+
+for _, m := range modules {
+if _, err := stmt.Exec(m.Path, m.Version, m.Timestamp, m.Domain, m.Owner, m.Repo); err != nil {
+return err
+}
+}
+
 return tx.Commit()
 }
