@@ -6,13 +6,15 @@ import (
 "log/slog"
 "net/http"
 "strings"
+"sync"
 "time"
 )
 
 type GoModFetcher struct {
-proxyURL   string
-httpClient *http.Client
-fetchLimit int
+proxyURL     string
+httpClient   *http.Client
+fetchLimit   int
+fetchWorkers int
 }
 
 type Dependency struct {
@@ -34,6 +36,14 @@ httpClient: &http.Client{
 Timeout: 15 * time.Second,
 },
 }
+}
+
+// NewGoModFetcherWithWorkers is like NewGoModFetcher but lets the caller set the
+// concurrency level for batch fetching.
+func NewGoModFetcherWithWorkers(proxyURL string, fetchLimit, workers int) *GoModFetcher {
+f := NewGoModFetcher(proxyURL, fetchLimit)
+f.fetchWorkers = workers
+return f
 }
 
 func (f *GoModFetcher) FetchGoMod(modulePath, version string) (*GoModInfo, error) {
@@ -69,52 +79,81 @@ Dependencies: deps,
 }
 
 func (f *GoModFetcher) FetchGoModBatch(modules []ModuleInfo) []GoModInfo {
-var results []GoModInfo
 seen := make(map[string]bool)
+var targets []ModuleInfo
 
 limit := f.fetchLimit
 if limit <= 0 || limit > len(modules) {
 limit = len(modules)
 }
 
-slog.Info("Starting go.mod fetch", "limit", limit, "total_modules", len(modules))
-
-fetched := 0
-for i, m := range modules {
-if fetched >= limit {
+for _, m := range modules {
+if len(targets) >= limit {
 break
 }
-
 if seen[m.Path] {
 continue
 }
 seen[m.Path] = true
+targets = append(targets, m)
+}
 
+workers := f.workers()
+slog.Info("Starting go.mod fetch", "targets", len(targets), "total_modules", len(modules), "workers", workers)
+
+jobs := make(chan ModuleInfo)
+resultsCh := make(chan *GoModInfo)
+
+var wg sync.WaitGroup
+for w := 0; w < workers; w++ {
+wg.Add(1)
+go func() {
+defer wg.Done()
+for m := range jobs {
 info, err := f.FetchGoMod(m.Path, m.Version)
 if err != nil {
-slog.Warn("Failed to fetch go.mod",
-"module", m.Path,
-"err", err,
-)
-fetched++
+slog.Warn("Failed to fetch go.mod", "module", m.Path, "err", err)
+resultsCh <- nil
 continue
 }
+resultsCh <- info
+}
+}()
+}
 
+go func() {
+for _, m := range targets {
+jobs <- m
+}
+close(jobs)
+}()
+
+go func() {
+wg.Wait()
+close(resultsCh)
+}()
+
+var results []GoModInfo
+processed := 0
+for info := range resultsCh {
+processed++
+if info != nil {
 results = append(results, *info)
-fetched++
-
-if (i+1)%500 == 0 {
-slog.Info("go.mod fetch progress",
-"fetched", fetched,
-"limit", limit,
-)
+}
+if processed%500 == 0 {
+slog.Info("go.mod fetch progress", "processed", processed, "targets", len(targets), "ok", len(results))
+}
 }
 
-time.Sleep(200 * time.Millisecond)
-}
-
-slog.Info("go.mod fetch complete", "total_fetched", len(results))
+slog.Info("go.mod fetch complete", "total_fetched", len(results), "attempted", len(targets))
 return results
+}
+
+func (f *GoModFetcher) workers() int {
+if f.fetchWorkers > 0 {
+return f.fetchWorkers
+}
+return 25
 }
 
 func parseGoMod(content string) []Dependency {
