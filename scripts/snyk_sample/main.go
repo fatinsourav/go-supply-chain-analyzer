@@ -294,6 +294,10 @@ func runOne(module, pattern, rawDir string) row {
 
 	vulns, err := parseSnyk(out)
 	if err != nil {
+		if strings.Contains(string(out), "is a program, not an importable package") || strings.Contains(string(out), "no Go files") {
+			return row{module: module, pattern: pattern, tested: actual, basis: basis,
+				note: "not-a-library (package main / not importable)"}
+		}
 		return row{module: module, pattern: pattern, tested: actual, basis: basis,
 			note: "parse failed (saved raw json): " + err.Error()}
 	}
