@@ -13,7 +13,22 @@ type moduleLine struct {
 Path string `json:"Path"`
 }
 
-var genericNames = map[string]bool{"errors":true,"error":true,"crypt":true,"crypto":true,"metrics":true,"metric":true,"config":true,"configs":true,"oauth":true,"oauth2":true,"logger":true,"logging":true,"common":true,"commons":true,"utils":true,"util":true,"client":true,"clients":true,"server":true,"cache":true,"queue":true,"worker":true,"session":true,"sessions":true,"locale":true,"locales":true,"tracer":true,"trace":true,"tracing":true,"goutils":true,"gotils":true,"jsonpath":true,"jsonpatch":true,"structtag":true,"structtags":true,"state":true,"stats":true,"clock":true,"flock":true,"pkcs7":true,"pkcs8":true,"goversion":true,"version":true,"versions":true,"sconfig":true,"goflags":true,"flags":true,"xerrors":true}
+type target struct {
+path, seg, owner string
+}
+
+var genericNames = map[string]bool{
+"errors": true, "error": true, "crypt": true, "crypto": true, "metrics": true,
+"metric": true, "config": true, "configs": true, "oauth": true, "oauth2": true,
+"logger": true, "logging": true, "common": true, "commons": true, "utils": true,
+"util": true, "client": true, "clients": true, "server": true, "cache": true,
+"queue": true, "worker": true, "session": true, "sessions": true, "locale": true,
+"locales": true, "tracer": true, "trace": true, "tracing": true, "goutils": true,
+"gotils": true, "jsonpath": true, "jsonpatch": true, "structtag": true,
+"structtags": true, "state": true, "stats": true, "clock": true, "flock": true,
+"pkcs7": true, "pkcs8": true, "goversion": true, "version": true, "versions": true,
+"sconfig": true, "goflags": true, "flags": true, "xerrors": true,
+}
 
 func baseName(seg string) string {
 s := strings.ToLower(seg)
@@ -24,7 +39,7 @@ return s
 }
 
 func isGeneric(seg string) bool {
-if genericNames[seg] {
+if genericNames[strings.ToLower(seg)] {
 return true
 }
 return genericNames[baseName(seg)]
@@ -43,6 +58,22 @@ i--
 return parts[i]
 }
 
+func ownerOf(modulePath string) (lower, raw string) {
+raw2 := strings.TrimSpace(modulePath)
+lp := strings.Split(strings.ToLower(raw2), "/")
+rp := strings.Split(raw2, "/")
+last := len(lp) - 1
+if last > 0 && isMajorVersion(lp[last]) {
+last--
+}
+if last-1 >= 1 {
+return lp[last-1], rp[last-1]
+} else if last-1 == 0 {
+return lp[0], rp[0]
+}
+return "", ""
+}
+
 func isMajorVersion(s string) bool {
 if len(s) < 2 || s[0] != 'v' {
 return false
@@ -56,27 +87,27 @@ return true
 }
 
 func stripVersionSuffix(seg string) string {
- if i := strings.LastIndex(seg, "."); i > 0 {
-  suf := seg[i+1:]
-  if len(suf) >= 2 && suf[0] == 'v' {
-   allDigit := true
-   for _, r := range suf[1:] {
-    if r < '0' || r > '9' {
-     allDigit = false
-     break
-    }
-   }
-   if allDigit {
-    return seg[:i]
-   }
-  }
- }
- return seg
+if i := strings.LastIndex(seg, "."); i > 0 {
+suf := seg[i+1:]
+if len(suf) >= 2 && suf[0] == 'v' {
+allDigit := true
+for _, r := range suf[1:] {
+if r < '0' || r > '9' {
+allDigit = false
+break
+}
+}
+if allDigit {
+return seg[:i]
+}
+}
+}
+return seg
 }
 
 func sameProjectDifferentVersion(a, b string) bool {
- ba, bb := stripVersionSuffix(a), stripVersionSuffix(b)
- return ba == bb && (ba != a || bb != b)
+ba, bb := stripVersionSuffix(a), stripVersionSuffix(b)
+return ba == bb && (ba != a || bb != b)
 }
 
 func host(modulePath string) string {
@@ -137,9 +168,6 @@ if normalizeSeparators(c) == normalizeSeparators(t) {
 return "separator"
 }
 d := levenshtein(c, t)
-if d == 0 {
-return ""
-}
 if d == 1 {
 switch {
 case len(c) == len(t):
@@ -192,9 +220,9 @@ if err != nil {
 fmt.Fprintln(os.Stderr, "open targets:", err)
 os.Exit(1)
 }
-type target struct{ path, seg string }
 var targets []target
 popularPath := map[string]bool{}
+popularOwner := map[string]bool{}
 ts := bufio.NewScanner(tf)
 for ts.Scan() {
 p := strings.TrimSpace(ts.Text())
@@ -202,17 +230,26 @@ if p == "" {
 continue
 }
 seg := lastSegment(p)
-if len(seg) < *minLen {
-continue
-}
-targets = append(targets, target{path: strings.ToLower(p), seg: seg})
+to, _ := ownerOf(p)
+targets = append(targets, target{path: strings.ToLower(p), seg: seg, owner: to})
 popularPath[strings.ToLower(p)] = true
+if len(to) >= *minLen {
+popularOwner[to] = true
+}
 }
 tf.Close()
 
 byLen := map[int][]target{}
+ownerByLen := map[int][]target{}
+ownerToTarget := map[string]target{}
 for _, t := range targets {
+if len(t.seg) >= *minLen {
 byLen[len(t.seg)] = append(byLen[len(t.seg)], t)
+}
+if t.owner != "" {
+ownerByLen[len(t.owner)] = append(ownerByLen[len(t.owner)], t)
+ownerToTarget[t.owner] = t
+}
 }
 fmt.Printf("Loaded %d popular targets (>= %d chars)\n", len(targets), *minLen)
 
@@ -248,13 +285,12 @@ continue
 }
 scanned++
 candPath := strings.ToLower(ml.Path)
-if popularPath[candPath] {
+caseVariantOfPopular := popularPath[candPath] && ml.Path != candPath
+if popularPath[candPath] && !caseVariantOfPopular {
 continue
 }
 seg := lastSegment(candPath)
-if len(seg) < *minLen {
-continue
-}
+if len(seg) >= *minLen {
 for dl := -1; dl <= 1; dl++ {
 for _, t := range byLen[len(seg)+dl] {
 if t.seg == seg {
@@ -278,6 +314,64 @@ continue
 seenCandidate[key] = true
 flagged++
 fmt.Fprintf(w, "%s,%s,%s,%s,%s,%t\n", ml.Path, seg, t.path, t.seg, tech, crossHost)
+}
+}
+}
+
+co, coRaw := ownerOf(ml.Path)
+if len(co) >= *minLen && !isGeneric(co) {
+emitOwner := func(t target, otech string) {
+oKey := candPath + "|owner|" + t.path
+if seenCandidate[oKey] {
+return
+}
+seenCandidate[oKey] = true
+flagged++
+ch := host(candPath) != host(t.path)
+display := co
+if otech == "case" {
+display = coRaw
+}
+fmt.Fprintf(w, "%s,%s,%s,%s,%s,%t\n", ml.Path, display, t.path, t.owner, otech, ch)
+}
+// CASE impersonation: lowercased owner matches a popular owner but case differs.
+if t, ok := ownerToTarget[co]; ok {
+if coRaw != "" && coRaw != t.owner && strings.EqualFold(coRaw, t.owner) {
+emitOwner(t, "case")
+}
+}
+// Edit/affix checks require the candidate owner to NOT itself be popular.
+if !popularOwner[co] {
+affixes := []string{"-go", "go-", "-js", "-db", "-inc", "-api", "-lib", "-sdk", "-pkg", "-core", "-client", "-official", "-v2"}
+for _, a := range affixes {
+var base string
+if strings.HasSuffix(co, a) {
+base = co[:len(co)-len(a)]
+} else if strings.HasPrefix(co, a) {
+base = co[len(a):]
+} else {
+continue
+}
+if len(base) < *minLen {
+continue
+}
+if t, ok := ownerToTarget[base]; ok && t.owner != co && !isGeneric(t.owner) {
+emitOwner(t, "owner-affix")
+}
+}
+for dl := -1; dl <= 1; dl++ {
+for _, t := range ownerByLen[len(co)+dl] {
+if t.owner == "" || t.owner == co || len(t.owner) < *minLen || isGeneric(t.owner) {
+continue
+}
+if sameProjectDifferentVersion(co, t.owner) {
+continue
+}
+if tt := technique(co, t.owner); tt != "" {
+emitOwner(t, "owner-"+tt)
+}
+}
+}
 }
 }
 }
