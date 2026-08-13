@@ -1,0 +1,525 @@
+// source_ambiguity_v2 rewrites the source_ambiguity pattern as a set of
+// impersonation signals instead of a trusted-domain whitelist.
+//
+// v1 flaw (supervisor feedback): "untrusted_domain" flags every legitimate
+// vanity import (k8s.io, go.uber.org, ...). Vanity hosting is a normal,
+// documented Go mechanism; being absent from a whitelist is not suspicious.
+//
+// v2 signals (offline, per unique domain):
+//   domain_lookalike   - edit distance <= 2 to a well-known host (githab.com)
+//   embedded_brand     - brand token inside a non-brand domain (github-mirror.xyz)
+//   subdomain_spoof    - trusted domain used as leading labels (github.com.evil.xyz)
+//   ip_literal         - raw IPv4 used as module host
+//   punycode_label     - xn-- IDN label (homograph vector)
+//   suspicious_tld     - modifier only: raises severity when combined with a
+//                        brand signal; never flags on its own
+//
+// v2 signals (online, -net flag, unique flagged domains only):
+//   no_resolve         - vanity domain dead: takeover / resurrection risk
+//   no_meta            - resolves but serves no go-import meta tag
+//   prefix_mismatch    - go-import prefix is not a prefix of the module path
+//   tail_mismatch      - redirect repo name differs from module name
+//   redirect_ok        - vanity redirect is coherent
+//
+// Usage:
+//   go run scripts/source_ambiguity_v2/main.go \
+//     -dataset data/dataset_combined.txt \
+//     -out data/output/source_ambiguity_v2_candidates.csv \
+//     [-net] [-workers 25] [-timeout 8]
+package main
+
+import (
+	"bufio"
+	"context"
+	"crypto/tls"
+	"encoding/json"
+	"flag"
+	"fmt"
+	"io"
+	"net"
+	"net/http"
+	"os"
+	"regexp"
+	"sort"
+	"strings"
+	"sync"
+	"time"
+)
+
+type moduleLine struct {
+	Path string `json:"Path"`
+}
+
+// Well-known hosts. Used ONLY as lookalike / spoof targets, never as a
+// whitelist whose absence is itself a finding.
+var knownHosts = []string{
+	"github.com", "gitlab.com", "bitbucket.org", "sourceforge.net",
+	"golang.org", "google.golang.org", "cloud.google.com", "gopkg.in",
+	"k8s.io", "sigs.k8s.io", "go.uber.org", "go.opencensus.io",
+	"go.opentelemetry.io", "google.dev", "rsc.io", "gonum.org",
+	"gioui.org", "modernc.org", "honnef.co", "howett.net",
+	"codeberg.org", "gitee.com", "gitea.com", "sr.ht", "git.sr.ht",
+}
+
+// Brand tokens whose presence inside an unrelated domain suggests mimicry.
+var brandTokens = []string{
+	"github", "gitlab", "bitbucket", "golang", "google", "kubernetes",
+	"k8s", "docker", "hashicorp", "grpc", "protobuf", "prometheus",
+	"opentelemetry", "uber", "aws", "amazon", "azure", "microsoft",
+	"apache", "mozilla", "cloudflare", "elastic", "redis", "mongo",
+}
+
+// Domains legitimately owned by a brand: exact match or true subdomain.
+var brandLegit = map[string][]string{
+	"github":        {"github.com", "github.io", "githubusercontent.com", "github.dev"},
+	"gitlab":        {"gitlab.com", "gitlab.io", "gitlab.org"},
+	"bitbucket":     {"bitbucket.org", "bitbucket.io"},
+	"golang":        {"golang.org", "google.golang.org", "golang.google.cn"},
+	"google":        {"google.com", "golang.org", "google.golang.org", "cloud.google.com", "google.dev", "googlesource.com", "googleapis.com", "withgoogle.com"},
+	"kubernetes":    {"kubernetes.io"},
+	"k8s":           {"k8s.io", "sigs.k8s.io", "x-k8s.io", "k8s.dev"},
+	"docker":        {"docker.com", "docker.io"},
+	"hashicorp":     {"hashicorp.com"},
+	"grpc":          {"grpc.io"},
+	"protobuf":      {"protobuf.dev"},
+	"prometheus":    {"prometheus.io"},
+	"opentelemetry": {"opentelemetry.io", "go.opentelemetry.io"},
+	"uber":          {"uber.com", "go.uber.org", "uber.org"},
+	"aws":           {"amazonaws.com", "aws.dev", "aws.amazon.com"},
+	"amazon":        {"amazon.com", "amazonaws.com", "aws.amazon.com"},
+	"azure":         {"azure.com", "microsoft.com", "azure.dev"},
+	"microsoft":     {"microsoft.com", "azure.com"},
+	"apache":        {"apache.org"},
+	"mozilla":       {"mozilla.org", "mozilla.com"},
+	"cloudflare":    {"cloudflare.com"},
+	"elastic":       {"elastic.co"},
+	"redis":         {"redis.io", "redis.com"},
+	"mongo":         {"mongodb.com", "mongodb.org"},
+}
+
+// Abused TLDs (Spamhaus / literature). Severity modifier only.
+var suspiciousTLDs = []string{
+	".xyz", ".top", ".club", ".online", ".site", ".info", ".biz",
+	".tk", ".ml", ".ga", ".cf", ".gq", ".icu", ".rest", ".click",
+}
+
+type finding struct {
+	module   string
+	domain   string
+	signals  []string
+	severity string
+	// filled by -net phase
+	netStatus    string
+	redirectRepo string
+}
+
+func extractDomain(modulePath string) string {
+	p := strings.ToLower(strings.TrimSpace(modulePath))
+	if i := strings.IndexByte(p, '/'); i >= 0 {
+		p = p[:i]
+	}
+	// strip :port if present
+	if i := strings.IndexByte(p, ':'); i >= 0 {
+		p = p[:i]
+	}
+	return p
+}
+
+func firstSegment(modulePath string) string {
+	parts := strings.Split(strings.TrimSpace(modulePath), "/")
+	if len(parts) >= 2 {
+		return parts[1]
+	}
+	return ""
+}
+
+func isIPv4(domain string) bool {
+	ip := net.ParseIP(domain)
+	return ip != nil && ip.To4() != nil
+}
+
+func levenshtein(a, b string) int {
+	la, lb := len(a), len(b)
+	if la == 0 {
+		return lb
+	}
+	if lb == 0 {
+		return la
+	}
+	prev := make([]int, lb+1)
+	cur := make([]int, lb+1)
+	for j := 0; j <= lb; j++ {
+		prev[j] = j
+	}
+	for i := 1; i <= la; i++ {
+		cur[0] = i
+		for j := 1; j <= lb; j++ {
+			cost := 1
+			if a[i-1] == b[j-1] {
+				cost = 0
+			}
+			m := prev[j] + 1
+			if cur[j-1]+1 < m {
+				m = cur[j-1] + 1
+			}
+			if prev[j-1]+cost < m {
+				m = prev[j-1] + cost
+			}
+			cur[j] = m
+		}
+		prev, cur = cur, prev
+	}
+	return prev[lb]
+}
+
+// deleet folds common visual substitutions before distance comparison.
+var deleetR = strings.NewReplacer("0", "o", "1", "l", "3", "e", "5", "s", "7", "t", "8", "b")
+
+func isKnownHost(domain string) bool {
+	for _, k := range knownHosts {
+		if domain == k {
+			return true
+		}
+	}
+	return false
+}
+
+func lookalike(domain string) (string, bool) {
+	if isKnownHost(domain) {
+		return "", false
+	}
+	d := deleetR.Replace(domain)
+	for _, k := range knownHosts {
+		dist := levenshtein(d, k)
+		if dist == 0 {
+			return k, true // pure leet variant
+		}
+		// scale threshold: short domains get 1, longer get 2
+		max := 1
+		if len(k) >= 10 {
+			max = 2
+		}
+		if dist <= max {
+			return k, true
+		}
+	}
+	return "", false
+}
+
+func subdomainSpoof(domain string) (string, bool) {
+	for _, k := range knownHosts {
+		if strings.HasPrefix(domain, k+".") {
+			return k, true
+		}
+	}
+	return "", false
+}
+
+// secondLevelTLDs is a short approximation list so registrableDomain does
+// not collapse country-code hierarchies (evil-github.co.uk -> co.uk).
+var secondLevelTLDs = map[string]bool{
+	"co.uk": true, "org.uk": true, "ac.uk": true, "com.au": true,
+	"net.au": true, "org.au": true, "co.jp": true, "co.in": true,
+	"com.br": true, "com.cn": true, "co.nz": true, "co.za": true,
+}
+
+// registrableDomain approximates eTLD+1: the part of the hostname the
+// registrant actually controls. Brand tokens in subdomains of an unrelated
+// registrable domain (gitlab.mycompany.com) are hosting conventions for
+// self-hosted instances, not mimicry; mimicry lives in the registrable part
+// (gitlab-official.com, github-mirror.xyz).
+func registrableDomain(domain string) string {
+	labels := strings.Split(domain, ".")
+	n := len(labels)
+	if n <= 2 {
+		return domain
+	}
+	if secondLevelTLDs[labels[n-2]+"."+labels[n-1]] {
+		return strings.Join(labels[n-3:], ".")
+	}
+	return strings.Join(labels[n-2:], ".")
+}
+
+func embeddedBrand(domain string) (string, bool) {
+	if isKnownHost(domain) {
+		return "", false
+	}
+	reg := registrableDomain(domain)
+	for _, b := range brandTokens {
+		if !strings.Contains(reg, b) {
+			continue
+		}
+		legit := false
+		for _, ld := range brandLegit[b] {
+			if domain == ld || strings.HasSuffix(domain, "."+ld) {
+				legit = true
+				break
+			}
+		}
+		if !legit {
+			return b, true
+		}
+	}
+	return "", false
+}
+
+func hasSuspiciousTLD(domain string) (string, bool) {
+	for _, t := range suspiciousTLDs {
+		if strings.HasSuffix(domain, t) {
+			return t, true
+		}
+	}
+	return "", false
+}
+
+func hasPunycode(domain string) bool {
+	for _, label := range strings.Split(domain, ".") {
+		if strings.HasPrefix(label, "xn--") {
+			return true
+		}
+	}
+	return false
+}
+
+// --- online phase -----------------------------------------------------------
+
+var metaRe = regexp.MustCompile(`<meta[^>]+name=["']go-import["'][^>]+content=["']([^"']+)["']`)
+var metaReAlt = regexp.MustCompile(`<meta[^>]+content=["']([^"']+)["'][^>]+name=["']go-import["']`)
+
+type netResult struct {
+	status string // no_resolve | no_meta | prefix_mismatch | tail_mismatch | redirect_ok | http_error
+	repo   string
+}
+
+func checkVanity(client *http.Client, module string) netResult {
+	domain := extractDomain(module)
+	seg := firstSegment(module)
+	url := "https://" + domain + "/"
+	if seg != "" {
+		url += seg
+	}
+	url += "?go-get=1"
+
+	ctx, cancel := context.WithTimeout(context.Background(), client.Timeout)
+	defer cancel()
+	req, err := http.NewRequestWithContext(ctx, http.MethodGet, url, nil)
+	if err != nil {
+		return netResult{status: "http_error"}
+	}
+	resp, err := client.Do(req)
+	if err != nil {
+		if ne, ok := err.(net.Error); ok && ne.Timeout() {
+			return netResult{status: "no_resolve"}
+		}
+		var dnsErr *net.DNSError
+		if errAs(err, &dnsErr) {
+			return netResult{status: "no_resolve"}
+		}
+		return netResult{status: "no_resolve"}
+	}
+	defer resp.Body.Close()
+	body, _ := io.ReadAll(io.LimitReader(resp.Body, 256*1024))
+
+	m := metaRe.FindSubmatch(body)
+	if m == nil {
+		m = metaReAlt.FindSubmatch(body)
+	}
+	if m == nil {
+		return netResult{status: "no_meta"}
+	}
+	fields := strings.Fields(string(m[1]))
+	if len(fields) < 3 {
+		return netResult{status: "no_meta"}
+	}
+	prefix, repoURL := fields[0], fields[2]
+	if !strings.HasPrefix(strings.ToLower(module)+"/", strings.ToLower(prefix)+"/") &&
+		strings.ToLower(module) != strings.ToLower(prefix) {
+		return netResult{status: "prefix_mismatch", repo: repoURL}
+	}
+	modTail := tail(module)
+	repoTail := strings.TrimSuffix(tail(repoURL), ".git")
+	if modTail != "" && repoTail != "" && modTail != repoTail {
+		return netResult{status: "tail_mismatch", repo: repoURL}
+	}
+	return netResult{status: "redirect_ok", repo: repoURL}
+}
+
+func errAs(err error, target *(*net.DNSError)) bool {
+	for err != nil {
+		if d, ok := err.(*net.DNSError); ok {
+			*target = d
+			return true
+		}
+		u, ok := err.(interface{ Unwrap() error })
+		if !ok {
+			return false
+		}
+		err = u.Unwrap()
+	}
+	return false
+}
+
+func tail(p string) string {
+	p = strings.ToLower(strings.TrimSuffix(strings.TrimSpace(p), "/"))
+	if i := strings.LastIndexByte(p, '/'); i >= 0 {
+		p = p[i+1:]
+	}
+	return p
+}
+
+// ----------------------------------------------------------------------------
+
+func main() {
+	datasetPath := flag.String("dataset", "data/dataset_combined.txt", "dataset JSON lines")
+	outPath := flag.String("out", "data/output/source_ambiguity_v2_candidates.csv", "output CSV")
+	doNet := flag.Bool("net", false, "run online vanity go-import verification on flagged domains")
+	workers := flag.Int("workers", 25, "network worker pool size")
+	timeoutS := flag.Int("timeout", 8, "per-request timeout seconds")
+	flag.Parse()
+
+	df, err := os.Open(*datasetPath)
+	if err != nil {
+		fmt.Fprintln(os.Stderr, "open dataset:", err)
+		os.Exit(1)
+	}
+	defer df.Close()
+
+	// one finding per unique domain; keep first module seen as exemplar,
+	// count how many modules share the domain.
+	findings := map[string]*finding{}
+	domainCount := map[string]int{}
+	scanned := 0
+
+	sc := bufio.NewScanner(df)
+	sc.Buffer(make([]byte, 1024*1024), 1024*1024)
+	for sc.Scan() {
+		line := strings.TrimSpace(sc.Text())
+		if line == "" {
+			continue
+		}
+		var ml moduleLine
+		if json.Unmarshal([]byte(line), &ml) != nil || ml.Path == "" {
+			continue
+		}
+		scanned++
+		domain := extractDomain(ml.Path)
+		if domain == "" {
+			continue
+		}
+		domainCount[domain]++
+		if _, done := findings[domain]; done {
+			continue
+		}
+		if isKnownHost(domain) {
+			findings[domain] = nil // mark processed, no finding
+			continue
+		}
+
+		var signals []string
+		if k, ok := lookalike(domain); ok {
+			signals = append(signals, "domain_lookalike:"+k)
+		}
+		if k, ok := subdomainSpoof(domain); ok {
+			signals = append(signals, "subdomain_spoof:"+k)
+		}
+		if b, ok := embeddedBrand(domain); ok {
+			signals = append(signals, "embedded_brand:"+b)
+		}
+		if isIPv4(domain) {
+			signals = append(signals, "ip_literal")
+		}
+		if hasPunycode(domain) {
+			signals = append(signals, "punycode_label")
+		}
+
+		if len(signals) == 0 {
+			findings[domain] = nil
+			continue
+		}
+		severity := "medium"
+		for _, s := range signals {
+			if strings.HasPrefix(s, "domain_lookalike") ||
+				strings.HasPrefix(s, "subdomain_spoof") ||
+				s == "ip_literal" {
+				severity = "high"
+			}
+		}
+		// suspicious TLD is a modifier: only recorded alongside other signals
+		if t, ok := hasSuspiciousTLD(domain); ok {
+			signals = append(signals, "suspicious_tld:"+t)
+			severity = "high"
+		}
+		findings[domain] = &finding{
+			module: ml.Path, domain: domain,
+			signals: signals, severity: severity,
+		}
+	}
+
+	var flagged []*finding
+	for _, f := range findings {
+		if f != nil {
+			flagged = append(flagged, f)
+		}
+	}
+	sort.Slice(flagged, func(i, j int) bool { return flagged[i].domain < flagged[j].domain })
+
+	fmt.Printf("Scanned %d modules, %d unique domains, %d flagged domains\n",
+		scanned, len(findings), len(flagged))
+
+	if *doNet {
+		client := &http.Client{
+			Timeout: time.Duration(*timeoutS) * time.Second,
+			Transport: &http.Transport{
+				TLSClientConfig: &tls.Config{MinVersion: tls.VersionTLS12},
+				MaxIdleConns:    *workers,
+			},
+		}
+		jobs := make(chan *finding)
+		var wg sync.WaitGroup
+		for i := 0; i < *workers; i++ {
+			wg.Add(1)
+			go func() {
+				defer wg.Done()
+				for f := range jobs {
+					r := checkVanity(client, f.module)
+					f.netStatus = r.status
+					f.redirectRepo = r.repo
+				}
+			}()
+		}
+		for _, f := range flagged {
+			jobs <- f
+		}
+		close(jobs)
+		wg.Wait()
+	}
+
+	of, err := os.Create(*outPath)
+	if err != nil {
+		fmt.Fprintln(os.Stderr, "create out:", err)
+		os.Exit(1)
+	}
+	defer of.Close()
+	w := bufio.NewWriter(of)
+	defer w.Flush()
+	fmt.Fprintln(w, "exemplar_module,domain,module_count,signals,severity,net_status,redirect_repo")
+	sigTally := map[string]int{}
+	for _, f := range flagged {
+		for _, s := range f.signals {
+			sigTally[strings.SplitN(s, ":", 2)[0]]++
+		}
+		fmt.Fprintf(w, "%s,%s,%d,%s,%s,%s,%s\n",
+			f.module, f.domain, domainCount[f.domain],
+			strings.Join(f.signals, ";"), f.severity, f.netStatus, f.redirectRepo)
+	}
+	fmt.Println("Signal tally:")
+	var keys []string
+	for k := range sigTally {
+		keys = append(keys, k)
+	}
+	sort.Strings(keys)
+	for _, k := range keys {
+		fmt.Printf("  %-18s %d\n", k, sigTally[k])
+	}
+	fmt.Println("Wrote", *outPath)
+}

@@ -1,0 +1,62 @@
+package storage
+
+import (
+"database/sql"
+"log/slog"
+_ "github.com/mattn/go-sqlite3"
+)
+
+type DB struct {
+conn *sql.DB
+}
+
+func NewDB(dbPath string) (*DB, error) {
+conn, err := sql.Open("sqlite3", dbPath)
+if err != nil {
+return nil, err
+}
+db := &DB{conn: conn}
+if err := db.initialize(); err != nil {
+return nil, err
+}
+slog.Info("Database initialized", "path", dbPath)
+return db, nil
+}
+
+func (db *DB) initialize() error {
+queries := []string{
+`CREATE TABLE IF NOT EXISTS modules (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+path TEXT UNIQUE NOT NULL,
+version TEXT,
+timestamp TEXT,
+domain TEXT,
+owner TEXT,
+repo TEXT,
+created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+)`,
+`CREATE TABLE IF NOT EXISTS risk_patterns (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+module_path TEXT NOT NULL,
+pattern_type TEXT NOT NULL,
+severity TEXT NOT NULL,
+details TEXT,
+detected_at DATETIME DEFAULT CURRENT_TIMESTAMP
+)`,
+`CREATE TABLE IF NOT EXISTS versions (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+module_path TEXT NOT NULL,
+version TEXT NOT NULL,
+timestamp TEXT NOT NULL
+)`,
+}
+for _, q := range queries {
+if _, err := db.conn.Exec(q); err != nil {
+return err
+}
+}
+return nil
+}
+
+func (db *DB) InsertModule(path, version, timestamp, domain, owner, repo string) error {
+_, err := de
