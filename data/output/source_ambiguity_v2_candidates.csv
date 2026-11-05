@@ -1,0 +1,13 @@
+exemplar_module,domain,module_count,signals,severity,net_status,http_code,redirect_repo,probe_url
+bitbucket.com/fluidpay/appcontext.git,bitbucket.com,2,embedded_brand:bitbucket,medium,no_meta,200,,https://bitbucket.com?go-get=1
+crawshaw.io/iox,crawshaw.io,3,embedded_brand:aws,medium,redirect_ok,200,https://github.com/crawshaw/iox,https://crawshaw.io/iox?go-get=1
+github.com.cnpmjs.org/kataras/iris.git,github.com.cnpmjs.org,10,subdomain_spoof:github.com,high,nxdomain,0,,https://github.com.cnpmjs.org/kataras/iris.git?go-get=1
+github.ink/supranational/blst,github.ink,3,embedded_brand:github,medium,dns_error,0,,https://github.ink?go-get=1
+go.awsctrl.io/generator,go.awsctrl.io,2,embedded_brand:aws,medium,nxdomain,0,,https://go.awsctrl.io/generator?go-get=1
+go.awsmlabs.co.uk/rounding,go.awsmlabs.co.uk,2,embedded_brand:aws,medium,nxdomain,0,,https://go.awsmlabs.co.uk/rounding?go-get=1
+go.e13.dev/golib,go.e13.dev,1,domain_lookalike:google.dev,high,no_meta,404,,https://go.e13.dev?go-get=1
+golang.design/x/thread,golang.design,8,embedded_brand:golang,medium,redirect_ok,200,https://github.com/golang-design/thread,https://golang.design/x/thread?go-get=1
+golang.ir/x/tools,golang.ir,3,domain_lookalike:golang.org;embedded_brand:golang,high,nxdomain,0,,https://golang.ir/x/tools?go-get=1
+golangleipzig.space/clt23,golangleipzig.space,1,embedded_brand:golang,medium,redirect_ok,200,https://github.com/golang-leipzig/clt23,https://golangleipzig.space/clt23?go-get=1
+k0s.io/conntroll,k0s.io,18,domain_lookalike:k8s.io,high,tail_mismatch,200,https://github.com/btwiuse/k0s,https://k0s.io?go-get=1
+volvo-exclusion-hon-assurance.trycloudflare.com/aws,volvo-exclusion-hon-assurance.trycloudflare.com,1,embedded_brand:cloudflare,medium,nxdomain,0,,https://volvo-exclusion-hon-assurance.trycloudflare.com/aws?go-get=1
