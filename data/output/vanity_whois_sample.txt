@@ -1,0 +1,2463 @@
+=== 54hub.com
+   Domain Name: 54HUB.COM
+   Registry Domain ID: 2112543335_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: whois.cloudflare.com
+   Registrar URL: http://www.cloudflare.com
+   Updated Date: 2025-11-15T02:49:43Z
+   Creation Date: 2017-04-09T14:05:48Z
+   Registry Expiry Date: 2028-04-09T14:05:48Z
+   Registrar: Cloudflare, Inc.
+   Registrar IANA ID: 1910
+   Registrar Abuse Contact Email: registrar-abuse@cloudflare.com
+   Registrar Abuse Contact Phone: +1.6503198930
+   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+   Name Server: NORAH.NS.CLOUDFLARE.COM
+   Name Server: YADIEL.NS.CLOUDFLARE.COM
+   DNSSEC: unsigned
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of whois database: 2026-11-05T14:30:03Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+unsolicited, commercial advertising or solicitations via e-mail, telephone,
+or facsimile; or (2) enable high volume, automated, electronic processes
+=== ailur.dev
+getaddrinfo(whois.nic.dev): Name or service not known
+=== airdispat.ch
+Requests of this client are not permitted. Please use https://www.nic.ch/whois/ for queries.
+
+=== aletheiaware.com
+No match for domain "ALETHEIAWARE.COM".
+>>> Last update of whois database: 2026-11-05T14:30:03Z <<<
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+unsolicited, commercial advertising or solicitations via e-mail, telephone,
+or facsimile; or (2) enable high volume, automated, electronic processes
+that apply to VeriSign (or its computer systems). The compilation,
+repackaging, dissemination or other use of this Data is expressly
+prohibited without the prior written consent of VeriSign. You agree not to
+use electronic processes that are automated and high-volume to access or
+query the Whois database except as reasonably necessary to register
+domain names or modify existing registrations. VeriSign reserves the right
+to restrict your access to the Whois database in its sole discretion to ensure
+operational stability.  VeriSign may restrict or terminate your access to the
+Whois database for failure to abide by these terms of use. VeriSign
+reserves the right to modify these terms at any time.
+
+The Registry database contains ONLY .COM, .NET, .EDU domains and
+Registrars.
+=== alhur.es
+This TLD has no whois server, but you can access the whois database at
+https://www.nic.es/
+=== apigo.cc
+   Domain Name: APIGO.CC
+   Registry Domain ID: 198756762_DOMAIN_CC-VRSN
+   Registrar WHOIS Server: grs-whois.hichina.com
+   Registrar URL: http://wanwang.aliyun.com
+   Updated Date: 2026-08-08T08:59:14Z
+   Creation Date: 2024-01-26T05:51:55Z
+   Registry Expiry Date: 2028-01-26T05:51:55Z
+   Registrar: Alibaba Cloud Computing Ltd. d/b/a HiChina (www.net.cn)
+   Registrar IANA ID: 1599
+   Registrar Abuse Contact Email: DomainAbuse@service.aliyun.com
+   Registrar Abuse Contact Phone: +86.95187
+   Domain Status: ok https://icann.org/epp#ok
+   Name Server: DNS17.HICHINA.COM
+   Name Server: DNS18.HICHINA.COM
+   DNSSEC: unsigned
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of WHOIS database: 2026-11-05T14:30:02Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the
+expiration date of the domain name registrant's agreement with the
+sponsoring registrar.  Users may consult the sponsoring registrar's
+Whois database to view the registrar's reported date of expiration
+for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign's ("VeriSign") Whois
+database is provided by VeriSign for information purposes only, and to
+assist persons in obtaining information about or related to a domain name
+registration record. VeriSign does not guarantee its accuracy.
+By submitting a Whois query, you agree to abide by the following terms of
+use: You agree that you may use this Data only for lawful purposes and that
+under no circumstances will you use this Data to: (1) allow, enable, or
+otherwise support the transmission of mass unsolicited, commercial
+advertising or solicitations via e-mail, telephone, or facsimile; or
+=== appscode.dev
+getaddrinfo(whois.nic.dev): Name or service not known
+=== bamsoftware.com
+   Domain Name: BAMSOFTWARE.COM
+   Registry Domain ID: 25225117_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: whois.namecheap.com
+   Registrar URL: http://www.namecheap.com
+   Updated Date: 2021-03-09T01:15:16Z
+   Creation Date: 2000-04-19T01:31:01Z
+   Registry Expiry Date: 2027-04-19T01:31:01Z
+   Registrar: NameCheap, Inc.
+   Registrar IANA ID: 1068
+   Registrar Abuse Contact Email: abuse@namecheap.com
+   Registrar Abuse Contact Phone: +1.6613102107
+   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+   Name Server: NS1.LINODE.COM
+   Name Server: NS2.LINODE.COM
+   DNSSEC: unsigned
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of whois database: 2026-11-05T14:30:18Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+unsolicited, commercial advertising or solicitations via e-mail, telephone,
+or facsimile; or (2) enable high volume, automated, electronic processes
+=== barfuss.email
+TLD is not supported.
+>>> Last update of WHOIS database: 2026-11-05T14:30:29Z <<<
+
+Terms of Use: Access to WHOIS information is provided to assist persons in determining the contents of a domain name registration record in the registry database. The data in this record is provided by Identity Digital or the Registry Operator for informational purposes only, and accuracy is not guaranteed. This service is intended only for query-based access. You agree that you will use this data only for lawful purposes and that, under no circumstances will you use this data to (a) allow, enable, or otherwise support the transmission by e-mail, telephone, or facsimile of mass unsolicited, commercial advertising or solicitations to entities other than the data recipient's own existing customers; or (b) enable high volume, automated, electronic processes that send queries or data to the systems of Registry Operator, a Registrar, or Identity Digital except as reasonably necessary to register domain names or modify existing registrations. When using the Whois service, please consider the following: The Whois service is not a replacement for standard EPP commands to the SRS service. Whois is not considered authoritative for registered domain objects. The Whois service may be scheduled for downtime during production or OT&E maintenance periods. Queries to the Whois services are throttled. If too many queries are received from a single IP address within a specified time, the service will begin to reject further queries for a period of time to prevent disruption of Whois service access. Abuse of the Whois system through data mining is mitigated by detecting and limiting bulk query access from single sources. Where applicable, the presence of a [Non-Public Data] tag indicates that such data is not made publicly available due to applicable data privacy laws or requirements. Should you wish to contact the registrant, please refer to the Whois records available through the registrar URL listed above. Access to non-public data may be provided, upon request, where it can be re
+asonably confirmed that the requester holds a specific legitimate interest and a proper legal basis for accessing the withheld data. Access to this data provided by Identity Digital can be requested by submitting a request via the form found at https://www.identity.digital/about/policies/whois-layered-access/. The Registrar of Record identified in this output may have an RDDS service that can be queried for additional information on how to contact the Registrant, Admin, or Tech contact of the queried domain name. Identity Digital Inc. and Registry Operator reserve the right to modify these terms at any time. By submitting this query, you agree to abide by this policy.
+=== bella.network
+TLD is not supported.
+>>> Last update of WHOIS database: 2026-11-05T14:30:31Z <<<
+
+Terms of Use: Access to WHOIS information is provided to assist persons in determining the contents of a domain name registration record in the registry database. The data in this record is provided by Identity Digital or the Registry Operator for informational purposes only, and accuracy is not guaranteed. This service is intended only for query-based access. You agree that you will use this data only for lawful purposes and that, under no circumstances will you use this data to (a) allow, enable, or otherwise support the transmission by e-mail, telephone, or facsimile of mass unsolicited, commercial advertising or solicitations to entities other than the data recipient's own existing customers; or (b) enable high volume, automated, electronic processes that send queries or data to the systems of Registry Operator, a Registrar, or Identity Digital except as reasonably necessary to register domain names or modify existing registrations. When using the Whois service, please consider the following: The Whois service is not a replacement for standard EPP commands to the SRS service. Whois is not considered authoritative for registered domain objects. The Whois service may be scheduled for downtime during production or OT&E maintenance periods. Queries to the Whois services are throttled. If too many queries are received from a single IP address within a specified time, the service will begin to reject further queries for a period of time to prevent disruption of Whois service access. Abuse of the Whois system through data mining is mitigated by detecting and limiting bulk query access from single sources. Where applicable, the presence of a [Non-Public Data] tag indicates that such data is not made publicly available due to applicable data privacy laws or requirements. Should you wish to contact the registrant, please refer to the Whois records available through the registrar URL listed above. Access to non-public data may be provided, upon request, where it can be re
+asonably confirmed that the requester holds a specific legitimate interest and a proper legal basis for accessing the withheld data. Access to this data provided by Identity Digital can be requested by submitting a request via the form found at https://www.identity.digital/about/policies/whois-layered-access/. The Registrar of Record identified in this output may have an RDDS service that can be queried for additional information on how to contact the Registrant, Admin, or Tech contact of the queried domain name. Identity Digital Inc. and Registry Operator reserve the right to modify these terms at any time. By submitting this query, you agree to abide by this policy.
+=== berachain.dev
+getaddrinfo(whois.nic.dev): Name or service not known
+=== blekksprut.net
+=== blockdaemon.com
+   Domain Name: BLOCKDAEMON.COM
+   Registry Domain ID: 2111307267_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: whois.squarespace.domains
+   Registrar URL: http://domains2.squarespace.com
+   Updated Date: 2026-03-21T03:06:47Z
+   Creation Date: 2017-04-05T02:44:44Z
+   Registry Expiry Date: 2027-04-05T02:44:44Z
+   Registrar: Squarespace Domains II LLC
+   Registrar IANA ID: 895
+   Registrar Abuse Contact Email: abuse-complaints@squarespace.com
+   Registrar Abuse Contact Phone: +1.6466935324
+   Domain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited
+   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+   Name Server: EOIN.NS.CLOUDFLARE.COM
+   Name Server: HARLEE.NS.CLOUDFLARE.COM
+   DNSSEC: signedDelegation
+   DNSSEC DS Data: 2371 13 2 DA09863B686328420E76581944EFB8360DB7E9D9F0B27E796D4648AF68AC236E
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of whois database: 2026-11-05T14:30:48Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+=== bme.hu
+% Whois server 4.1 serving the hu ccTLD
+
+
+domain:         bme.hu
+record created: 1993-03-03
+Tovabbi adatokert ld.:
+https://www.domain.hu/domain-kereses/
+For further data see:
+https://www.domain.hu/domain-search/
+
+=== bog.dev
+getaddrinfo(whois.nic.dev): Name or service not known
+=== bou.ke
+Domain Name: bou.ke
+Registry Domain ID: 564724-KENIC
+Updated Date: 2023-10-30T21:26:38Z
+Creation Date: 2018-01-19T18:43:24Z
+Registry Expiry Date: 2029-01-19T18:43:24Z
+Registrar Registration Expiration Date: 2029-01-19T18:43:24Z
+Registrar: Lexregistration Limited
+Registrar Street Address: Eaton Place, UN Crescent, P.O. Box Village Market, 2nd Floor - 00100, Nairobi
+Registrar Phone: +254205147069
+Registrar Email: registries@lexregistration.co.ke
+Registrar Abuse Contact Email: 
+Registrar Abuse Contact Phone: 
+Domain Status: active https://icann.org/epp#active
+Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+Domain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited
+Domain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited
+Name Server: tom.ns.cloudflare.com
+Name Server: rose.ns.cloudflare.com
+DNSSEC: unsigned
+>>> Last update of WHOIS database: 2026-11-05T14:22:01.210Z <<<
+
+For more information on domain status codes, please visit https://icann.org/epp
+
+
+=== bradytrix.net
+   Domain Name: BRADYTRIX.NET
+   Registry Domain ID: 2469881352_DOMAIN_NET-VRSN
+   Registrar WHOIS Server: whois.registrar.amazon
+   Registrar URL: http://registrar.amazon.com
+   Updated Date: 2025-11-16T18:06:00Z
+   Creation Date: 2019-12-21T18:04:00Z
+   Registry Expiry Date: 2026-12-21T18:04:00Z
+   Registrar: Amazon Registrar, Inc.
+   Registrar IANA ID: 468
+   Registrar Abuse Contact Email: trustandsafety@support.aws.com
+   Registrar Abuse Contact Phone: +1.2024422253
+   Domain Status: ok https://icann.org/epp#ok
+   Name Server: NS-1474.AWSDNS-56.ORG
+   Name Server: NS-1581.AWSDNS-05.CO.UK
+   Name Server: NS-305.AWSDNS-38.COM
+   Name Server: NS-865.AWSDNS-44.NET
+   DNSSEC: unsigned
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of whois database: 2026-11-05T14:30:48Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+=== bytelog.org
+Domain Name: bytelog.org
+Registry Domain ID: REDACTED
+Registrar WHOIS Server: http://whois.cloudflare.com
+Registrar URL: http://www.cloudflare.com
+Updated Date: 2026-08-12T04:19:34Z
+Creation Date: 2016-02-06T18:11:52Z
+Registry Expiry Date: 2027-02-06T18:11:52Z
+Registrar: Cloudflare, Inc.
+Registrar IANA ID: 1910
+Registrar Abuse Contact Email: registry-abuse@cloudflare.com
+Registrar Abuse Contact Phone: +1.6503198930
+Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+Name Server: hal.ns.cloudflare.com
+Name Server: liberty.ns.cloudflare.com
+DNSSEC: unsigned
+URL of the ICANN Whois Inaccuracy Complaint Form: https://icann.org/wicf/
+>>> Last update of WHOIS database: 2026-11-05T14:31:10Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+Terms of Use: Access to Public Interest Registry WHOIS information is provided to assist persons in determining the contents of a domain name registration record in the Public Interest Registry registry database. The data in this record is provided by Public Interest Registry for informational purposes only, and Public Interest Registry does not guarantee its accuracy. This service is intended only for query-based access. You agree that you will use this data only for lawful purposes and that, under no circumstances will you use this data to (a) allow, enable, or otherwise support the transmission by e-mail, telephone, or facsimile of mass unsolicited, commercial advertising or solicitations to entities other than the data recipient's own existing customers; or (b) enable high volume, automated, electronic processes that send queries or data to the systems of Registry Operator, a Registrar, or Identity Digital except as reasonably necessary to register domain names or modify existing registrations. All rights reserved. Public Interest Registry reserves the right to modify these terms at any time. By submitting this query, you agree to abide by this policy.  The Registrar of Record identified in this output may have an RDDS service that can be queried for additional information on how to contact the Registrant, Admin, or Tech contact of the queried domain name.
+=== changkun.de
+% Restricted rights.
+% 
+% Terms and Conditions of Use
+% 
+% The above data may only be used within the scope of technical or
+% administrative necessities of Internet operation or to remedy legal
+% problems.
+% The use for other purposes, in particular for advertising, is not permitted.
+% 
+% The DENIC whois service on port 43 doesn't disclose any information concerning
+% the domain holder, general request and abuse contact.
+% This information can be obtained through use of our web-based whois service
+% available at the DENIC website:
+% https://webwhois.denic.de/?lang=en
+% 
+% 
+
+Domain: changkun.de
+Nserver: ns81.domaincontrol.com
+Nserver: ns82.domaincontrol.com
+Status: connect
+Changed: 2020-09-18T16:48:16+02:00
+=== code.as
+getaddrinfo(whois.nic.as): No address associated with hostname
+=== csdn.net
+   Domain Name: CSDN.NET
+   Registry Domain ID: 4252779_DOMAIN_NET-VRSN
+   Registrar WHOIS Server: grs-whois.hichina.com
+   Registrar URL: http://www.net.cn
+   Updated Date: 2025-10-15T07:53:44Z
+   Creation Date: 1999-03-11T05:00:00Z
+   Registry Expiry Date: 2027-03-11T04:00:00Z
+   Registrar: Alibaba Cloud Computing (Beijing) Co., Ltd.
+   Registrar IANA ID: 420
+   Registrar Abuse Contact Email: DomainAbuse@service.aliyun.com
+   Registrar Abuse Contact Phone: +86.95187
+   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+   Domain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited
+   Name Server: VIP3.ALIDNS.COM
+   Name Server: VIP4.ALIDNS.COM
+   DNSSEC: unsigned
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of whois database: 2026-11-05T14:31:03Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+unsolicited, commercial advertising or solicitations via e-mail, telephone,
+=== cwtch.im
+
+                This information has been redacted to comply with European Union General Data Protection Regulations (GDPR). Please contact us at info@nic.im if you have any further queries.
+              
+Domain Name:	cwtch.im
+Domain Managers
+Name: Redacted
+Address
+Redacted
+Domain Owners / Registrant
+Name: Redacted
+Address
+Redacted
+Administrative Contact
+Name: Redacted
+Address
+Redacted
+Billing Contact
+Name: Redacted
+Address
+Redacted
+Technical Contact
+Name: Redacted
+Address
+Redacted
+Domain Details
+Expiry Date: 16/01/2027 00:59:51
+Name Server:ns1.digitalocean.com.
+Name Server:ns2.digitalocean.com.
+Name Server:ns3.digitalocean.com.
+=== daehorn.fr
+%%
+%% This is the AFNIC Whois server.
+%%
+%% complete date format: YYYY-MM-DDThh:mm:ssZ
+%%
+%% Rights restricted by copyright.
+%% See https://www.afnic.fr/en/domain-names-and-support/everything-there-is-to-know-about-domain-names/find-a-domain-name-or-a-holder-using-whois/
+%%
+%%
+
+%% NOT FOUND
+
+>>> Last update of WHOIS database: 2026-11-05T14:31:17.133468Z <<<
+
+=== daemonl.com
+   Domain Name: DAEMONL.COM
+   Registry Domain ID: 1722853694_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: whois.registrar.amazon
+   Registrar URL: http://registrar.amazon.com
+   Updated Date: 2026-05-16T05:41:33Z
+   Creation Date: 2012-05-25T23:33:14Z
+   Registry Expiry Date: 2027-05-25T23:33:14Z
+   Registrar: Amazon Registrar, Inc.
+   Registrar IANA ID: 468
+   Registrar Abuse Contact Email: trustandsafety@support.aws.com
+   Registrar Abuse Contact Phone: +1.2024422253
+   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+   Name Server: NS-1264.AWSDNS-30.ORG
+   Name Server: NS-2016.AWSDNS-60.CO.UK
+   Name Server: NS-312.AWSDNS-39.COM
+   Name Server: NS-517.AWSDNS-00.NET
+   DNSSEC: unsigned
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of whois database: 2026-11-05T14:31:03Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+=== ddosify.com
+   Domain Name: DDOSIFY.COM
+   Registry Domain ID: 2549317112_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: whois.cloudflare.com
+   Registrar URL: http://www.cloudflare.com
+   Updated Date: 2025-08-31T04:16:12Z
+   Creation Date: 2020-07-28T19:45:53Z
+   Registry Expiry Date: 2027-07-28T19:45:53Z
+   Registrar: Cloudflare, Inc.
+   Registrar IANA ID: 1910
+   Registrar Abuse Contact Email: registrar-abuse@cloudflare.com
+   Registrar Abuse Contact Phone: +1.6503198930
+   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+   Name Server: KARSYN.NS.CLOUDFLARE.COM
+   Name Server: KENNETH.NS.CLOUDFLARE.COM
+   DNSSEC: unsigned
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of whois database: 2026-11-05T14:31:03Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+unsolicited, commercial advertising or solicitations via e-mail, telephone,
+or facsimile; or (2) enable high volume, automated, electronic processes
+=== drjosh.dev
+getaddrinfo(whois.nic.dev): Name or service not known
+=== dutchsec.com
+   Domain Name: DUTCHSEC.COM
+   Registry Domain ID: 2037782516_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: whois.rrpproxy.net
+   Registrar URL: http://www.key-systems.net
+   Updated Date: 2026-06-28T08:06:21Z
+   Creation Date: 2016-06-27T06:57:07Z
+   Registry Expiry Date: 2027-06-27T06:57:07Z
+   Registrar: Key-Systems GmbH
+   Registrar IANA ID: 269
+   Registrar Abuse Contact Email: abuse@key-systems.net
+   Registrar Abuse Contact Phone: +49.68949396850
+   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+   Name Server: NS0.TRANSIP.NET
+   Name Server: NS1.TRANSIP.NL
+   Name Server: NS2.TRANSIP.EU
+   DNSSEC: signedDelegation
+   DNSSEC DS Data: 55099 13 2 FEDE7BF546B4359585DD417222C5DC6531C7D7A4148B411E6417D9035FFD815C
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of whois database: 2026-11-05T14:31:03Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+=== elara.ws
+Domain Name: ELARA.WS
+Domain ID: 6D24444CDF98E2B0E050010AAC0133D7-GDI
+WHOIS Server: whois.namecheap.com
+Registrar URL: https://www.namecheap.com/domains/whois.aspx
+Updated Date: 2026-03-11T08:18:38Z
+Creation Date: 2023-04-10T18:22:27Z
+Registrar Registration Expiration Date: 2027-04-10T18:22:27Z
+Registrar: Namecheap, Inc.
+Registrar IANA ID: 1068
+Registrar Abuse Contact Email: abuse@namecheap.com
+Registrar Abuse Contact Phone: +1.6613102107
+Domain Status: clientTransferProhibited
+Name Server: dns1.registrar-servers.com
+Name Server: dns2.registrar-servers.com
+DNSSEC: unsigned
+URL of the ICANN WHOIS Data Problem Reporting System: http://wdprs.internic.net/
+>>> Last update of WHOIS database: 2026-11-05T14:31:24Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+=== encore.dev
+getaddrinfo(whois.nic.dev): Name or service not known
+=== envs.sh
+Domain Name: envs.sh
+Registry Domain ID: REDACTED
+Registrar WHOIS Server: https://secure.galcomm.co.il/General/WhoIs.aspx
+Registrar URL: http://www.galcomm.com
+Updated Date: 2026-09-10T15:16:48Z
+Creation Date: 2026-09-05T15:15:53Z
+Registry Expiry Date: 2027-09-05T15:15:53Z
+Registrar: CommuniGal Communication Ltd.
+Registrar IANA ID: 418
+Registrar Abuse Contact Email: 
+Registrar Abuse Contact Phone: 
+Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+Registry Registrant ID: REDACTED
+Registrant Name: REDACTED
+Registrant Organization: Domain Name Privacy Inc.
+Registrant Street: REDACTED
+Registrant City: REDACTED
+Registrant State/Province: Paphos
+Registrant Postal Code: REDACTED
+Registrant Country: CY
+Registrant Phone: REDACTED
+Registrant Phone Ext: REDACTED
+Registrant Fax: REDACTED
+Registrant Fax Ext: REDACTED
+Registrant Email: REDACTED
+Registry Admin ID: REDACTED
+Admin Name: REDACTED
+Admin Organization: REDACTED
+Admin Street: REDACTED
+Admin City: REDACTED
+Admin State/Province: REDACTED
+Admin Postal Code: REDACTED
+Admin Country: REDACTED
+Admin Phone: REDACTED
+Admin Phone Ext: REDACTED
+Admin Fax: REDACTED
+Admin Fax Ext: REDACTED
+Admin Email: REDACTED
+Registry Tech ID: REDACTED
+Tech Name: REDACTED
+=== essio.dev
+getaddrinfo(whois.nic.dev): Name or service not known
+=== euphoria.io
+Domain Name: euphoria.io
+Registry Domain ID: REDACTED
+Registrar WHOIS Server: whois.gandi.net
+Registrar URL: https://www.gandi.net
+Updated Date: 2026-08-12T03:17:50Z
+Creation Date: 2014-12-23T23:01:53Z
+Registry Expiry Date: 2026-12-23T23:01:53Z
+Registrar: Gandi SAS
+Registrar IANA ID: 81
+Registrar Abuse Contact Email: abuse@support.gandi.net
+Registrar Abuse Contact Phone: +33.170377661
+Domain Status: ok https://icann.org/epp#ok
+Registry Registrant ID: REDACTED
+Registrant Name: REDACTED
+Registrant Organization: 
+Registrant Street: REDACTED
+Registrant City: REDACTED
+Registrant State/Province: 
+Registrant Postal Code: REDACTED
+Registrant Country: FR
+Registrant Phone: REDACTED
+Registrant Phone Ext: REDACTED
+Registrant Fax: REDACTED
+Registrant Fax Ext: REDACTED
+Registrant Email: REDACTED
+Registry Admin ID: REDACTED
+Admin Name: REDACTED
+Admin Organization: REDACTED
+Admin Street: REDACTED
+Admin City: REDACTED
+Admin State/Province: REDACTED
+Admin Postal Code: REDACTED
+Admin Country: REDACTED
+Admin Phone: REDACTED
+Admin Phone Ext: REDACTED
+Admin Fax: REDACTED
+Admin Fax Ext: REDACTED
+Admin Email: REDACTED
+Registry Tech ID: REDACTED
+Tech Name: REDACTED
+=== f110.dev
+getaddrinfo(whois.nic.dev): Name or service not known
+=== feneas.org
+Domain Name: feneas.org
+Registry Domain ID: REDACTED
+Registrar WHOIS Server: https://rdap.spaceship.com
+Registrar URL: http://www.spaceship.com/
+Updated Date: 2026-10-04T15:16:27Z
+Creation Date: 2023-08-20T15:15:49Z
+Registry Expiry Date: 2027-08-20T15:15:49Z
+Registrar: Spaceship, Inc.
+Registrar IANA ID: 3862
+Registrar Abuse Contact Email: abuse@spaceship.com
+Registrar Abuse Contact Phone: +1.9854014545
+Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+Name Server: ns1.dyna-ns.net
+Name Server: ns2.dyna-ns.net
+DNSSEC: unsigned
+URL of the ICANN Whois Inaccuracy Complaint Form: https://icann.org/wicf/
+>>> Last update of WHOIS database: 2026-11-05T14:31:31Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+Terms of Use: Access to Public Interest Registry WHOIS information is provided to assist persons in determining the contents of a domain name registration record in the Public Interest Registry registry database. The data in this record is provided by Public Interest Registry for informational purposes only, and Public Interest Registry does not guarantee its accuracy. This service is intended only for query-based access. You agree that you will use this data only for lawful purposes and that, under no circumstances will you use this data to (a) allow, enable, or otherwise support the transmission by e-mail, telephone, or facsimile of mass unsolicited, commercial advertising or solicitations to entities other than the data recipient's own existing customers; or (b) enable high volume, automated, electronic processes that send queries or data to the systems of Registry Operator, a Registrar, or Identity Digital except as reasonably necessary to register domain names or modify existing registrations. All rights reserved. Public Interest Registry reserves the right to modify these terms at any time. By submitting this query, you agree to abide by this policy.  The Registrar of Record identified in this output may have an RDDS service that can be queried for additional information on how to contact the Registrant, Admin, or Tech contact of the queried domain name.
+=== freecumextremist.com
+   Domain Name: FREECUMEXTREMIST.COM
+   Registry Domain ID: 2602879266_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: whois.namecheap.com
+   Registrar URL: http://www.namecheap.com
+   Updated Date: 2026-03-14T20:59:37Z
+   Creation Date: 2021-04-04T23:07:34Z
+   Registry Expiry Date: 2028-04-04T23:07:34Z
+   Registrar: NameCheap, Inc.
+   Registrar IANA ID: 1068
+   Registrar Abuse Contact Email: abuse@namecheap.com
+   Registrar Abuse Contact Phone: +1.6613102107
+   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+   Name Server: ILLYA.FROTH.ZONE
+   Name Server: RIN.FROTH.ZONE
+   Name Server: SABER.FROTH.ZONE
+   Name Server: SAKURA.FROTH.ZONE
+   DNSSEC: unsigned
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of whois database: 2026-11-05T14:31:18Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+=== gitclone.com
+   Domain Name: GITCLONE.COM
+   Registry Domain ID: 2102440674_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: grs-whois.hichina.com
+   Registrar URL: http://www.net.cn
+   Updated Date: 2024-04-03T07:03:36Z
+   Creation Date: 2017-03-05T19:08:03Z
+   Registry Expiry Date: 2028-03-05T19:08:03Z
+   Registrar: Alibaba Cloud Computing (Beijing) Co., Ltd.
+   Registrar IANA ID: 420
+   Registrar Abuse Contact Email: DomainAbuse@service.aliyun.com
+   Registrar Abuse Contact Phone: +86.95187
+   Domain Status: ok https://icann.org/epp#ok
+   Name Server: DNS19.HICHINA.COM
+   Name Server: DNS20.HICHINA.COM
+   DNSSEC: unsigned
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of whois database: 2026-11-05T14:31:18Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+unsolicited, commercial advertising or solicitations via e-mail, telephone,
+or facsimile; or (2) enable high volume, automated, electronic processes
+=== gitee.com
+   Domain Name: GITEE.COM
+   Registry Domain ID: 1545335312_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: grs-whois.hichina.com
+   Registrar URL: http://www.net.cn
+   Updated Date: 2025-04-01T08:33:34Z
+   Creation Date: 2009-03-04T14:56:37Z
+   Registry Expiry Date: 2028-03-04T14:56:37Z
+   Registrar: Alibaba Cloud Computing (Beijing) Co., Ltd.
+   Registrar IANA ID: 420
+   Registrar Abuse Contact Email: DomainAbuse@service.aliyun.com
+   Registrar Abuse Contact Phone: +86.95187
+   Domain Status: ok https://icann.org/epp#ok
+   Name Server: SV1.BDYDNS.CN
+   Name Server: SV2.BDYDNS.CN
+   Name Server: SV3.BDYDNS.CN
+   Name Server: SV4.BDYDNS.CN
+   DNSSEC: unsigned
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of whois database: 2026-11-05T14:31:18Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+=== gitoa.ru
+% TCI Whois Service. Terms of use:
+% https://tcinet.ru/documents/whois_ru_rf.pdf (in Russian)
+% https://tcinet.ru/documents/whois_su.pdf (in Russian)
+
+domain:        GITOA.RU
+nserver:       ns1.reg.ru.
+nserver:       ns2.reg.ru.
+state:         REGISTERED, DELEGATED, UNVERIFIED
+person:        Private Person
+registrar:     REGRU-RU
+admin-contact: http://www.reg.ru/whois/admin_contact
+created:       2020-04-27T15:56:05Z
+paid-till:     2027-04-27T15:56:05Z
+free-date:     2027-05-28
+source:        TCI
+
+Last updated on 2026-11-05T14:28:01Z
+
+=== gnzler.io
+Domain Name: gnzler.io
+Registry Domain ID: REDACTED
+Registrar WHOIS Server: whois.porkbun.com
+Registrar URL: http://porkbun.com
+Updated Date: 2026-08-13T18:27:05Z
+Creation Date: 2017-07-07T15:21:13Z
+Registry Expiry Date: 2027-07-07T15:21:13Z
+Registrar: Porkbun LLC
+Registrar IANA ID: 1861
+Registrar Abuse Contact Email: abuse+registry@porkbun.com
+Registrar Abuse Contact Phone: +1.8557675286
+Domain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited
+Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+Registry Registrant ID: REDACTED
+Registrant Name: REDACTED
+Registrant Organization: Private by Design, LLC
+Registrant Street: REDACTED
+Registrant City: REDACTED
+Registrant State/Province: NC
+Registrant Postal Code: REDACTED
+Registrant Country: US
+Registrant Phone: REDACTED
+Registrant Phone Ext: REDACTED
+Registrant Fax: REDACTED
+Registrant Fax Ext: REDACTED
+Registrant Email: REDACTED
+Registry Admin ID: REDACTED
+Admin Name: REDACTED
+Admin Organization: REDACTED
+Admin Street: REDACTED
+Admin City: REDACTED
+Admin State/Province: REDACTED
+Admin Postal Code: REDACTED
+Admin Country: REDACTED
+Admin Phone: REDACTED
+Admin Phone Ext: REDACTED
+Admin Fax: REDACTED
+Admin Fax Ext: REDACTED
+Admin Email: REDACTED
+Registry Tech ID: REDACTED
+=== go4.org
+Domain Name: go4.org
+Registry Domain ID: REDACTED
+Registrar WHOIS Server: http://whois.gandi.net
+Registrar URL: http://www.gandi.net
+Updated Date: 2026-08-12T10:00:59Z
+Creation Date: 2013-07-24T14:46:23Z
+Registry Expiry Date: 2029-07-24T14:46:23Z
+Registrar: Gandi SAS
+Registrar IANA ID: 81
+Registrar Abuse Contact Email: abuse@support.gandi.net
+Registrar Abuse Contact Phone: +33.170377661
+Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+Name Server: ns-1278.awsdns-31.org
+Name Server: ns-1541.awsdns-00.co.uk
+Name Server: ns-387.awsdns-48.com
+Name Server: ns-873.awsdns-45.net
+DNSSEC: unsigned
+URL of the ICANN Whois Inaccuracy Complaint Form: https://icann.org/wicf/
+>>> Last update of WHOIS database: 2026-11-05T14:31:44Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+Terms of Use: Access to Public Interest Registry WHOIS information is provided to assist persons in determining the contents of a domain name registration record in the Public Interest Registry registry database. The data in this record is provided by Public Interest Registry for informational purposes only, and Public Interest Registry does not guarantee its accuracy. This service is intended only for query-based access. You agree that you will use this data only for lawful purposes and that, under no circumstances will you use this data to (a) allow, enable, or otherwise support the transmission by e-mail, telephone, or facsimile of mass unsolicited, commercial advertising or solicitations to entities other than the data recipient's own existing customers; or (b) enable high volume, automated, electronic processes that send queries or data to the systems of Registry Operator, a Registrar, or Identity Digital except as reasonably necessary to register domain names or modify existing registrations. All rights reserved. Public Interest Registry reserves the right to modify these terms at any time. By submitting this query, you agree to abide by this policy.  The Registrar of Record identified in this output may have an RDDS service that can be queried for additional information on how to contact the Registrant, Admin, or Tech contact of the queried domain name.
+=== golift.io
+Domain Name: golift.io
+Registry Domain ID: REDACTED
+Registrar WHOIS Server: whois.encirca.com
+Registrar URL: http://encirca.com
+Updated Date: 2026-08-12T02:50:30Z
+Creation Date: 2019-07-12T21:51:48Z
+Registry Expiry Date: 2030-07-12T21:51:48Z
+Registrar: EnCirca, Inc.
+Registrar IANA ID: 455
+Registrar Abuse Contact Email: reportedabuse@encirca.com
+Registrar Abuse Contact Phone: +1.7819429975
+Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+Registry Registrant ID: REDACTED
+Registrant Name: REDACTED
+Registrant Organization: Sleepers
+Registrant Street: REDACTED
+Registrant City: REDACTED
+Registrant State/Province: CA
+Registrant Postal Code: REDACTED
+Registrant Country: US
+Registrant Phone: REDACTED
+Registrant Phone Ext: REDACTED
+Registrant Fax: REDACTED
+Registrant Fax Ext: REDACTED
+Registrant Email: REDACTED
+Registry Admin ID: REDACTED
+Admin Name: REDACTED
+Admin Organization: REDACTED
+Admin Street: REDACTED
+Admin City: REDACTED
+Admin State/Province: REDACTED
+Admin Postal Code: REDACTED
+Admin Country: REDACTED
+Admin Phone: REDACTED
+Admin Phone Ext: REDACTED
+Admin Fax: REDACTED
+Admin Fax Ext: REDACTED
+Admin Email: REDACTED
+Registry Tech ID: REDACTED
+Tech Name: REDACTED
+=== gophers.dev
+getaddrinfo(whois.nic.dev): Name or service not known
+=== iim.gay
+Domain Name: iim.gay
+Registry Domain ID: REDACTED FOR PRIVACY
+Registrar WHOIS Server: whois.namecheap.com
+Registrar URL: http://www.namecheap.com
+Updated Date: 2026-09-05T13:27:00Z
+Creation Date: 2020-09-16T15:36:53Z
+Registry Expiry Date: 2030-09-16T23:59:59Z
+Registrar: NameCheap, Inc.
+Registrar IANA ID: 1068
+Registrar Abuse Contact Email: abuse@namecheap.com
+Registrar Abuse Contact Phone: +1.6613102107
+Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+Registry Registrant ID: REDACTED FOR PRIVACY
+Registrant Name: REDACTED FOR PRIVACY
+Registrant Organization: Privacy service provided by WITHHELD FOR PRIVACY LLC
+Registrant Street: REDACTED FOR PRIVACY
+Registrant Street: REDACTED FOR PRIVACY
+Registrant Street: REDACTED FOR PRIVACY
+Registrant City: REDACTED FOR PRIVACY
+Registrant State/Province: Delaware
+Registrant Postal Code: REDACTED FOR PRIVACY
+Registrant Country: US
+Registrant Phone: REDACTED FOR PRIVACY
+Registrant Phone Ext: REDACTED FOR PRIVACY
+Registrant Fax: REDACTED FOR PRIVACY
+Registrant Fax Ext: REDACTED FOR PRIVACY
+Registrant Email: Please query the RDDS service of the Registrar of Record identified in this output for information on how to contact the Registrant, Admin, or Tech contact of the queried domain name.
+Registry Admin ID:
+Admin Name:
+Admin Organization:
+Admin Street:
+Admin Street:
+Admin Street:
+Admin City:
+Admin State/Province:
+Admin Postal Code:
+Admin Country:
+Admin Phone:
+Admin Phone Ext:
+Admin Fax:
+=== imzhwk.com
+   Domain Name: IMZHWK.COM
+   Registry Domain ID: 2104850569_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: whois.namecheap.com
+   Registrar URL: http://www.namecheap.com
+   Updated Date: 2026-03-01T16:52:41Z
+   Creation Date: 2017-03-14T16:40:16Z
+   Registry Expiry Date: 2028-03-14T16:40:16Z
+   Registrar: NameCheap, Inc.
+   Registrar IANA ID: 1068
+   Registrar Abuse Contact Email: abuse@namecheap.com
+   Registrar Abuse Contact Phone: +1.6613102107
+   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+   Name Server: DNS1.REGISTRAR-SERVERS.COM
+   Name Server: DNS2.REGISTRAR-SERVERS.COM
+   DNSSEC: unsigned
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of whois database: 2026-11-05T14:31:33Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+unsolicited, commercial advertising or solicitations via e-mail, telephone,
+or facsimile; or (2) enable high volume, automated, electronic processes
+=== innotegrity.dev
+getaddrinfo(whois.nic.dev): Name or service not known
+=== jba.io
+Domain Name: jba.io
+Registry Domain ID: REDACTED
+Registrar WHOIS Server: whois.gandi.net
+Registrar URL: https://www.gandi.net
+Updated Date: 2026-08-26T04:05:48Z
+Creation Date: 2014-10-03T04:08:06Z
+Registry Expiry Date: 2030-10-03T04:08:06Z
+Registrar: Gandi SAS
+Registrar IANA ID: 81
+Registrar Abuse Contact Email: abuse@support.gandi.net
+Registrar Abuse Contact Phone: +33.170377661
+Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+Registry Registrant ID: REDACTED
+Registrant Name: REDACTED
+Registrant Organization: 
+Registrant Street: REDACTED
+Registrant City: REDACTED
+Registrant State/Province: TX
+Registrant Postal Code: REDACTED
+Registrant Country: US
+Registrant Phone: REDACTED
+Registrant Phone Ext: REDACTED
+Registrant Fax: REDACTED
+Registrant Fax Ext: REDACTED
+Registrant Email: REDACTED
+Registry Admin ID: REDACTED
+Admin Name: REDACTED
+Admin Organization: REDACTED
+Admin Street: REDACTED
+Admin City: REDACTED
+Admin State/Province: REDACTED
+Admin Postal Code: REDACTED
+Admin Country: REDACTED
+Admin Phone: REDACTED
+Admin Phone Ext: REDACTED
+Admin Fax: REDACTED
+Admin Fax Ext: REDACTED
+Admin Email: REDACTED
+Registry Tech ID: REDACTED
+Tech Name: REDACTED
+=== jhenson.dev
+getaddrinfo(whois.nic.dev): Name or service not known
+=== jl-k.com
+   Domain Name: JL-K.COM
+   Registry Domain ID: 2552242374_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: whois.cloudflare.com
+   Registrar URL: http://www.cloudflare.com
+   Updated Date: 2026-07-12T04:10:29Z
+   Creation Date: 2020-08-11T08:59:54Z
+   Registry Expiry Date: 2027-08-11T08:59:54Z
+   Registrar: Cloudflare, Inc.
+   Registrar IANA ID: 1910
+   Registrar Abuse Contact Email: registrar-abuse@cloudflare.com
+   Registrar Abuse Contact Phone: +1.6503198930
+   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+   Name Server: PENNY.NS.CLOUDFLARE.COM
+   Name Server: RICK.NS.CLOUDFLARE.COM
+   DNSSEC: signedDelegation
+   DNSSEC DS Data: 2371 13 2 EBFC14DD93FEE0B16DABFB3C92FB374CD51ECFBF4FD88EC812BE58CB4323BD6A
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of whois database: 2026-11-05T14:31:33Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+unsolicited, commercial advertising or solicitations via e-mail, telephone,
+=== jolheiser.com
+   Domain Name: JOLHEISER.COM
+   Registry Domain ID: 2479559240_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: whois.namesilo.com
+   Registrar URL: http://www.namesilo.com
+   Updated Date: 2026-01-13T08:55:51Z
+   Creation Date: 2020-01-13T02:31:50Z
+   Registry Expiry Date: 2027-01-13T02:31:50Z
+   Registrar: NameSilo, LLC
+   Registrar IANA ID: 1479
+   Registrar Abuse Contact Email: abuse@namesilo.com
+   Registrar Abuse Contact Phone: +1.4805240066
+   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+   Name Server: NS1.DNSOWL.COM
+   Name Server: NS2.DNSOWL.COM
+   Name Server: NS3.DNSOWL.COM
+   DNSSEC: unsigned
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of whois database: 2026-11-05T14:31:48Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+unsolicited, commercial advertising or solicitations via e-mail, telephone,
+=== k2software.cn
+Domain Name: k2software.cn
+ROID: 20090730s10001s36186159-cn
+Domain Status: ok
+Registrant: 上海斯歌信息技术有限公司
+Registrant Contact Email: zenglingsong@k2software.cn
+Sponsoring Registrar: 阿里云计算有限公司（万网）
+Name Server: dns29.hichina.com
+Name Server: dns30.hichina.com
+Registration Time: 2009-07-30 11:01:51
+Expiration Time: 2027-07-30 11:01:51
+DNSSEC: unsigned
+=== ketch.com
+   Domain Name: KETCH.COM
+   Registry Domain ID: 21958826_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: whois.registrar.amazon
+   Registrar URL: http://registrar.amazon.com
+   Updated Date: 2026-05-15T12:58:35Z
+   Creation Date: 2000-03-09T11:37:00Z
+   Registry Expiry Date: 2027-03-09T10:37:00Z
+   Registrar: Amazon Registrar, Inc.
+   Registrar IANA ID: 468
+   Registrar Abuse Contact Email: trustandsafety@support.aws.com
+   Registrar Abuse Contact Phone: +1.2024422253
+   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+   Name Server: NS-104.AWSDNS-13.COM
+   Name Server: NS-1511.AWSDNS-60.ORG
+   Name Server: NS-1678.AWSDNS-17.CO.UK
+   Name Server: NS-618.AWSDNS-13.NET
+   DNSSEC: unsigned
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of whois database: 2026-11-05T14:31:48Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+=== khan.rip
+TLD is not supported.
+>>> Last update of WHOIS database: 2026-11-05T14:32:02Z <<<
+
+Terms of Use: Access to WHOIS information is provided to assist persons in determining the contents of a domain name registration record in the registry database. The data in this record is provided by Identity Digital or the Registry Operator for informational purposes only, and accuracy is not guaranteed. This service is intended only for query-based access. You agree that you will use this data only for lawful purposes and that, under no circumstances will you use this data to (a) allow, enable, or otherwise support the transmission by e-mail, telephone, or facsimile of mass unsolicited, commercial advertising or solicitations to entities other than the data recipient's own existing customers; or (b) enable high volume, automated, electronic processes that send queries or data to the systems of Registry Operator, a Registrar, or Identity Digital except as reasonably necessary to register domain names or modify existing registrations. When using the Whois service, please consider the following: The Whois service is not a replacement for standard EPP commands to the SRS service. Whois is not considered authoritative for registered domain objects. The Whois service may be scheduled for downtime during production or OT&E maintenance periods. Queries to the Whois services are throttled. If too many queries are received from a single IP address within a specified time, the service will begin to reject further queries for a period of time to prevent disruption of Whois service access. Abuse of the Whois system through data mining is mitigated by detecting and limiting bulk query access from single sources. Where applicable, the presence of a [Non-Public Data] tag indicates that such data is not made publicly available due to applicable data privacy laws or requirements. Should you wish to contact the registrant, please refer to the Whois records available through the registrar URL listed above. Access to non-public data may be provided, upon request, where it can be re
+asonably confirmed that the requester holds a specific legitimate interest and a proper legal basis for accessing the withheld data. Access to this data provided by Identity Digital can be requested by submitting a request via the form found at https://www.identity.digital/about/policies/whois-layered-access/. The Registrar of Record identified in this output may have an RDDS service that can be queried for additional information on how to contact the Registrant, Admin, or Tech contact of the queried domain name. Identity Digital Inc. and Registry Operator reserve the right to modify these terms at any time. By submitting this query, you agree to abide by this policy.
+=== kilic.dev
+getaddrinfo(whois.nic.dev): Name or service not known
+=== linuxhg.com
+=== llib.dev
+getaddrinfo(whois.nic.dev): Name or service not known
+=== lmao.ch
+Requests of this client are not permitted. Please use https://www.nic.ch/whois/ for queries.
+
+=== mattglei.ch
+Requests of this client are not permitted. Please use https://www.nic.ch/whois/ for queries.
+
+=== meandercode.com
+No match for domain "MEANDERCODE.COM".
+>>> Last update of whois database: 2026-11-05T14:32:18Z <<<
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+unsolicited, commercial advertising or solicitations via e-mail, telephone,
+or facsimile; or (2) enable high volume, automated, electronic processes
+that apply to VeriSign (or its computer systems). The compilation,
+repackaging, dissemination or other use of this Data is expressly
+prohibited without the prior written consent of VeriSign. You agree not to
+use electronic processes that are automated and high-volume to access or
+query the Whois database except as reasonably necessary to register
+domain names or modify existing registrations. VeriSign reserves the right
+to restrict your access to the Whois database in its sole discretion to ensure
+operational stability.  VeriSign may restrict or terminate your access to the
+Whois database for failure to abide by these terms of use. VeriSign
+reserves the right to modify these terms at any time.
+
+The Registry database contains ONLY .COM, .NET, .EDU domains and
+Registrars.
+=== mercari.io
+Domain Name: mercari.io
+Registry Domain ID: REDACTED
+Registrar WHOIS Server: whois.markmonitor.com
+Registrar URL: http://www.markmonitor.com
+Updated Date: 2026-08-12T10:12:59Z
+Creation Date: 2017-06-21T07:07:08Z
+Registry Expiry Date: 2027-06-21T07:07:08Z
+Registrar: MarkMonitor Inc.
+Registrar IANA ID: 292
+Registrar Abuse Contact Email: abusecomplaints@markmonitor.com
+Registrar Abuse Contact Phone: +1.2083895740
+Domain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited
+Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+Domain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited
+Registry Registrant ID: REDACTED
+Registrant Name: REDACTED
+Registrant Organization: Mercari, Inc
+Registrant Street: REDACTED
+Registrant City: REDACTED
+Registrant State/Province: Tokyo
+Registrant Postal Code: REDACTED
+Registrant Country: JP
+Registrant Phone: REDACTED
+Registrant Phone Ext: REDACTED
+Registrant Fax: REDACTED
+Registrant Fax Ext: REDACTED
+Registrant Email: REDACTED
+Registry Admin ID: REDACTED
+Admin Name: REDACTED
+Admin Organization: REDACTED
+Admin Street: REDACTED
+Admin City: REDACTED
+Admin State/Province: REDACTED
+Admin Postal Code: REDACTED
+Admin Country: REDACTED
+Admin Phone: REDACTED
+Admin Phone Ext: REDACTED
+Admin Fax: REDACTED
+Admin Fax Ext: REDACTED
+Admin Email: REDACTED
+=== micro.dev
+getaddrinfo(whois.nic.dev): Name or service not known
+=== nit.so
+Domain Name: nit.so
+Registry Domain ID: 229872-sonic
+Registrar WHOIS Server: whois.namecheap.com
+Updated Date: 2026-03-10T08:47:51Z
+Creation Date: 2023-04-09T20:20:19Z
+Registry Expiry Date: 2027-04-09T20:20:19Z
+Registrar Registration Expiration Date: 2027-04-09T20:20:19Z
+Registrar: NameCheap
+Registrar IANA ID: 1068
+Registrar Street Address: Street No. 4600, East Washington Street, Suite 305
+Registrar City: Phoenix
+Registrar State: AZ
+Registrar Postal Code: 85034
+Registrar Email: registry@namecheap.com
+Registrar Abuse Contact Email: abuse@namecheap.com
+Registrar Abuse Contact Phone: +1.6613102107
+Domain Status: active https://icann.org/epp#active
+Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+Name Server: edna.ns.cloudflare.com
+Name Server: tom.ns.cloudflare.com
+DNSSEC: unsigned
+>>> Last update of WHOIS database: 2026-11-05T14:26:30.484Z <<<
+
+For more information on domain status codes, please visit https://icann.org/epp
+
+TERMS OF USE: You are not authorized to access or query our WHOIS database through the use of electronic processes that are high-volume and automated.  This WHOIS database is provided by as a service to the internet community.
+
+The data is for information purposes only. We do not guarantee its accuracy. By submitting a WHOIS query, you agree to abide by the following terms of use: You agree that you may use this Data only for lawful purposes and that under no circumstances will you use this Data to: (1) allow, enable, or otherwise support the transmission of mass unsolicited, commercial advertising or solicitations via e-mail, telephone, or facsimile; or (2) enable high volume, automated, electronic processes. The compilation, repackaging, dissemination or other use of this Data is expressly prohibited.
+
+=== oras.land
+TLD is not supported.
+>>> Last update of WHOIS database: 2026-11-05T14:32:34Z <<<
+
+Terms of Use: Access to WHOIS information is provided to assist persons in determining the contents of a domain name registration record in the registry database. The data in this record is provided by Identity Digital or the Registry Operator for informational purposes only, and accuracy is not guaranteed. This service is intended only for query-based access. You agree that you will use this data only for lawful purposes and that, under no circumstances will you use this data to (a) allow, enable, or otherwise support the transmission by e-mail, telephone, or facsimile of mass unsolicited, commercial advertising or solicitations to entities other than the data recipient's own existing customers; or (b) enable high volume, automated, electronic processes that send queries or data to the systems of Registry Operator, a Registrar, or Identity Digital except as reasonably necessary to register domain names or modify existing registrations. When using the Whois service, please consider the following: The Whois service is not a replacement for standard EPP commands to the SRS service. Whois is not considered authoritative for registered domain objects. The Whois service may be scheduled for downtime during production or OT&E maintenance periods. Queries to the Whois services are throttled. If too many queries are received from a single IP address within a specified time, the service will begin to reject further queries for a period of time to prevent disruption of Whois service access. Abuse of the Whois system through data mining is mitigated by detecting and limiting bulk query access from single sources. Where applicable, the presence of a [Non-Public Data] tag indicates that such data is not made publicly available due to applicable data privacy laws or requirements. Should you wish to contact the registrant, please refer to the Whois records available through the registrar URL listed above. Access to non-public data may be provided, upon request, where it can be re
+asonably confirmed that the requester holds a specific legitimate interest and a proper legal basis for accessing the withheld data. Access to this data provided by Identity Digital can be requested by submitting a request via the form found at https://www.identity.digital/about/policies/whois-layered-access/. The Registrar of Record identified in this output may have an RDDS service that can be queried for additional information on how to contact the Registrant, Admin, or Tech contact of the queried domain name. Identity Digital Inc. and Registry Operator reserve the right to modify these terms at any time. By submitting this query, you agree to abide by this policy.
+=== otter.engineering
+TLD is not supported.
+>>> Last update of WHOIS database: 2026-11-05T14:32:35Z <<<
+
+Terms of Use: Access to WHOIS information is provided to assist persons in determining the contents of a domain name registration record in the registry database. The data in this record is provided by Identity Digital or the Registry Operator for informational purposes only, and accuracy is not guaranteed. This service is intended only for query-based access. You agree that you will use this data only for lawful purposes and that, under no circumstances will you use this data to (a) allow, enable, or otherwise support the transmission by e-mail, telephone, or facsimile of mass unsolicited, commercial advertising or solicitations to entities other than the data recipient's own existing customers; or (b) enable high volume, automated, electronic processes that send queries or data to the systems of Registry Operator, a Registrar, or Identity Digital except as reasonably necessary to register domain names or modify existing registrations. When using the Whois service, please consider the following: The Whois service is not a replacement for standard EPP commands to the SRS service. Whois is not considered authoritative for registered domain objects. The Whois service may be scheduled for downtime during production or OT&E maintenance periods. Queries to the Whois services are throttled. If too many queries are received from a single IP address within a specified time, the service will begin to reject further queries for a period of time to prevent disruption of Whois service access. Abuse of the Whois system through data mining is mitigated by detecting and limiting bulk query access from single sources. Where applicable, the presence of a [Non-Public Data] tag indicates that such data is not made publicly available due to applicable data privacy laws or requirements. Should you wish to contact the registrant, please refer to the Whois records available through the registrar URL listed above. Access to non-public data may be provided, upon request, where it can be re
+asonably confirmed that the requester holds a specific legitimate interest and a proper legal basis for accessing the withheld data. Access to this data provided by Identity Digital can be requested by submitting a request via the form found at https://www.identity.digital/about/policies/whois-layered-access/. The Registrar of Record identified in this output may have an RDDS service that can be queried for additional information on how to contact the Registrant, Admin, or Tech contact of the queried domain name. Identity Digital Inc. and Registry Operator reserve the right to modify these terms at any time. By submitting this query, you agree to abide by this policy.
+=== parallelcoin.io
+Domain Name: parallelcoin.io
+Registry Domain ID: REDACTED
+Registrar WHOIS Server: https://www.spaceship.com/domains/whois/
+Registrar URL: 
+Updated Date: 2026-08-13T20:24:14Z
+Creation Date: 2026-07-17T10:55:59Z
+Registry Expiry Date: 2027-07-17T10:55:59Z
+Registrar: Spaceship, Inc.
+Registrar IANA ID: 3862
+Registrar Abuse Contact Email: abuse@spaceship.com
+Registrar Abuse Contact Phone: +1.9854014545
+Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+Registry Registrant ID: REDACTED
+Registrant Name: REDACTED
+Registrant Organization: Privacy service provided by WITHHELD FOR PRIVACY LLC
+Registrant Street: REDACTED
+Registrant City: REDACTED
+Registrant State/Province: Delaware
+Registrant Postal Code: REDACTED
+Registrant Country: US
+Registrant Phone: REDACTED
+Registrant Phone Ext: REDACTED
+Registrant Fax: REDACTED
+Registrant Fax Ext: REDACTED
+Registrant Email: REDACTED
+Registry Admin ID: REDACTED
+Admin Name: REDACTED
+Admin Organization: REDACTED
+Admin Street: REDACTED
+Admin City: REDACTED
+Admin State/Province: REDACTED
+Admin Postal Code: REDACTED
+Admin Country: REDACTED
+Admin Phone: REDACTED
+Admin Phone Ext: REDACTED
+Admin Fax: REDACTED
+Admin Fax Ext: REDACTED
+Admin Email: REDACTED
+Registry Tech ID: REDACTED
+Tech Name: REDACTED
+=== pesca.dev
+getaddrinfo(whois.nic.dev): Name or service not known
+=== pkg.is
+% This is the ISNIC Whois server.
+%
+% Rights restricted by copyright.
+% See https://www.isnic.is/en/about/copyright
+
+domain:       pkg.is
+registrant:   MS24413-IS
+admin-c:      NI231-IS
+tech-c:       NI231-IS
+zone-c:       CN25-IS
+billing-c:    NI230-IS
+nserver:      carlane.ns.cloudflare.com
+nserver:      watson.ns.cloudflare.com
+dnssec:       unsigned delegation
+created:      February 20 2023
+expires:      February 20 2027
+source:       ISNIC 
+
+nic-hdl:      MS24413-IS
+address:      US
+created:      February 20 2023
+source:       ISNIC 
+
+role:         NameCheap, Inc.
+nic-hdl:      NI230-IS
+address:      4600 East Washington Street, Suite 305
+address:      Phoenix, AZ 85034
+address:      US
+phone:        +1 6613102107
+e-mail:       isnicdomains2@namecheap.com
+created:      March 21 2019
+source:       ISNIC 
+
+role:         NameCheap, Inc.
+nic-hdl:      NI231-IS
+address:      4600 East Washington Street, Suite 305
+address:      Phoenix, AZ 85034
+address:      US
+phone:        +1 6613102107
+e-mail:       isnicdomains@namecheap.com
+=== qianqiusoft.com
+   Domain Name: QIANQIUSOFT.COM
+   Registry Domain ID: 1880172313_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: grs-whois.hichina.com
+   Registrar URL: http://www.net.cn
+   Updated Date: 2026-10-10T01:17:58Z
+   Creation Date: 2014-10-13T15:35:49Z
+   Registry Expiry Date: 2027-10-13T15:35:49Z
+   Registrar: Alibaba Cloud Computing (Beijing) Co., Ltd.
+   Registrar IANA ID: 420
+   Registrar Abuse Contact Email: DomainAbuse@service.aliyun.com
+   Registrar Abuse Contact Phone: +86.95187
+   Domain Status: ok https://icann.org/epp#ok
+   Name Server: DNS7.HICHINA.COM
+   Name Server: DNS8.HICHINA.COM
+   DNSSEC: unsigned
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of whois database: 2026-11-05T14:32:33Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+unsolicited, commercial advertising or solicitations via e-mail, telephone,
+or facsimile; or (2) enable high volume, automated, electronic processes
+=== reefassistant.com
+   Domain Name: REEFASSISTANT.COM
+   Registry Domain ID: 2501108117_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: whois.godaddy.com
+   Registrar URL: http://www.godaddy.com
+   Updated Date: 2026-04-20T14:14:45Z
+   Creation Date: 2020-03-08T05:31:25Z
+   Registry Expiry Date: 2027-03-08T05:31:25Z
+   Registrar: GoDaddy.com, LLC
+   Registrar IANA ID: 146
+   Registrar Abuse Contact Email: abuse@godaddy.com
+   Registrar Abuse Contact Phone: 480-624-2505
+   Domain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited
+   Domain Status: clientRenewProhibited https://icann.org/epp#clientRenewProhibited
+   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+   Domain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited
+   Name Server: NS1.AFTERNIC.COM
+   Name Server: NS2.AFTERNIC.COM
+   DNSSEC: unsigned
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of whois database: 2026-11-05T14:32:33Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+=== resenje.org
+Domain Name: resenje.org
+Registry Domain ID: REDACTED
+Registrar WHOIS Server: whois.namecheap.com
+Registrar URL: http://www.namecheap.com
+Updated Date: 2026-08-12T01:56:48Z
+Creation Date: 2010-02-18T13:54:17Z
+Registry Expiry Date: 2028-02-18T13:54:17Z
+Registrar: NameCheap, Inc.
+Registrar IANA ID: 1068
+Registrar Abuse Contact Email: abuse@namecheap.com
+Registrar Abuse Contact Phone: +1.9854014545
+Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+Name Server: ns1.first-ns.de
+Name Server: robotns2.second-ns.de
+Name Server: robotns3.second-ns.com
+Name Server: ns.resenje.org
+DNSSEC: unsigned
+URL of the ICANN Whois Inaccuracy Complaint Form: https://icann.org/wicf/
+>>> Last update of WHOIS database: 2026-11-05T14:32:44Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+Terms of Use: Access to Public Interest Registry WHOIS information is provided to assist persons in determining the contents of a domain name registration record in the Public Interest Registry registry database. The data in this record is provided by Public Interest Registry for informational purposes only, and Public Interest Registry does not guarantee its accuracy. This service is intended only for query-based access. You agree that you will use this data only for lawful purposes and that, under no circumstances will you use this data to (a) allow, enable, or otherwise support the transmission by e-mail, telephone, or facsimile of mass unsolicited, commercial advertising or solicitations to entities other than the data recipient's own existing customers; or (b) enable high volume, automated, electronic processes that send queries or data to the systems of Registry Operator, a Registrar, or Identity Digital except as reasonably necessary to register domain names or modify existing registrations. All rights reserved. Public Interest Registry reserves the right to modify these terms at any time. By submitting this query, you agree to abide by this policy.  The Registrar of Record identified in this output may have an RDDS service that can be queried for additional information on how to contact the Registrant, Admin, or Tech contact of the queried domain name.
+=== rokan.xyz
+Domain Name: ROKAN.XYZ
+Registry Domain ID: D92053413-CNIC
+Registrar WHOIS Server: whois.ovh.com
+Registrar URL: http://www.ovh.com
+Updated Date: 2026-03-01T12:26:45.0Z
+Creation Date: 2019-01-27T20:58:28.0Z
+Registry Expiry Date: 2027-01-27T23:59:59.0Z
+Registrar: OVH sas
+Registrar IANA ID: 433
+Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+Domain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited
+Name Server: NS1.1984HOSTING.COM
+Name Server: NS0.1984.IS
+Name Server: NS2.1984.IS
+Name Server: NS1.1984.IS
+DNSSEC: signedDelegation
+Registrar Abuse Contact Email: abuse@ovh.net
+Registrar Abuse Contact Phone: +33.974530814
+URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of WHOIS database: 2026-11-05T14:32:45.0Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+The registration data available in this service is limited. Additional
+data may be available at https://lookup.icann.org
+
+The Whois and RDAP services are provided by CentralNic, and contain
+information pertaining to Internet domain names registered by our
+our customers. By using this service you are agreeing (1) not to use any
+information presented here for any purpose other than determining
+ownership of domain names, (2) not to store or reproduce this data in
+any way, (3) not to use any high-volume, automated, electronic processes
+to obtain data from this service. Abuse of this service is monitored and
+actions in contravention of these terms will result in being permanently
+blacklisted. All data is (c) CentralNic Ltd (https://www.centralnicregistry.com)
+
+Access to the Whois and RDAP services is rate limited. For more
+information, visit https://centralnicregistry.com/policies/whois-guidance.
+=== rootprojects.org
+Domain Name: rootprojects.org
+Registry Domain ID: REDACTED
+Registrar WHOIS Server: http://whois.name.com
+Registrar URL: http://www.name.com
+Updated Date: 2026-08-12T08:34:08Z
+Creation Date: 2019-02-23T05:27:16Z
+Registry Expiry Date: 2027-02-23T05:27:16Z
+Registrar: Name.com, Inc.
+Registrar IANA ID: 625
+Registrar Abuse Contact Email: abuse@name.com
+Registrar Abuse Contact Phone: +1.7203101849
+Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+Name Server: ns1gjz.name.com
+Name Server: ns2nsy.name.com
+Name Server: ns3jmt.name.com
+Name Server: ns4fmw.name.com
+DNSSEC: unsigned
+URL of the ICANN Whois Inaccuracy Complaint Form: https://icann.org/wicf/
+>>> Last update of WHOIS database: 2026-11-05T14:32:47Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+Terms of Use: Access to Public Interest Registry WHOIS information is provided to assist persons in determining the contents of a domain name registration record in the Public Interest Registry registry database. The data in this record is provided by Public Interest Registry for informational purposes only, and Public Interest Registry does not guarantee its accuracy. This service is intended only for query-based access. You agree that you will use this data only for lawful purposes and that, under no circumstances will you use this data to (a) allow, enable, or otherwise support the transmission by e-mail, telephone, or facsimile of mass unsolicited, commercial advertising or solicitations to entities other than the data recipient's own existing customers; or (b) enable high volume, automated, electronic processes that send queries or data to the systems of Registry Operator, a Registrar, or Identity Digital except as reasonably necessary to register domain names or modify existing registrations. All rights reserved. Public Interest Registry reserves the right to modify these terms at any time. By submitting this query, you agree to abide by this policy.  The Registrar of Record identified in this output may have an RDDS service that can be queried for additional information on how to contact the Registrant, Admin, or Tech contact of the queried domain name.
+=== runtime.link
+Domain Name: runtime.link
+Registry Domain ID: DO_e6a5861ceba1b969c1720ec8ceb82221-UR
+Registrar WHOIS Server: whois.namecheap.com
+Registrar URL: https://www.namecheap.com
+Updated Date: 2026-08-09T09:48:58.299Z
+Creation Date: 2023-09-03T02:27:57.293Z
+Registry Expiry Date: 2027-09-03T02:27:57.293Z
+Registrar: NAMECHEAP
+Registrar IANA ID: 1068
+Registrar Abuse Contact Email: abuse@namecheap.com
+Registrar Abuse Contact Phone: +1.6613102107
+Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+Name Server: dns1.registrar-servers.com
+Name Server: dns2.registrar-servers.com
+DNSSEC: unsigned
+URL of the ICANN RDDS Inaccuracy Complaint Form: https://icann.org/wicf
+
+>>> Last update of WHOIS database: 2026-11-05T14:32:48.754Z <<<
+
+For more information on domain status codes, please visit https://icann.org/epp
+
+The WHOIS information provided in this page has been redacted
+in compliance with ICANN's Temporary Specification for gTLD
+Registration Data.
+
+The data in this record is provided by Tucows Registry for informational
+purposes only, and it does not guarantee its accuracy. Tucows Registry is
+authoritative for whois information in top-level domains it operates
+under contract with the Internet Corporation for Assigned Names and
+Numbers. Whois information from other top-level domains is provided by
+a third-party under license to Tucows Registry.
+
+This service is intended only for query-based access. By using this
+service, you agree that you will use any data presented only for lawful
+purposes and that, under no circumstances will you use (a) data
+acquired for the purpose of allowing, enabling, or otherwise supporting
+the transmission by e-mail, telephone, facsimile or other
+communications mechanism of mass  unsolicited, commercial advertising
+or solicitations to entities other than your existing  customers; or
+(b) this service to enable high volume, automated, electronic processes
+=== savefile.me
+Domain Name: savefile.me
+Registry Domain ID: REDACTED
+Registrar WHOIS Server: whois.dynadot.com
+Registrar URL: http://dynadot.com
+Updated Date: 2026-08-11T20:32:33Z
+Creation Date: 2011-07-28T12:02:18Z
+Registry Expiry Date: 2027-07-28T12:02:18Z
+Registrar: Dynadot Inc
+Registrar IANA ID: 472
+Registrar Abuse Contact Email: abuse@dynadot.com
+Registrar Abuse Contact Phone: +1.6502620100
+Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+Registry Registrant ID: REDACTED
+Registrant Name: REDACTED
+Registrant Organization: Super Privacy Service LTD c/o Dynadot
+Registrant Street: REDACTED
+Registrant City: REDACTED
+Registrant State/Province: California
+Registrant Postal Code: REDACTED
+Registrant Country: US
+Registrant Phone: REDACTED
+Registrant Phone Ext: REDACTED
+Registrant Fax: REDACTED
+Registrant Fax Ext: REDACTED
+Registrant Email: REDACTED
+Registry Admin ID: REDACTED
+Admin Name: REDACTED
+Admin Organization: REDACTED
+Admin Street: REDACTED
+Admin City: REDACTED
+Admin State/Province: REDACTED
+Admin Postal Code: REDACTED
+Admin Country: REDACTED
+Admin Phone: REDACTED
+Admin Phone Ext: REDACTED
+Admin Fax: REDACTED
+Admin Fax Ext: REDACTED
+Admin Email: REDACTED
+Registry Tech ID: REDACTED
+Tech Name: REDACTED
+=== sensorstation.co
+getaddrinfo(whois.nic.co): Name or service not known
+=== shib.me
+Domain Name: shib.me
+Registry Domain ID: REDACTED
+Registrar WHOIS Server: http://whois.cloudflare.com
+Registrar URL: http://cloudflare.com
+Updated Date: 2026-08-11T23:59:16Z
+Creation Date: 2013-05-28T05:55:12Z
+Registry Expiry Date: 2036-05-28T05:55:12Z
+Registrar: Cloudflare, Inc
+Registrar IANA ID: 1910
+Registrar Abuse Contact Email: registry-abuse@cloudflare.com
+Registrar Abuse Contact Phone: +1.4153195717
+Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+Registry Registrant ID: REDACTED
+Registrant Name: REDACTED
+Registrant Organization: 
+Registrant Street: REDACTED
+Registrant City: REDACTED
+Registrant State/Province: Tamilnadu
+Registrant Postal Code: REDACTED
+Registrant Country: IN
+Registrant Phone: REDACTED
+Registrant Phone Ext: REDACTED
+Registrant Fax: REDACTED
+Registrant Fax Ext: REDACTED
+Registrant Email: REDACTED
+Registry Admin ID: REDACTED
+Admin Name: REDACTED
+Admin Organization: REDACTED
+Admin Street: REDACTED
+Admin City: REDACTED
+Admin State/Province: REDACTED
+Admin Postal Code: REDACTED
+Admin Country: REDACTED
+Admin Phone: REDACTED
+Admin Phone Ext: REDACTED
+Admin Fax: REDACTED
+Admin Fax Ext: REDACTED
+Admin Email: REDACTED
+Registry Tech ID: REDACTED
+Tech Name: REDACTED
+=== ship56.net
+   Domain Name: SHIP56.NET
+   Registry Domain ID: 1693166473_DOMAIN_NET-VRSN
+   Registrar WHOIS Server: grs-whois.hichina.com
+   Registrar URL: http://www.net.cn
+   Updated Date: 2026-03-07T04:23:13Z
+   Creation Date: 2011-12-21T09:05:42Z
+   Registry Expiry Date: 2027-12-21T09:05:42Z
+   Registrar: Alibaba Cloud Computing (Beijing) Co., Ltd.
+   Registrar IANA ID: 420
+   Registrar Abuse Contact Email: DomainAbuse@service.aliyun.com
+   Registrar Abuse Contact Phone: +86.95187
+   Domain Status: ok https://icann.org/epp#ok
+   Name Server: JAZZ.DNSPOD.NET
+   Name Server: PIANIST.DNSPOD.NET
+   DNSSEC: unsigned
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of whois database: 2026-11-05T14:32:33Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+unsolicited, commercial advertising or solicitations via e-mail, telephone,
+or facsimile; or (2) enable high volume, automated, electronic processes
+=== simonwaldherr.de
+% Restricted rights.
+% 
+% Terms and Conditions of Use
+% 
+% The above data may only be used within the scope of technical or
+% administrative necessities of Internet operation or to remedy legal
+% problems.
+% The use for other purposes, in particular for advertising, is not permitted.
+% 
+% The DENIC whois service on port 43 doesn't disclose any information concerning
+% the domain holder, general request and abuse contact.
+% This information can be obtained through use of our web-based whois service
+% available at the DENIC website:
+% https://webwhois.denic.de/?lang=en
+% 
+% 
+
+Domain: simonwaldherr.de
+Nserver: docks01.rzone.de
+Nserver: shades01.rzone.de
+Status: connect
+Changed: 2011-11-10T15:06:06+01:00
+=== simplesystems.tech
+Domain Name: simplesystems.tech
+Registry Domain ID: D103573671-CNIC
+Registrar WHOIS Server: whois.cloudflare.com
+Registrar URL: https://domains.cloudflare.com
+Updated Date: 2026-08-19T16:16:32.554Z
+Creation Date: 2019-05-14T22:29:23.000Z
+Registry Expiry Date: 2028-05-14T23:59:59.000Z
+Registrar: Cloudflare, Inc.
+Registrar IANA ID: 1910
+Registrar Abuse Contact Email: registrar-abuse@cloudflare.com
+Registrar Abuse Contact Phone: +1.8889935273
+Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+Name Server: gracie.ns.cloudflare.com
+Name Server: stanley.ns.cloudflare.com
+DNSSEC: unsigned
+URL of the ICANN RDDS Inaccuracy Complaint Form: https://icann.org/wicf
+
+>>> Last update of WHOIS database: 2026-11-05T14:32:57.461Z <<<
+
+For more information on domain status codes, please visit https://icann.org/epp
+
+The WHOIS information provided in this page has been redacted
+in compliance with ICANN's Temporary Specification for gTLD
+Registration Data.
+
+The data in this record is provided by Tucows Registry for informational
+purposes only, and it does not guarantee its accuracy. Tucows Registry is
+authoritative for whois information in top-level domains it operates
+under contract with the Internet Corporation for Assigned Names and
+Numbers. Whois information from other top-level domains is provided by
+a third-party under license to Tucows Registry.
+
+This service is intended only for query-based access. By using this
+service, you agree that you will use any data presented only for lawful
+purposes and that, under no circumstances will you use (a) data
+acquired for the purpose of allowing, enabling, or otherwise supporting
+the transmission by e-mail, telephone, facsimile or other
+communications mechanism of mass  unsolicited, commercial advertising
+or solicitations to entities other than your existing  customers; or
+(b) this service to enable high volume, automated, electronic processes
+=== smartzap.com.br
+% Copyright (c) Nic.br - Use of this data is governed by the Use and
+% Privacy Policy at https://registro.br/upp . Distribution,
+% commercialization, reproduction, and use for advertising or similar
+% purposes are expressly prohibited.
+% 2026-11-05T11:32:59-03:00 - 130.237.241.64
+
+domain:      smartzap.com.br
+owner:       FORTICS COMERCIO SERVICOS DE INFORMATICA E TELECOM
+ownerid:     05.533.459/0001-74
+responsible: Edineudo de Oliveira
+country:     BR
+owner-c:     LII30
+tech-c:      LII30
+nserver:     ns-cloud-c1.googledomains.com
+nsstat:      20261105 AA
+nslastaa:    20261105
+nserver:     ns-cloud-c2.googledomains.com
+nsstat:      20261105 AA
+nslastaa:    20261105
+nserver:     ns-cloud-c3.googledomains.com
+nsstat:      20261105 AA
+nslastaa:    20261105
+nserver:     ns-cloud-c4.googledomains.com
+nsstat:      20261105 AA
+nslastaa:    20261105
+saci:        yes
+created:     20170710 #17206770
+changed:     20260630
+expires:     20280710
+status:      published
+
+nic-hdl-br:  LII30
+person:      Liberty Informatica
+e-mail:      edineudo@libertynet.com.br
+country:     BR
+created:     20060424
+changed:     20260708
+
+% Security and mail abuse issues should also be addressed to cert.br,
+% respectivelly to cert@cert.br and mail-abuse@cert.br
+=== snrui.net
+   Domain Name: SNRUI.NET
+   Registry Domain ID: 2054565805_DOMAIN_NET-VRSN
+   Registrar WHOIS Server: whois.paycenter.com.cn
+   Registrar URL: http://www.xinnet.com
+   Updated Date: 2026-08-08T16:09:56Z
+   Creation Date: 2016-08-23T14:09:24Z
+   Registry Expiry Date: 2027-08-23T14:09:24Z
+   Registrar: Xin Net Technology Corporation
+   Registrar IANA ID: 120
+   Registrar Abuse Contact Email: supervision@xinnet.com
+   Registrar Abuse Contact Phone: +86.4008182233
+   Domain Status: ok https://icann.org/epp#ok
+   Name Server: F1G1NS1.DNSPOD.NET
+   Name Server: F1G1NS2.DNSPOD.NET
+   DNSSEC: unsigned
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of whois database: 2026-11-05T14:32:48Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+unsolicited, commercial advertising or solicitations via e-mail, telephone,
+or facsimile; or (2) enable high volume, automated, electronic processes
+=== sqlkite.com
+No match for domain "SQLKITE.COM".
+>>> Last update of whois database: 2026-11-05T14:32:48Z <<<
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+unsolicited, commercial advertising or solicitations via e-mail, telephone,
+or facsimile; or (2) enable high volume, automated, electronic processes
+that apply to VeriSign (or its computer systems). The compilation,
+repackaging, dissemination or other use of this Data is expressly
+prohibited without the prior written consent of VeriSign. You agree not to
+use electronic processes that are automated and high-volume to access or
+query the Whois database except as reasonably necessary to register
+domain names or modify existing registrations. VeriSign reserves the right
+to restrict your access to the Whois database in its sole discretion to ensure
+operational stability.  VeriSign may restrict or terminate your access to the
+Whois database for failure to abide by these terms of use. VeriSign
+reserves the right to modify these terms at any time.
+
+The Registry database contains ONLY .COM, .NET, .EDU domains and
+Registrars.
+=== stevedudenhoeffer.com
+=== sustainyfacts.org
+Domain not found.
+>>> Last update of WHOIS database: 2026-11-05T14:33:29Z <<<
+
+Terms of Use: Access to Public Interest Registry WHOIS information is provided to assist persons in determining the contents of a domain name registration record in the Public Interest Registry registry database. The data in this record is provided by Public Interest Registry for informational purposes only, and Public Interest Registry does not guarantee its accuracy. This service is intended only for query-based access. You agree that you will use this data only for lawful purposes and that, under no circumstances will you use this data to (a) allow, enable, or otherwise support the transmission by e-mail, telephone, or facsimile of mass unsolicited, commercial advertising or solicitations to entities other than the data recipient's own existing customers; or (b) enable high volume, automated, electronic processes that send queries or data to the systems of Registry Operator, a Registrar, or Identity Digital except as reasonably necessary to register domain names or modify existing registrations. All rights reserved. Public Interest Registry reserves the right to modify these terms at any time. By submitting this query, you agree to abide by this policy.  The Registrar of Record identified in this output may have an RDDS service that can be queried for additional information on how to contact the Registrant, Admin, or Tech contact of the queried domain name.
+=== t0ddz.com
+   Domain Name: T0DDZ.COM
+   Registry Domain ID: 2365362205_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: whois.cloudflare.com
+   Registrar URL: http://www.cloudflare.com
+   Updated Date: 2026-01-30T04:21:31Z
+   Creation Date: 2019-03-01T19:54:22Z
+   Registry Expiry Date: 2027-03-01T19:54:22Z
+   Registrar: Cloudflare, Inc.
+   Registrar IANA ID: 1910
+   Registrar Abuse Contact Email: registrar-abuse@cloudflare.com
+   Registrar Abuse Contact Phone: +1.6503198930
+   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+   Name Server: CONRAD.NS.CLOUDFLARE.COM
+   Name Server: VAL.NS.CLOUDFLARE.COM
+   DNSSEC: unsigned
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of whois database: 2026-11-05T14:33:18Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+unsolicited, commercial advertising or solicitations via e-mail, telephone,
+or facsimile; or (2) enable high volume, automated, electronic processes
+=== tgragnato.it
+
+*********************************************************************
+* Please note that the following result could be a subgroup of      *
+* the data contained in the database.                               *
+*                                                                   *
+* Additional information can be visualized at:                      *
+* http://web-whois.nic.it                                           *
+*********************************************************************
+
+Domain:             tgragnato.it
+Status:             ok
+Signed:             no
+Created:            2018-05-25 01:25:03
+Last Update:        2026-09-30 08:42:25
+Expire Date:        2027-05-24
+
+Registrant
+  Organization:     hidden
+
+Admin Contact
+  Name:             hidden
+  Organization:     hidden
+
+Technical Contacts
+  Name:             hidden
+  Organization:     hidden
+
+Registrar
+  Organization:     Keliweb S.r.l.
+  Name:             KELIWEB-REG
+  Web:              https://www.keliweb.it/
+  DNSSEC:           no
+
+
+Nameservers
+  dns.keliweb.com
+  dns.keliweb.eu
+  dns.keliweb.net
+  dns.keliweb.org
+
+=== thevis.us
+Domain Name: thevis.us
+Registry Domain ID: DB1C1919D55274DECAB04E77B5249D4FA-NSR
+Registrar WHOIS Server:
+Registrar URL: www.name.com
+Updated Date: 2026-11-01T17:11:54Z
+Creation Date: 2019-11-25T21:50:53Z
+Registry Expiry Date: 2026-11-25T21:50:53Z
+Registrar: Name.com, Inc.
+Registrar IANA ID: 625
+Registrar Abuse Contact Email: abuse@name.com
+Registrar Abuse Contact Phone: +1.7203101849
+Domain Status: pendingTransfer https://icann.org/epp#pendingTransfer
+Registry Registrant ID: CE998A99425AE4F609A0218E206D809B7-NSR
+Registrant Name: John Robinson
+Registrant Organization:
+Registrant Street: 4916 NE 33rd Ave
+Registrant Street:
+Registrant Street:
+Registrant City: Portland
+Registrant State/Province: OR
+Registrant Postal Code: 97211
+Registrant Country: US
+Registrant Phone: +1.5049545719
+Registrant Phone Ext:
+Registrant Fax:
+Registrant Fax Ext:
+Registrant Email: thejuniorrobot@gmail.com
+Registrant Application Purpose: P3
+Registrant Nexus Category: C11
+Registry Admin ID: CEE7FACBC9B434518BF8F32A074BAAEC1-NSR
+Admin Name: John Robinson
+Admin Organization:
+Admin Street: 4916 NE 33rd Ave
+Admin Street:
+Admin Street:
+Admin City: Portland
+Admin State/Province: OR
+Admin Postal Code: 97211
+Admin Country: US
+Admin Phone: +1.5049545719
+=== thirdmartini.com
+   Domain Name: THIRDMARTINI.COM
+   Registry Domain ID: 92121310_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: whois.godaddy.com
+   Registrar URL: http://www.godaddy.com
+   Updated Date: 2025-11-13T17:38:24Z
+   Creation Date: 2002-11-12T06:23:36Z
+   Registry Expiry Date: 2027-11-12T06:23:36Z
+   Registrar: GoDaddy.com, LLC
+   Registrar IANA ID: 146
+   Registrar Abuse Contact Email: abuse@godaddy.com
+   Registrar Abuse Contact Phone: 480-624-2505
+   Domain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited
+   Domain Status: clientRenewProhibited https://icann.org/epp#clientRenewProhibited
+   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+   Domain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited
+   Name Server: NS1.DIGITALOCEAN.COM
+   Name Server: NS2.DIGITALOCEAN.COM
+   DNSSEC: unsigned
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of whois database: 2026-11-05T14:33:18Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+=== thyth.com
+   Domain Name: THYTH.COM
+   Registry Domain ID: 1644741261_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: whois.gandi.net
+   Registrar URL: http://www.gandi.net
+   Updated Date: 2026-01-18T21:35:44Z
+   Creation Date: 2011-03-10T19:22:03Z
+   Registry Expiry Date: 2028-03-10T18:22:03Z
+   Registrar: Gandi SAS
+   Registrar IANA ID: 81
+   Registrar Abuse Contact Email: abuse@support.gandi.net
+   Registrar Abuse Contact Phone: +33.170377661
+   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+   Name Server: NS-138-B.GANDI.NET
+   Name Server: NS-185-C.GANDI.NET
+   Name Server: NS-29-A.GANDI.NET
+   DNSSEC: unsigned
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of whois database: 2026-11-05T14:33:18Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+unsolicited, commercial advertising or solicitations via e-mail, telephone,
+=== torproject.org
+Domain Name: torproject.org
+Registry Domain ID: REDACTED
+Registrar WHOIS Server: http://whois.joker.com
+Registrar URL: http://www.joker.com
+Updated Date: 2026-08-11T22:58:46Z
+Creation Date: 2006-10-17T22:02:50Z
+Registry Expiry Date: 2027-10-17T22:02:50Z
+Registrar: CSL Computer Service Langenbach GmbH d/b/a joker.com
+Registrar IANA ID: 113
+Registrar Abuse Contact Email: abuse@joker.com
+Registrar Abuse Contact Phone: +49.21186767447
+Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+Name Server: ns4.torproject.org
+Name Server: ns5.torproject.org
+Name Server: ns1.torproject.org
+Name Server: ns3.torproject.org
+Name Server: nsp.dnsnode.net
+Name Server: ns2.torproject.org
+DNSSEC: signedDelegation
+URL of the ICANN Whois Inaccuracy Complaint Form: https://icann.org/wicf/
+>>> Last update of WHOIS database: 2026-11-05T14:33:37Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+Terms of Use: Access to Public Interest Registry WHOIS information is provided to assist persons in determining the contents of a domain name registration record in the Public Interest Registry registry database. The data in this record is provided by Public Interest Registry for informational purposes only, and Public Interest Registry does not guarantee its accuracy. This service is intended only for query-based access. You agree that you will use this data only for lawful purposes and that, under no circumstances will you use this data to (a) allow, enable, or otherwise support the transmission by e-mail, telephone, or facsimile of mass unsolicited, commercial advertising or solicitations to entities other than the data recipient's own existing customers; or (b) enable high volume, automated, electronic processes that send queries or data to the systems of Registry Operator, a Registrar, or Identity Digital except as reasonably necessary to register domain names or modify existing registrations. All rights reserved. Public Interest Registry reserves the right to modify these terms at any time. By submitting this query, you agree to abide by this policy.  The Registrar of Record identified in this output may have an RDDS service that can be queried for additional information on how to contact the Registrant, Admin, or Tech contact of the queried domain name.
+=== txtdirect.org
+Domain Name: txtdirect.org
+Registry Domain ID: REDACTED
+Registrar WHOIS Server: http://whois.porkbun.com
+Registrar URL: https://porkbun.com
+Updated Date: 2026-08-12T06:42:40Z
+Creation Date: 2017-05-06T15:37:36Z
+Registry Expiry Date: 2027-05-06T15:37:36Z
+Registrar: Porkbun LLC
+Registrar IANA ID: 1861
+Registrar Abuse Contact Email: abuse@porkbun.com
+Registrar Abuse Contact Phone: +1.8557675286
+Domain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited
+Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+Name Server: ns.gitns.org
+Name Server: ns.gitns.com
+Name Server: ns.gitns.io
+Name Server: ns.gitns.net
+Name Server: ns.gitns.nl
+DNSSEC: unsigned
+URL of the ICANN Whois Inaccuracy Complaint Form: https://icann.org/wicf/
+>>> Last update of WHOIS database: 2026-11-05T14:33:39Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+Terms of Use: Access to Public Interest Registry WHOIS information is provided to assist persons in determining the contents of a domain name registration record in the Public Interest Registry registry database. The data in this record is provided by Public Interest Registry for informational purposes only, and Public Interest Registry does not guarantee its accuracy. This service is intended only for query-based access. You agree that you will use this data only for lawful purposes and that, under no circumstances will you use this data to (a) allow, enable, or otherwise support the transmission by e-mail, telephone, or facsimile of mass unsolicited, commercial advertising or solicitations to entities other than the data recipient's own existing customers; or (b) enable high volume, automated, electronic processes that send queries or data to the systems of Registry Operator, a Registrar, or Identity Digital except as reasonably necessary to register domain names or modify existing registrations. All rights reserved. Public Interest Registry reserves the right to modify these terms at any time. By submitting this query, you agree to abide by this policy.  The Registrar of Record identified in this output may have an RDDS service that can be queried for additional information on how to contact the Registrant, Admin, or Tech contact of the queried domain name.
+=== u-jy.cn
+Domain Name: u-jy.cn
+ROID: 20161208s10001s86115982-cn
+Domain Status: clientTransferProhibited
+Registrant: 江苏鼎昊信息科技有限公司
+Registrant Contact Email: 1076296008@qq.com
+Sponsoring Registrar: 广东时代互联科技有限公司
+Name Server: ns1.huaweicloud-dns.cn
+Name Server: ns1.huaweicloud-dns.net
+Name Server: ns1.huaweicloud-dns.org
+Name Server: ns1.huaweicloud-dns.com
+Registration Time: 2016-12-08 08:12:02
+Expiration Time: 2027-12-08 08:12:02
+DNSSEC: unsigned
+=== unlock-music.dev
+getaddrinfo(whois.nic.dev): Name or service not known
+=== us.kg
+% This is the .kg ccTLD Whois server
+% Register your own domain at https://www.cctld.kg
+% Whois web service - https://www.cctld.kg/whois
+
+Domain US.KG (ACTIVE)
+
+Administrative Contact:
+   PID: Secured
+
+Technical Contact:
+   PID: Secured
+
+Billing Contact:
+   PID: Secured
+
+
+Record created: Wed May 10 21:12:06 2023
+Record last updated on:  Tue Apr 14 21:51:40 2026
+Record expires on: Tue May  8 21:12:06 2029
+
+Name servers in the listed order:
+
+NS1.DIGITALPLAT.ORG
+NS2.DIGITALPLAT.ORG
+NS3.DIGITALPLAT.ORG
+NS4.DIGITALPLAT.ORG
+
+=== userspace.com.au
+Domain Name: userspace.com.au
+Registry Domain ID: 8a687bd650194c81ae2d3ffccc346d74-AU
+Registrar WHOIS Server: whois.auda.org.au
+Registrar URL: https://synergywholesale.com/partner-lookup
+Last Modified: 2026-10-31T04:09:18Z
+Registrar Name: Synergy Wholesale Accreditations Pty Ltd
+Registrar Abuse Contact Email: registry-abuse@nexigen.digital
+Registrar Abuse Contact Phone: +61.383999483
+Reseller Name: 
+Status: ok https://identitydigital.au/whois-status-codes#ok
+Registrant Contact ID: 77bb77e6e8144337b82bd87552d41ec7-AU
+Registrant Contact Name: Felix Hanley
+Tech Contact ID: 77bb77e6e8144337b82bd87552d41ec7-AU
+Tech Contact Name: Felix Hanley
+Name Server: ns01.userspace.com.au
+Name Server IP: 103.236.162.119
+Name Server IP: 2404:9400:1::b25:10:834d
+Name Server IP: 2404:9400:3:0:216:3eff:fee0:7f69
+Name Server: ns2.userspace.com.au
+Name Server IP: 2404:9400:2:0:216:3eff:fee9:a100
+Name Server IP: 66.226.145.139
+DNSSEC: unsigned
+Registrant: HANLEY, OLIVER FELIX
+Registrant ID: ABN 65507675382
+Eligibility Type: Sole Trader
+>>> Last update of WHOIS database: 2026-11-05T14:33:47Z <<<
+
+Identity Digital Australia Pty Ltd, for itself and on behalf of .au Domain Administration Limited (auDA), makes the WHOIS registration data directory service (WHOIS Service) available solely for the purposes of:
+
+(a) querying the availability of a domain name licence;
+
+(b) identifying the holder of a domain name licence; and/or
+
+(c) contacting the holder of a domain name licence in relation to that domain name and its use.
+
+The WHOIS Service must not be used for any other purpose (even if that purpose is lawful), including:
+
+(a) aggregating, collecting or compiling information from the WHOIS database, whether for personal or commercial purposes;
+
+(b) enabling the sending of unsolicited electronic communications; and / or
+=== voyagermesh.dev
+getaddrinfo(whois.nic.dev): Name or service not known
+=== wanadev.org
+Domain Name: wanadev.org
+Registry Domain ID: REDACTED
+Registrar WHOIS Server: http://whois.ovh.com
+Registrar URL: http://www.ovh.com
+Updated Date: 2026-08-12T03:05:52Z
+Creation Date: 2009-03-02T17:44:26Z
+Registry Expiry Date: 2027-03-02T17:44:26Z
+Registrar: OVH sas
+Registrar IANA ID: 433
+Registrar Abuse Contact Email: abuse@ovh.net
+Registrar Abuse Contact Phone: +33.972101007
+Domain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited
+Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+Name Server: dns13.ovh.net
+Name Server: ns13.ovh.net
+DNSSEC: unsigned
+URL of the ICANN Whois Inaccuracy Complaint Form: https://icann.org/wicf/
+>>> Last update of WHOIS database: 2026-11-05T14:33:50Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+Terms of Use: Access to Public Interest Registry WHOIS information is provided to assist persons in determining the contents of a domain name registration record in the Public Interest Registry registry database. The data in this record is provided by Public Interest Registry for informational purposes only, and Public Interest Registry does not guarantee its accuracy. This service is intended only for query-based access. You agree that you will use this data only for lawful purposes and that, under no circumstances will you use this data to (a) allow, enable, or otherwise support the transmission by e-mail, telephone, or facsimile of mass unsolicited, commercial advertising or solicitations to entities other than the data recipient's own existing customers; or (b) enable high volume, automated, electronic processes that send queries or data to the systems of Registry Operator, a Registrar, or Identity Digital except as reasonably necessary to register domain names or modify existing registrations. All rights reserved. Public Interest Registry reserves the right to modify these terms at any time. By submitting this query, you agree to abide by this policy.  The Registrar of Record identified in this output may have an RDDS service that can be queried for additional information on how to contact the Registrant, Admin, or Tech contact of the queried domain name.
+=== wfsanwen.com
+   Domain Name: WFSANWEN.COM
+   Registry Domain ID: 2353731866_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: grs-whois.hichina.com
+   Registrar URL: http://www.net.cn
+   Updated Date: 2026-02-25T09:58:31Z
+   Creation Date: 2019-01-19T19:23:09Z
+   Registry Expiry Date: 2028-01-19T19:23:09Z
+   Registrar: Alibaba Cloud Computing (Beijing) Co., Ltd.
+   Registrar IANA ID: 420
+   Registrar Abuse Contact Email: DomainAbuse@service.aliyun.com
+   Registrar Abuse Contact Phone: +86.95187
+   Domain Status: ok https://icann.org/epp#ok
+   Name Server: DNS29.HICHINA.COM
+   Name Server: DNS30.HICHINA.COM
+   DNSSEC: unsigned
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of whois database: 2026-11-05T14:33:33Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+unsolicited, commercial advertising or solicitations via e-mail, telephone,
+or facsimile; or (2) enable high volume, automated, electronic processes
+=== yoorie.de
+% Restricted rights.
+% 
+% Terms and Conditions of Use
+% 
+% The above data may only be used within the scope of technical or
+% administrative necessities of Internet operation or to remedy legal
+% problems.
+% The use for other purposes, in particular for advertising, is not permitted.
+% 
+% The DENIC whois service on port 43 doesn't disclose any information concerning
+% the domain holder, general request and abuse contact.
+% This information can be obtained through use of our web-based whois service
+% available at the DENIC website:
+% https://webwhois.denic.de/?lang=en
+% 
+% 
+
+Domain: yoorie.de
+Nserver: cns1.alfahosting.info
+Nserver: cns2.alfahosting.info
+Nserver: cns3.alfahosting.info
+Status: connect
+Changed: 2016-11-18T13:05:14+01:00
+=== yrws.xyz
+Domain Name: YRWS.XYZ
+Registry Domain ID: D622445722-CNIC
+Registrar WHOIS Server: whois.discount-domain.com
+Registrar URL: http://www.onamae.com
+Updated Date: 2025-12-07T09:57:09.0Z
+Creation Date: 2025-12-02T09:52:14.0Z
+Registry Expiry Date: 2026-12-02T23:59:59.0Z
+Registrar: GMO Internet Group, Inc. d/b/a Onamae.com
+Registrar IANA ID: 49
+Domain Status: ok https://icann.org/epp#ok
+Name Server: NS5.AFTERNIC.COM
+Name Server: NS6.AFTERNIC.COM
+Name Server: VERIFICATION-GAKBZZZQMT6GKCPLW4EFPP.NS101.VERIFY.HN
+DNSSEC: unsigned
+Registrar Abuse Contact Email: abuse@internet.gmo
+Registrar Abuse Contact Phone: +81.337709199
+URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of WHOIS database: 2026-11-05T14:33:55.0Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+The registration data available in this service is limited. Additional
+data may be available at https://lookup.icann.org
+
+The Whois and RDAP services are provided by CentralNic, and contain
+information pertaining to Internet domain names registered by our
+our customers. By using this service you are agreeing (1) not to use any
+information presented here for any purpose other than determining
+ownership of domain names, (2) not to store or reproduce this data in
+any way, (3) not to use any high-volume, automated, electronic processes
+to obtain data from this service. Abuse of this service is monitored and
+actions in contravention of these terms will result in being permanently
+blacklisted. All data is (c) CentralNic Ltd (https://www.centralnicregistry.com)
+
+Access to the Whois and RDAP services is rate limited. For more
+information, visit https://centralnicregistry.com/policies/whois-guidance.
+=== ywwxhz.com
+   Domain Name: YWWXHZ.COM
+   Registry Domain ID: 2208948122_DOMAIN_COM-VRSN
+   Registrar WHOIS Server: whois.dnspod.cn
+   Registrar URL: http://www.dnspod.cn
+   Updated Date: 2024-06-09T04:21:57Z
+   Creation Date: 2018-01-05T04:05:17Z
+   Registry Expiry Date: 2029-01-05T04:05:17Z
+   Registrar: DNSPod, Inc.
+   Registrar IANA ID: 1697
+   Registrar Abuse Contact Email: dnsabuse@tencent.com
+   Registrar Abuse Contact Phone: +86.4009100100
+   Domain Status: ok https://icann.org/epp#ok
+   Name Server: F1G1NS1.DNSPOD.NET
+   Name Server: F1G1NS2.DNSPOD.NET
+   DNSSEC: unsigned
+   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
+>>> Last update of whois database: 2026-11-05T14:33:48Z <<<
+
+For more information on Whois status codes, please visit https://icann.org/epp
+
+NOTICE: The expiration date displayed in this record is the date the
+registrar's sponsorship of the domain name registration in the registry is
+currently set to expire. This date does not necessarily reflect the expiration
+date of the domain name registrant's agreement with the sponsoring
+registrar.  Users may consult the sponsoring registrar's Whois database to
+view the registrar's reported date of expiration for this registration.
+
+TERMS OF USE: You are not authorized to access or query our Whois
+database through the use of electronic processes that are high-volume and
+automated except as reasonably necessary to register domain names or
+modify existing registrations; the Data in VeriSign Global Registry
+Services' ("VeriSign") Whois database is provided by VeriSign for
+information purposes only, and to assist persons in obtaining information
+about or related to a domain name registration record. VeriSign does not
+guarantee its accuracy. By submitting a Whois query, you agree to abide
+by the following terms of use: You agree that you may use this Data only
+for lawful purposes and that under no circumstances will you use this Data
+to: (1) allow, enable, or otherwise support the transmission of mass
+unsolicited, commercial advertising or solicitations via e-mail, telephone,
+or facsimile; or (2) enable high volume, automated, electronic processes
