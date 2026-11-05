@@ -1,0 +1,61 @@
+module_path,pattern_type,tested_version,pin_basis,snyk_flagged,snyk_vuln_count,severities,note
+code.cloudfoundry.org/lager,naming_similarity,v1.0.0,lowest release (no OSV record),false,0,,
+github.com/amhr/easycache,naming_similarity,v1.0.0,lowest release (no OSV record),false,0,,
+github.com/argo/argo,naming_similarity,v0.4.8,lowest release (no OSV record),false,0,,unresolved: go: downloading github.com/argo/argo v0.4.8
+github.com/bjartek/go-with-the-flow,naming_similarity,v1.0.0,lowest release (no OSV record),false,0,,unresolved: go: downloading github.com/bjartek/go-with-the-flow v1.0.0
+github.com/buth/go-token,naming_similarity,v0.0.0-20170912174748-7169ebeb03c6,no clean release tags,false,0,,
+github.com/cactush/go_test,naming_similarity,v1.0.0,lowest release (no OSV record),false,0,,unresolved: go: downloading github.com/cactush/go_test v1.0.0
+github.com/clue/docker-json-server,naming_similarity,,no clean release tags,false,0,,unresolved: go: finding module for package github.com/clue/docker-json-server
+github.com/daemonl/avro,naming_similarity,v0.0.0-20200223203715-725eaffba8c8,no clean release tags,false,0,,
+github.com/edmaciel/go-fiber-fx,naming_similarity,v0.0.0-20221024012439-38cf0ff852d7,no clean release tags,false,0,,parse failed (saved raw json): could not parse snyk JSON
+github.com/elhu/pressepapier,naming_similarity,,no clean release tags,false,0,,unresolved: go: finding module for package github.com/elhu/pressepapier
+github.com/emqtt/emqttd,naming_similarity,,no clean release tags,false,0,,unresolved: go: finding module for package github.com/emqtt/emqttd
+github.com/geek-go/getui,naming_similarity,v0.0.0-20200624145106-05397323fb3d,no clean release tags,false,0,,
+github.com/go-micro/plugins/v4/broker/googlepubsub,naming_similarity,v1.0.0,lowest release (no OSV record),false,0,,
+github.com/golib/assert,naming_similarity,v1.0.0,lowest release (no OSV record),false,0,,
+github.com/kindling-project/kindling,naming_similarity,v0.2.0,lowest release (no OSV record),false,0,,unresolved: go: downloading github.com/kindling-project/kindling v0.2.0
+github.com/ksync/ksync,naming_similarity,,no clean release tags,false,0,,unresolved: go: finding module for package github.com/ksync/ksync
+github.com/machine3/api,naming_similarity,,no clean release tags,false,0,,unresolved: go: finding module for package github.com/machine3/api
+github.com/readarr/readarr,naming_similarity,,no clean release tags,false,0,,unresolved: go: finding module for package github.com/readarr/readarr
+github.com/rinor/jorcli,naming_similarity,,no clean release tags,false,0,,unresolved: go: finding module for package github.com/rinor/jorcli
+github.com/riton/puppet-environment-cache-invalidate,naming_similarity,v0.1.0,lowest release (no OSV record),false,0,,parse failed (saved raw json): could not parse snyk JSON
+github.com/weui/weui.js,naming_similarity,v1.0.0,lowest release (no OSV record),false,0,,unresolved: go: downloading github.com/weui/weui.js v1.0.0
+github.com/wsteel/blink,naming_similarity,v0.0.0-20200310061832-d1fc7579c5d6,no clean release tags,false,0,,parse failed (saved raw json): could not parse snyk JSON
+github.com/yaiio/ea-messenger,naming_similarity,v0.0.0-20201215152506-0c7e7589241e,no clean release tags,false,0,,parse failed (saved raw json): could not parse snyk JSON
+github.com/yetu/go-netlink,naming_similarity,v0.0.0-20150730094846-7f0672e68176,no clean release tags,false,0,,
+github.com/ystv/computing-site,naming_similarity,v0.1.0,lowest release (no OSV record),false,0,,unresolved: go: downloading github.com/ystv/computing-site v0.1.0
+github.com/zxing/zxing,naming_similarity,,no clean release tags,false,0,,unresolved: go: finding module for package github.com/zxing/zxing
+gitlab.techcultivation.org/sangha/mq,naming_similarity,v0.0.0-20190307110821-666b0222f392,no clean release tags,false,0,,
+go.einride.tech/sage,naming_similarity,v0.1.0,lowest release (no OSV record),false,0,,unresolved: go: downloading go.einride.tech/sage v0.1.0
+gopkg.in/aa-ar/dat.v1,naming_similarity,v1.1.0,lowest release (no OSV record),false,0,,
+stash.kopano.io/kgol/caddy-prometheus,naming_similarity,v0.0.0-20190726090614-6055bc7a4bdf,no clean release tags,false,0,,
+1f320.xyz/x,source_ambiguity,v0.1.0,lowest release (no OSV record),false,0,,unresolved: go: finding module for package 1f320.xyz/x
+676f.dev/rfc7807,source_ambiguity,v0.0.1,lowest release (no OSV record),false,0,,
+augie.upspin.io,source_ambiguity,,no clean release tags,false,0,,unresolved: go: finding module for package augie.upspin.io
+code.teris.io/mirror/go-cli,source_ambiguity,v0.1.0,lowest release (no OSV record),false,0,,
+fortio.org/fortio,source_ambiguity,v0.2.8,lowest release (no OSV record),false,0,,unresolved: go: downloading fortio.org/fortio v0.2.8
+getsturdy.com/api,source_ambiguity,v1.0.4,lowest release (no OSV record),false,0,,unresolved: go: downloading getsturdy.com/api v1.0.4
+git.augendre.info/gaugendre/insee_number_translator,source_ambiguity,v1.0.0,lowest release (no OSV record),false,0,,unresolved: go: downloading git.augendre.info/gaugendre/insee_number_translator v1.0.0
+git.innovasive.co.th/backend/mongo,source_ambiguity,v1.0.0,lowest release (no OSV record),false,0,,unresolved: go: downloading git.innovasive.co.th/backend/mongo v1.0.0
+git.kausm.in/kaustubh/autosaved,source_ambiguity,,no clean release tags,false,0,,unresolved: go: finding module for package git.kausm.in/kaustubh/autosaved
+git.kescher.at/forestcloud/blazer,source_ambiguity,,no clean release tags,false,0,,unresolved: go: finding module for package git.kescher.at/forestcloud/blazer
+git.launchpad.net/~maas-committers/maas.git/src/maasagent,source_ambiguity,,no clean release tags,false,0,,unresolved: go: finding module for package git.launchpad.net/~maas-committers/maas.git/src/maasagent
+git.sci4me.com/sci4me/yakvs,source_ambiguity,,no clean release tags,false,0,,unresolved: go: finding module for package git.sci4me.com/sci4me/yakvs
+git.shangtai.net/staffan/go-ico,source_ambiguity,v1.0.0-beta.3,no clean release tags,false,0,,
+git.thirdmartini.com/pub/snap,source_ambiguity,v0.1.0,lowest release (no OSV record),false,0,,
+git.wanadev.org/octopod/dependencies/golang/helper.git,source_ambiguity,v1.0.0,lowest release (no OSV record),false,0,,unresolved: go: downloading git.wanadev.org/octopod/dependencies/golang/helper.git v1.0.0
+gitlab.4act.com/pub/actproxy,source_ambiguity,,no clean release tags,false,0,,unresolved: go: finding module for package gitlab.4act.com/pub/actproxy
+gitlab.gwdg.de/subugoe/shared-product-configs,source_ambiguity,v0.1.0,lowest release (no OSV record),false,0,,unresolved: go: downloading gitlab.gwdg.de/subugoe/shared-product-configs v0.1.0
+gitlab.ttsing.com/changdao/framework/third_extension/phachon/go-logger,source_ambiguity,v0.0.0-20190928073103-085e20178734,no clean release tags,false,0,,
+gitverse.ru/yasunov/storage,source_ambiguity,,no clean release tags,false,0,,unresolved: go: finding module for package gitverse.ru/yasunov/storage
+go.ligato.io/cn-infra,source_ambiguity,v1.0.2,lowest release (no OSV record),false,0,,
+golang.source-fellows.com/cmd,source_ambiguity,?,no clean release tags,false,0,,parse failed (saved raw json): could not parse snyk JSON
+instinctive.eu/go/mqttagent,source_ambiguity,v0.0.0-20250605180948-02c9a3ed16c9,no clean release tags,false,0,,
+kubeform.dev/kubeform,source_ambiguity,v0.0.1,lowest release (no OSV record),false,0,,unresolved: go: downloading kubeform.dev/kubeform v0.0.1
+package-operator.run/apis,source_ambiguity,v0.1.0,lowest release (no OSV record),false,0,,unresolved: go: snyksample imports
+qiniupkg.com/qiniutest,source_ambiguity,v1.0.0,lowest release (no OSV record),false,0,,unresolved: go: snyksample imports
+qpid.apache.org,source_ambiguity,,no clean release tags,false,0,,unresolved: go: finding module for package qpid.apache.org
+redwood.dev/redwood,source_ambiguity,,no clean release tags,false,0,,unresolved: go: finding module for package redwood.dev/redwood
+scatter.im,source_ambiguity,,no clean release tags,false,0,,unresolved: go: finding module for package scatter.im
+src.d10.dev/command,source_ambiguity,?,no clean release tags,false,0,,parse failed (saved raw json): could not parse snyk JSON
+toast.cafe/x/libuconf,source_ambiguity,v0.0.0-20200503132847-7313c6677668,no clean release tags,false,0,,

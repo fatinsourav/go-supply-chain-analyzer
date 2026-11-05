@@ -1,0 +1,4397 @@
+{
+  "vulnerabilities": [
+    {
+      "id": "SNYK-GOLANG-STDCRYPTOX509-14545540",
+      "title": "Improper Certificate Validation",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+      "credit": [
+        "Unknown"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.24.11",
+          ">=1.25.0 <1.25.5"
+        ],
+        "hashesRange": [
+          "<go1.24.11",
+          ">=go1.25.0 <go1.25.5"
+        ],
+        "vulnerableHashes": []
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.24.11",
+        "1.25.5"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "golang",
+      "severity": "medium",
+      "cvssScore": 6.9,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "std/crypto/x509",
+      "references": [
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2025-4175",
+          "title": "Go Advisory"
+        },
+        {
+          "url": "https://go.dev/cl/723900",
+          "title": "Go Commit"
+        },
+        {
+          "url": "https://go.dev/issue/76442",
+          "title": "Go Issue"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-announce/c/8FJoBkPddm4",
+          "title": "Google Groups Forum"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2025-12-11T11:43:18.831226Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+          "cvssV3BaseScore": 6.5,
+          "modificationTime": "2025-12-17T08:03:51.147525Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.9,
+          "cvssVersion": "4.0",
+          "modificationTime": "2026-07-03T02:00:29.662112Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-07-03T02:00:29.662112Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "SUSE",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-12-11T11:43:18.831226Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 6.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-12-17T08:03:51.147525Z"
+        }
+      ],
+      "description": "## Overview\n[std/crypto/x509](None) is a Go standard library package std/crypto/x509\n\nAffected versions of this package are vulnerable to Improper Certificate Validation. <br><br>**Go Vulnerability Report:**<br>\r\nAn excluded subdomain constraint in a certificate chain does not restrict the usage of wildcard SANs in the leaf certificate. For example a constraint that excludes the subdomain test.example.com does not prevent a leaf certificate from claiming the SAN *.example.com.\n## Remediation\nUpgrade `std/crypto/x509` to version 1.24.11, 1.25.5 or higher.\n## References\n- [Go Advisory](https://pkg.go.dev/vuln/GO-2025-4175)\n- [Go Commit](https://go.dev/cl/723900)\n- [Go Issue](https://go.dev/issue/76442)\n- [Google Groups Forum](https://groups.google.com/g/golang-announce/c/8FJoBkPddm4)\n",
+      "epssDetails": {
+        "percentile": "0.19214",
+        "probability": "0.00274",
+        "modelVersion": "v2026.06.15"
+      },
+      "identifiers": {
+        "GO": [
+          "GO-2025-4175"
+        ],
+        "CVE": [
+          "CVE-2025-61727"
+        ],
+        "CWE": [
+          "CWE-295"
+        ]
+      },
+      "packageName": "std/crypto/x509",
+      "proprietary": false,
+      "creationTime": "2025-12-22T14:24:40.678514Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2025-12-02T20:55:55Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "golang",
+      "publicationTime": "2026-01-06T12:31:59.471225Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-07-03T02:00:29.662112Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "snykcheck@0.0.0",
+        "golang.org/x/oauth2@0.26.0",
+        "golang.org/x/oauth2/internal@0.26.0",
+        "std/crypto/x509@1.22.3"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "std/crypto/x509",
+      "version": "1.22.3"
+    },
+    {
+      "id": "SNYK-GOLANG-STDCRYPTOX509-14545541",
+      "title": "Allocation of Resources Without Limits or Throttling",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+      "credit": [
+        "Philippe Antoine"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.24.11",
+          ">=1.25.0 <1.25.5"
+        ],
+        "hashesRange": [
+          "<go1.24.11",
+          ">=go1.25.0 <go1.25.5"
+        ],
+        "vulnerableHashes": []
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.24.11",
+        "1.25.5"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "golang",
+      "severity": "medium",
+      "cvssScore": 6.9,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "std/crypto/x509",
+      "references": [
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2025-4155",
+          "title": "Go Advisory"
+        },
+        {
+          "url": "https://go.dev/cl/725920",
+          "title": "Go Commit"
+        },
+        {
+          "url": "https://go.dev/issue/76445",
+          "title": "Go Issue"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-announce/c/8FJoBkPddm4",
+          "title": "Google Groups Forum"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2025-12-11T11:44:49.036297Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2025-12-17T13:36:58.427178Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.9,
+          "cvssVersion": "4.0",
+          "modificationTime": "2026-07-02T02:00:21.253095Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 5.3,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-07-02T02:00:21.253095Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "SUSE",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-12-11T11:44:49.036297Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "Red Hat",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-12-17T13:36:58.427178Z"
+        }
+      ],
+      "description": "## Overview\n[std/crypto/x509](None) is a Go standard library package std/crypto/x509\n\nAffected versions of this package are vulnerable to Allocation of Resources Without Limits or Throttling. <br><br>**Go Vulnerability Report:**<br>\r\nA memory exhaustion vulnerability in the `Error` function of `HostnameError` when constructing an error string. An attacker can cause excessive resource consumption by providing a certificate with a large number of hosts, resulting in repeated string concatenation and quadratic runtime.\n## Remediation\nUpgrade `std/crypto/x509` to version 1.24.11, 1.25.5 or higher.\n## References\n- [Go Advisory](https://pkg.go.dev/vuln/GO-2025-4155)\n- [Go Commit](https://go.dev/cl/725920)\n- [Go Issue](https://go.dev/issue/76445)\n- [Google Groups Forum](https://groups.google.com/g/golang-announce/c/8FJoBkPddm4)\n",
+      "epssDetails": {
+        "percentile": "0.36550",
+        "probability": "0.00459",
+        "modelVersion": "v2026.06.15"
+      },
+      "identifiers": {
+        "GO": [
+          "GO-2025-4155"
+        ],
+        "CVE": [
+          "CVE-2025-61729"
+        ],
+        "CWE": [
+          "CWE-770"
+        ]
+      },
+      "packageName": "std/crypto/x509",
+      "proprietary": false,
+      "creationTime": "2025-12-22T14:37:51.132982Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2025-12-02T18:30:24Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "golang",
+      "publicationTime": "2026-01-06T12:33:02.830222Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-07-02T02:00:21.253095Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "snykcheck@0.0.0",
+        "golang.org/x/oauth2@0.26.0",
+        "golang.org/x/oauth2/internal@0.26.0",
+        "std/crypto/x509@1.22.3"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "std/crypto/x509",
+      "version": "1.22.3"
+    },
+    {
+      "id": "SNYK-GOLANG-STDCRYPTOX509-14545542",
+      "title": "Uncaught Exception",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        "Jakub Ciolek"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.24.8",
+          ">=1.25.0 <1.25.2"
+        ],
+        "hashesRange": [
+          "<go1.24.8",
+          ">=go1.25.0 <go1.25.2"
+        ],
+        "vulnerableHashes": []
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.24.8",
+        "1.25.2"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "golang",
+      "severity": "high",
+      "cvssScore": 8.7,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "std/crypto/x509",
+      "references": [
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2025-4013",
+          "title": "Go Advisory"
+        },
+        {
+          "url": "https://go.dev/cl/709853",
+          "title": "Go Commit"
+        },
+        {
+          "url": "https://go.dev/issue/75675",
+          "title": "Go Issue"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI",
+          "title": "Google Groups Forum"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2025-10-14T13:40:31.835356Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "cvssV3BaseScore": 5.3,
+          "modificationTime": "2025-11-27T05:39:45.789223Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 8.7,
+          "cvssVersion": "4.0",
+          "modificationTime": "2026-06-27T02:00:42.037017Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-06-27T02:00:42.037017Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "SUSE",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-10-14T13:40:31.835356Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 5.3,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-11-27T05:39:45.789223Z"
+        }
+      ],
+      "description": "## Overview\n[std/crypto/x509](None) is a Go standard library package std/crypto/x509\n\nAffected versions of this package are vulnerable to Uncaught Exception. <br><br>**Go Vulnerability Report:**<br>\r\nValidating certificate chains which contain DSA public keys can cause programs to panic, due to a interface cast that assumes they implement the Equal method.This affects programs which validate arbitrary certificate chains.\n## Remediation\nUpgrade `std/crypto/x509` to version 1.24.8, 1.25.2 or higher.\n## References\n- [Go Advisory](https://pkg.go.dev/vuln/GO-2025-4013)\n- [Go Commit](https://go.dev/cl/709853)\n- [Go Issue](https://go.dev/issue/75675)\n- [Google Groups Forum](https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI)\n",
+      "epssDetails": {
+        "percentile": "0.28013",
+        "probability": "0.00361",
+        "modelVersion": "v2026.06.15"
+      },
+      "identifiers": {
+        "GO": [
+          "GO-2025-4013"
+        ],
+        "CVE": [
+          "CVE-2025-58188"
+        ],
+        "CWE": [
+          "CWE-248"
+        ]
+      },
+      "packageName": "std/crypto/x509",
+      "proprietary": false,
+      "creationTime": "2025-12-22T14:39:06.297378Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2025-10-29T21:50:08Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "golang",
+      "publicationTime": "2026-01-06T12:33:09.972855Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-06-27T02:00:42.037017Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "high",
+      "from": [
+        "snykcheck@0.0.0",
+        "golang.org/x/oauth2@0.26.0",
+        "golang.org/x/oauth2/internal@0.26.0",
+        "std/crypto/x509@1.22.3"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "std/crypto/x509",
+      "version": "1.22.3"
+    },
+    {
+      "id": "SNYK-GOLANG-STDCRYPTOX509-14545554",
+      "title": "Allocation of Resources Without Limits or Throttling",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        "Jakub Ciolek"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.24.9",
+          ">=1.25.0 <1.25.3"
+        ],
+        "hashesRange": [
+          "<go1.24.9",
+          ">=go1.25.0 <go1.25.3"
+        ],
+        "vulnerableHashes": []
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.24.9",
+        "1.25.3"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "golang",
+      "severity": "high",
+      "cvssScore": 8.7,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "std/crypto/x509",
+      "references": [
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2025-4007",
+          "title": "Go Advisory"
+        },
+        {
+          "url": "https://go.dev/cl/709854",
+          "title": "Go Commit"
+        },
+        {
+          "url": "https://go.dev/issue/75681",
+          "title": "Go Issue"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI",
+          "title": "Google Groups Forum"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "cvssV3BaseScore": 5.3,
+          "modificationTime": "2025-10-14T13:39:48.192211Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "cvssV3BaseScore": 5.3,
+          "modificationTime": "2025-12-17T13:37:00.806521Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 8.7,
+          "cvssVersion": "4.0",
+          "modificationTime": "2026-06-27T02:00:42.037354Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-06-27T02:00:42.037354Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "assigner": "SUSE",
+          "severity": "medium",
+          "baseScore": 5.3,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-10-14T13:39:48.192211Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 5.3,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-12-17T13:37:00.806521Z"
+        }
+      ],
+      "description": "## Overview\n[std/crypto/x509](None) is a Go standard library package std/crypto/x509\n\nAffected versions of this package are vulnerable to Allocation of Resources Without Limits or Throttling. <br><br>**Go Vulnerability Report:**<br>\r\nDue to the design of the name constraint checking algorithm, the processing time of some inputs scale non-linearly with respect to the size of the certificate.This affects programs which validate arbitrary certificate chains.\n## Remediation\nUpgrade `std/crypto/x509` to version 1.24.9, 1.25.3 or higher.\n## References\n- [Go Advisory](https://pkg.go.dev/vuln/GO-2025-4007)\n- [Go Commit](https://go.dev/cl/709854)\n- [Go Issue](https://go.dev/issue/75681)\n- [Google Groups Forum](https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI)\n",
+      "epssDetails": {
+        "percentile": "0.30279",
+        "probability": "0.00384",
+        "modelVersion": "v2026.06.15"
+      },
+      "identifiers": {
+        "GO": [
+          "GO-2025-4007"
+        ],
+        "CVE": [
+          "CVE-2025-58187"
+        ],
+        "CWE": [
+          "CWE-770"
+        ]
+      },
+      "packageName": "std/crypto/x509",
+      "proprietary": false,
+      "creationTime": "2025-12-22T14:47:45.885042Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2025-10-29T21:49:50Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "golang",
+      "publicationTime": "2026-01-06T12:33:26.631605Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-06-27T02:00:42.037354Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "high",
+      "from": [
+        "snykcheck@0.0.0",
+        "golang.org/x/oauth2@0.26.0",
+        "golang.org/x/oauth2/internal@0.26.0",
+        "std/crypto/x509@1.22.3"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "std/crypto/x509",
+      "version": "1.22.3"
+    },
+    {
+      "id": "SNYK-GOLANG-STDCRYPTOX509-14545631",
+      "title": "Improper Certificate Validation",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "credit": [
+        "Juho Forsén"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.22.11",
+          ">=1.23.0-0 <1.23.5",
+          ">=1.24.0-0 <1.24.0-rc.2"
+        ],
+        "hashesRange": [
+          "<go1.22.11",
+          ">=go1.23.0-0 <go1.23.5",
+          ">=go1.24.0-0 <go1.24.0-rc.2"
+        ],
+        "vulnerableHashes": []
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.22.11",
+        "1.23.5",
+        "1.24.0-rc.2"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "golang",
+      "severity": "medium",
+      "cvssScore": 5.3,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "std/crypto/x509",
+      "references": [
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2025-3373",
+          "title": "Go Advisory"
+        },
+        {
+          "url": "https://go.dev/cl/643099",
+          "title": "Go Commit"
+        },
+        {
+          "url": "https://go.dev/issue/71156",
+          "title": "Go Issue"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-dev/c/bG8cv1muIBM/m/G461hA6lCgAJ",
+          "title": "Google Groups Forum"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-dev/c/CAWXhan3Jww/m/bk9LAa-lCgAJ",
+          "title": "Google Groups Forum"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N",
+          "cvssV3BaseScore": 4.2,
+          "modificationTime": "2025-01-24T14:13:58.039390Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N",
+          "cvssV3BaseScore": 4.2,
+          "modificationTime": "2025-03-10T11:10:05.365919Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 5.3,
+          "cvssVersion": "4.0",
+          "modificationTime": "2026-06-26T14:06:36.516144Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.1,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-06-26T14:06:36.516144Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 4.2,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-01-24T14:13:58.039390Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N",
+          "assigner": "SUSE",
+          "severity": "medium",
+          "baseScore": 4.2,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-03-10T11:10:05.365919Z"
+        }
+      ],
+      "description": "## Overview\n[std/crypto/x509](None) is a Go standard library package std/crypto/x509\n\nAffected versions of this package are vulnerable to Improper Certificate Validation. <br><br>**Go Vulnerability Report:**<br>\r\nA certificate with a URI which has a IPv6 address with a zone ID may incorrectly satisfy a URI name constraint that applies to the certificate chain.Certificates containing URIs are not permitted in the web PKI, so this only affects users of private PKIs which make use of URIs.\n## Remediation\nUpgrade `std/crypto/x509` to version 1.22.11, 1.23.5, 1.24.0-rc.2 or higher.\n## References\n- [Go Advisory](https://pkg.go.dev/vuln/GO-2025-3373)\n- [Go Commit](https://go.dev/cl/643099)\n- [Go Issue](https://go.dev/issue/71156)\n- [Google Groups Forum](https://groups.google.com/g/golang-dev/c/bG8cv1muIBM/m/G461hA6lCgAJ)\n- [Google Groups Forum](https://groups.google.com/g/golang-dev/c/CAWXhan3Jww/m/bk9LAa-lCgAJ)\n",
+      "epssDetails": {
+        "percentile": "0.36449",
+        "probability": "0.00458",
+        "modelVersion": "v2026.06.15"
+      },
+      "identifiers": {
+        "GO": [
+          "GO-2025-3373"
+        ],
+        "CVE": [
+          "CVE-2024-45341"
+        ],
+        "CWE": [
+          "CWE-295"
+        ]
+      },
+      "packageName": "std/crypto/x509",
+      "proprietary": false,
+      "creationTime": "2025-12-22T14:56:17.090834Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2025-01-28T00:47:30Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "golang",
+      "publicationTime": "2026-01-06T12:34:48.988810Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-06-26T14:06:36.516144Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "snykcheck@0.0.0",
+        "golang.org/x/oauth2@0.26.0",
+        "golang.org/x/oauth2/internal@0.26.0",
+        "std/crypto/x509@1.22.3"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "std/crypto/x509",
+      "version": "1.22.3"
+    },
+    {
+      "id": "SNYK-GOLANG-STDCRYPTOX509-15928851",
+      "title": "Allocation of Resources Without Limits or Throttling",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        "Jakub Ciolek"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.25.9",
+          ">=1.26.0-0 <1.26.2"
+        ],
+        "hashesRange": [
+          "<go1.25.9",
+          ">=go1.26.0-0 <go1.26.2"
+        ],
+        "vulnerableHashes": []
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.25.9",
+        "1.26.2"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "golang",
+      "severity": "high",
+      "cvssScore": 8.2,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "std/crypto/x509",
+      "references": [
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2026-4946",
+          "title": "Go Advisory"
+        },
+        {
+          "url": "https://go.dev/cl/758061",
+          "title": "Go Commit"
+        },
+        {
+          "url": "https://go.dev/issue/78281",
+          "title": "Go Issue"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU",
+          "title": "Google Groups Forum"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2026-04-12T02:24:03.872232Z"
+        },
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2026-04-17T01:24:43.505889Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2026-04-16T10:00:14.223261Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 8.2,
+          "cvssVersion": "4.0",
+          "modificationTime": "2026-07-14T02:00:38.362458Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-07-14T02:00:38.362458Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 5.9,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-04-12T02:24:03.872232Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "NVD",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-04-17T01:24:43.505889Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "SUSE",
+          "severity": "medium",
+          "baseScore": 5.9,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-04-16T10:00:14.223261Z"
+        }
+      ],
+      "description": "## Overview\n[std/crypto/x509](None) is a Go standard library package std/crypto/x509\n\nAffected versions of this package are vulnerable to Allocation of Resources Without Limits or Throttling. <br><br>**Go Vulnerability Report:**<br>\r\n\r\nValidating certificate chains which use policies is unexpectedly inefficient when certificates in the chain contain a very large number of policy mappings, possibly causing denial of service. This only affects validation of otherwise trusted certificate chains, issued by a root CA in the VerifyOptions.Roots CertPool, or in the system certificate pool.\n## Remediation\nUpgrade `std/crypto/x509` to version 1.25.9, 1.26.2 or higher.\n## References\n- [Go Advisory](https://pkg.go.dev/vuln/GO-2026-4946)\n- [Go Commit](https://go.dev/cl/758061)\n- [Go Issue](https://go.dev/issue/78281)\n- [Google Groups Forum](https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU)\n",
+      "epssDetails": {
+        "percentile": "0.26535",
+        "probability": "0.00349",
+        "modelVersion": "v2026.06.15"
+      },
+      "identifiers": {
+        "GO": [
+          "GO-2026-4946"
+        ],
+        "CVE": [
+          "CVE-2026-32281"
+        ],
+        "CWE": [
+          "CWE-770"
+        ]
+      },
+      "packageName": "std/crypto/x509",
+      "proprietary": false,
+      "creationTime": "2026-04-08T10:01:35.660992Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2026-04-07T22:53:49Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "golang",
+      "publicationTime": "2026-04-08T10:01:35.927084Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-07-14T02:00:38.362458Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "high",
+      "from": [
+        "snykcheck@0.0.0",
+        "golang.org/x/oauth2@0.26.0",
+        "golang.org/x/oauth2/internal@0.26.0",
+        "std/crypto/x509@1.22.3"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "std/crypto/x509",
+      "version": "1.22.3"
+    },
+    {
+      "id": "SNYK-GOLANG-STDCRYPTOX509-15928852",
+      "title": "Allocation of Resources Without Limits or Throttling",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+      "credit": [
+        "Jakub Ciolek"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.25.9",
+          ">=1.26.0-0 <1.26.2"
+        ],
+        "hashesRange": [
+          "<go1.25.9",
+          ">=go1.26.0-0 <go1.26.2"
+        ],
+        "vulnerableHashes": []
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.25.9",
+        "1.26.2"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "golang",
+      "severity": "medium",
+      "cvssScore": 6.3,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "std/crypto/x509",
+      "references": [
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2026-4947",
+          "title": "Go Advisory"
+        },
+        {
+          "url": "https://go.dev/cl/758320",
+          "title": "Go Commit"
+        },
+        {
+          "url": "https://go.dev/issue/78282",
+          "title": "Go Issue"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU",
+          "title": "Google Groups Forum"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2026-04-17T05:58:14.096717Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2026-04-16T10:00:24.986348Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.3,
+          "cvssVersion": "4.0",
+          "modificationTime": "2026-07-21T13:26:08.779543Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "assigner": "Snyk",
+          "severity": "low",
+          "baseScore": 3.7,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-07-21T13:26:08.779543Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "Red Hat",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-04-17T05:58:14.096717Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "SUSE",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-04-16T10:00:24.986348Z"
+        }
+      ],
+      "description": "## Overview\n[std/crypto/x509](None) is a Go standard library package std/crypto/x509\n\nAffected versions of this package are vulnerable to Allocation of Resources Without Limits or Throttling. <br><br>**Go Vulnerability Report:**<br>\n\nDuring chain building, the amount of work that is done is not correctly limited when a large number of intermediate certificates are passed in VerifyOptions.Intermediates, which can lead to a denial of service. This affects both direct users of crypto/x509 and users of crypto/tls.\n## Remediation\nUpgrade `std/crypto/x509` to version 1.25.9, 1.26.2 or higher.\n## References\n- [Go Advisory](https://pkg.go.dev/vuln/GO-2026-4947)\n- [Go Commit](https://go.dev/cl/758320)\n- [Go Issue](https://go.dev/issue/78282)\n- [Google Groups Forum](https://groups.google.com/g/golang-announce/c/0uYbvbPZRWU)\n",
+      "epssDetails": {
+        "percentile": "0.44945",
+        "probability": "0.00615",
+        "modelVersion": "v2026.06.15"
+      },
+      "identifiers": {
+        "GO": [
+          "GO-2026-4947"
+        ],
+        "CVE": [
+          "CVE-2026-32280"
+        ],
+        "CWE": [
+          "CWE-770"
+        ]
+      },
+      "packageName": "std/crypto/x509",
+      "proprietary": false,
+      "creationTime": "2026-04-08T10:03:33.035694Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2026-04-07T22:53:49Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "golang",
+      "publicationTime": "2026-04-08T10:03:33.253708Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-07-21T13:26:08.779543Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "snykcheck@0.0.0",
+        "golang.org/x/oauth2@0.26.0",
+        "golang.org/x/oauth2/internal@0.26.0",
+        "std/crypto/x509@1.22.3"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "std/crypto/x509",
+      "version": "1.22.3"
+    },
+    {
+      "id": "SNYK-GOLANG-STDCRYPTOX509-17135840",
+      "title": "Allocation of Resources Without Limits or Throttling",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        "Jakub Ciolek"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.25.11",
+          ">=1.26.0-0 <1.26.4"
+        ],
+        "hashesRange": [
+          "<go1.25.11",
+          ">=go1.26.0-0 <go1.26.4"
+        ],
+        "vulnerableHashes": []
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.25.11",
+        "1.26.4"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "golang",
+      "severity": "high",
+      "cvssScore": 8.7,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "std/crypto/x509",
+      "references": [
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2026-5037",
+          "title": "Go Advisory"
+        },
+        {
+          "url": "https://go.dev/cl/783621",
+          "title": "Go Commit"
+        },
+        {
+          "url": "https://go.dev/issue/79694",
+          "title": "Go Issue"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-announce/c/tKs3rmcBcKw",
+          "title": "Google Groups Forum"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2026-06-30T06:28:25.424269Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "low",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+          "cvssV3BaseScore": 3.3,
+          "modificationTime": "2026-06-12T11:05:48.722942Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 8.7,
+          "cvssVersion": "4.0",
+          "modificationTime": "2026-07-21T13:26:58.293229Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-07-21T13:26:58.293229Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "Red Hat",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-06-30T06:28:25.424269Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+          "assigner": "SUSE",
+          "severity": "low",
+          "baseScore": 3.3,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-06-12T11:05:48.722942Z"
+        }
+      ],
+      "description": "## Overview\n[std/crypto/x509](None) is a Go standard library package std/crypto/x509\n\nAffected versions of this package are vulnerable to Allocation of Resources Without Limits or Throttling. <br><br>**Go Vulnerability Report:**<br>\n\n(*x509.Certificate).VerifyHostname previously called matchHostnames in a loop over all DNS Subject Alternative Name (SAN) entries. This caused strings.Split(host, \".\") to execute repeatedly on the same input hostname. With a large DNS SAN list, verification costs scaled quadratically based on the number of SAN entries multiplied by the hostname's label count. Because x509.Verify validates hostnames before building the certificate chain, this overhead occurred even for untrusted certificates.\n## Remediation\nUpgrade `std/crypto/x509` to version 1.25.11, 1.26.4 or higher.\n## References\n- [Go Advisory](https://pkg.go.dev/vuln/GO-2026-5037)\n- [Go Commit](https://go.dev/cl/783621)\n- [Go Issue](https://go.dev/issue/79694)\n- [Google Groups Forum](https://groups.google.com/g/golang-announce/c/tKs3rmcBcKw)\n",
+      "epssDetails": {
+        "percentile": "0.56695",
+        "probability": "0.00939",
+        "modelVersion": "v2026.06.15"
+      },
+      "identifiers": {
+        "GO": [
+          "GO-2026-5037"
+        ],
+        "CVE": [
+          "CVE-2026-27145"
+        ],
+        "CWE": [
+          "CWE-770"
+        ]
+      },
+      "packageName": "std/crypto/x509",
+      "proprietary": false,
+      "creationTime": "2026-06-03T10:36:09.094050Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2026-06-02T21:39:47Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "golang",
+      "publicationTime": "2026-06-03T10:36:09.279699Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-07-21T13:26:58.293229Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "high",
+      "from": [
+        "snykcheck@0.0.0",
+        "golang.org/x/oauth2@0.26.0",
+        "golang.org/x/oauth2/internal@0.26.0",
+        "std/crypto/x509@1.22.3"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "std/crypto/x509",
+      "version": "1.22.3"
+    },
+    {
+      "id": "SNYK-GOLANG-STDENCODINGPEM-14545563",
+      "title": "Allocation of Resources Without Limits or Throttling",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        "Jakub Ciolek"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.24.8",
+          ">=1.25.0 <1.25.2"
+        ],
+        "hashesRange": [
+          "<go1.24.8",
+          ">=go1.25.0 <go1.25.2"
+        ],
+        "vulnerableHashes": []
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.24.8",
+        "1.25.2"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "golang",
+      "severity": "high",
+      "cvssScore": 8.7,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "std/encoding/pem",
+      "references": [
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2025-4009",
+          "title": "Go Advisory"
+        },
+        {
+          "url": "https://go.dev/cl/709858",
+          "title": "Go Commit"
+        },
+        {
+          "url": "https://go.dev/issue/75676",
+          "title": "Go Issue"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI",
+          "title": "Google Groups Forum"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "cvssV3BaseScore": 5.3,
+          "modificationTime": "2025-10-14T13:41:06.921871Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "cvssV3BaseScore": 5.3,
+          "modificationTime": "2025-11-01T05:35:08.044897Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 8.7,
+          "cvssVersion": "4.0",
+          "modificationTime": "2026-06-27T02:00:41.812649Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-06-27T02:00:41.812649Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "assigner": "SUSE",
+          "severity": "medium",
+          "baseScore": 5.3,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-10-14T13:41:06.921871Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 5.3,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-11-01T05:35:08.044897Z"
+        }
+      ],
+      "description": "## Overview\n[std/encoding/pem](https://pkg.go.dev/encoding/pem) is a Go standard library package std/encoding/pem\n\nAffected versions of this package are vulnerable to Allocation of Resources Without Limits or Throttling. <br><br>**Go Vulnerability Report:**<br>\r\nThe processing time for parsing some invalid inputs scales non-linearly with respect to the size of the input.This affects programs which parse untrusted PEM inputs.\n## Remediation\nUpgrade `std/encoding/pem` to version 1.24.8, 1.25.2 or higher.\n## References\n- [Go Advisory](https://pkg.go.dev/vuln/GO-2025-4009)\n- [Go Commit](https://go.dev/cl/709858)\n- [Go Issue](https://go.dev/issue/75676)\n- [Google Groups Forum](https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI)\n",
+      "epssDetails": {
+        "percentile": "0.45454",
+        "probability": "0.00626",
+        "modelVersion": "v2026.06.15"
+      },
+      "identifiers": {
+        "GO": [
+          "GO-2025-4009"
+        ],
+        "CVE": [
+          "CVE-2025-61723"
+        ],
+        "CWE": [
+          "CWE-770"
+        ]
+      },
+      "packageName": "std/encoding/pem",
+      "proprietary": false,
+      "creationTime": "2025-12-22T14:48:45.904796Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2025-10-29T21:49:55Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "golang",
+      "publicationTime": "2026-01-06T12:33:35.197142Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-06-27T02:00:41.812649Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "high",
+      "from": [
+        "snykcheck@0.0.0",
+        "golang.org/x/oauth2@0.26.0",
+        "golang.org/x/oauth2/internal@0.26.0",
+        "std/encoding/pem@1.22.3"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "std/encoding/pem",
+      "version": "1.22.3"
+    },
+    {
+      "id": "SNYK-GOLANG-STDMIME-17135844",
+      "title": "Allocation of Resources Without Limits or Throttling",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        "p4p3r"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.25.11",
+          ">=1.26.0-0 <1.26.4"
+        ],
+        "hashesRange": [
+          "<go1.25.11",
+          ">=go1.26.0-0 <go1.26.4"
+        ],
+        "vulnerableHashes": []
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.25.11",
+        "1.26.4"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "golang",
+      "severity": "high",
+      "cvssScore": 8.7,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "std/mime",
+      "references": [
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2026-5038",
+          "title": "Go Advisory"
+        },
+        {
+          "url": "https://go.dev/cl/774481",
+          "title": "Go Commit"
+        },
+        {
+          "url": "https://go.dev/issue/79217",
+          "title": "Go Issue"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-announce/c/tKs3rmcBcKw",
+          "title": "Google Groups Forum"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2026-07-08T05:26:20.096012Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 6.5,
+          "modificationTime": "2026-06-12T11:05:50.592716Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 8.7,
+          "cvssVersion": "4.0",
+          "modificationTime": "2026-07-16T15:26:24.159946Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-07-16T15:26:24.159946Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "Red Hat",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-07-08T05:26:20.096012Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "assigner": "SUSE",
+          "severity": "medium",
+          "baseScore": 6.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-06-12T11:05:50.592716Z"
+        }
+      ],
+      "description": "## Overview\n[std/mime](https://pkg.go.dev/mime) is a Go standard library package std/mime\n\nAffected versions of this package are vulnerable to Allocation of Resources Without Limits or Throttling. <br><br>**Go Vulnerability Report:**<br>\n\nDecoding a maliciously-crafted MIME header containing many invalid encoded-words can consume excessive CPU.\n## Remediation\nUpgrade `std/mime` to version 1.25.11, 1.26.4 or higher.\n## References\n- [Go Advisory](https://pkg.go.dev/vuln/GO-2026-5038)\n- [Go Commit](https://go.dev/cl/774481)\n- [Go Issue](https://go.dev/issue/79217)\n- [Google Groups Forum](https://groups.google.com/g/golang-announce/c/tKs3rmcBcKw)\n",
+      "epssDetails": {
+        "percentile": "0.42188",
+        "probability": "0.00560",
+        "modelVersion": "v2026.06.15"
+      },
+      "identifiers": {
+        "GO": [
+          "GO-2026-5038"
+        ],
+        "CVE": [
+          "CVE-2026-42504"
+        ],
+        "CWE": [
+          "CWE-770"
+        ]
+      },
+      "packageName": "std/mime",
+      "proprietary": false,
+      "creationTime": "2026-06-03T10:42:37.184395Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2026-06-02T21:39:47Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "golang",
+      "publicationTime": "2026-06-03T10:42:37.356366Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-07-16T15:26:24.159946Z",
+      "socialTrendAlert": true,
+      "severityWithCritical": "high",
+      "from": [
+        "snykcheck@0.0.0",
+        "golang.org/x/oauth2@0.26.0",
+        "golang.org/x/oauth2/internal@0.26.0",
+        "std/mime@1.22.3"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "std/mime",
+      "version": "1.22.3"
+    },
+    {
+      "id": "SNYK-GOLANG-STDNETHTTP-14546365",
+      "title": "Allocation of Resources Without Limits or Throttling",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+      "credit": [
+        "jub0bs"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.24.8",
+          ">=1.25.0 <1.25.2"
+        ],
+        "hashesRange": [
+          "<go1.24.8",
+          ">=go1.25.0 <go1.25.2"
+        ],
+        "vulnerableHashes": []
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.24.8",
+        "1.25.2"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "golang",
+      "severity": "medium",
+      "cvssScore": 6.9,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "std/net/http",
+      "references": [
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2025-4012",
+          "title": "Go Advisory"
+        },
+        {
+          "url": "https://go.dev/cl/709855",
+          "title": "Go Code Review"
+        },
+        {
+          "url": "https://go.dev/issue/75672",
+          "title": "Go Issue"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI",
+          "title": "Google Groups Forum"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "cvssV3BaseScore": 5.3,
+          "modificationTime": "2025-10-14T13:38:55.482601Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "cvssV3BaseScore": 5.3,
+          "modificationTime": "2025-12-17T13:36:18.164452Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.9,
+          "cvssVersion": "4.0",
+          "modificationTime": "2026-06-27T02:00:42.283667Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 5.3,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-06-27T02:00:42.283667Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "assigner": "SUSE",
+          "severity": "medium",
+          "baseScore": 5.3,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-10-14T13:38:55.482601Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 5.3,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-12-17T13:36:18.164452Z"
+        }
+      ],
+      "description": "## Overview\n[std/net/http](https://pkg.go.dev/net/http) is a Go standard library package std/net/http\n\nAffected versions of this package are vulnerable to Allocation of Resources Without Limits or Throttling. <br><br>**Go Vulnerability Report:**<br>Despite HTTP headers having a default limit of 1MB, the number of cookies that can be parsed does not have a limit. By sending a lot of very small cookies such as \"a=;\", an attacker can make an HTTP server allocate a large amount of structs, causing large memory consumption.\n## Remediation\nUpgrade `std/net/http` to version 1.24.8, 1.25.2 or higher.\n## References\n- [Go Advisory](https://pkg.go.dev/vuln/GO-2025-4012)\n- [Go Code Review](https://go.dev/cl/709855)\n- [Go Issue](https://go.dev/issue/75672)\n- [Google Groups Forum](https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI)\n",
+      "epssDetails": {
+        "percentile": "0.41015",
+        "probability": "0.00534",
+        "modelVersion": "v2026.06.15"
+      },
+      "identifiers": {
+        "GO": [
+          "GO-2025-4012"
+        ],
+        "CVE": [
+          "CVE-2025-58186"
+        ],
+        "CWE": [
+          "CWE-770"
+        ]
+      },
+      "packageName": "std/net/http",
+      "proprietary": false,
+      "creationTime": "2025-12-22T17:09:10.133064Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2025-10-29T21:50:05Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "golang",
+      "publicationTime": "2026-01-06T12:48:15.566583Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-06-27T02:00:42.283667Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "snykcheck@0.0.0",
+        "golang.org/x/oauth2@0.26.0",
+        "std/net/http@1.22.3"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "std/net/http",
+      "version": "1.22.3"
+    },
+    {
+      "id": "SNYK-GOLANG-STDNETHTTP-14548596",
+      "title": "Insertion of Sensitive Information Into Sent Data",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+      "credit": [
+        "Takeshi Kaneko"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.23.10",
+          ">=1.24.0-0 <1.24.4"
+        ],
+        "hashesRange": [
+          "<go1.23.10",
+          ">=go1.24.0-0 <go1.24.4"
+        ],
+        "vulnerableHashes": []
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.23.10",
+        "1.24.4"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "golang",
+      "severity": "high",
+      "cvssScore": 8.9,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "std/net/http",
+      "references": [
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2025-3751",
+          "title": "Go Advisory"
+        },
+        {
+          "url": "https://go.dev/cl/679257",
+          "title": "Go Commit"
+        },
+        {
+          "url": "https://go.dev/issue/73816",
+          "title": "Go Issue"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A",
+          "title": "Google Groups Forum"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+          "cvssV3BaseScore": 6.8,
+          "modificationTime": "2025-06-19T15:18:25.183497Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+          "cvssV3BaseScore": 6.8,
+          "modificationTime": "2025-06-10T11:03:32.684335Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:H/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 8.9,
+          "cvssVersion": "4.0",
+          "modificationTime": "2026-07-18T15:25:35.792422Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-07-18T15:25:35.792422Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 6.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-06-19T15:18:25.183497Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+          "assigner": "SUSE",
+          "severity": "medium",
+          "baseScore": 6.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-06-10T11:03:32.684335Z"
+        }
+      ],
+      "description": "## Overview\n[std/net/http](https://pkg.go.dev/net/http) is a Go standard library package std/net/http\n\nAffected versions of this package are vulnerable to Insertion of Sensitive Information Into Sent Data. <br><br>**Go Vulnerability Report:**<br>\r\nProxy-Authorization and Proxy-Authenticate headers persisted on cross-origin redirects potentially leaking sensitive information.\n## Remediation\nUpgrade `std/net/http` to version 1.23.10, 1.24.4 or higher.\n## References\n- [Go Advisory](https://pkg.go.dev/vuln/GO-2025-3751)\n- [Go Commit](https://go.dev/cl/679257)\n- [Go Issue](https://go.dev/issue/73816)\n- [Google Groups Forum](https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A)\n",
+      "epssDetails": {
+        "percentile": "0.43844",
+        "probability": "0.00580",
+        "modelVersion": "v2026.06.15"
+      },
+      "identifiers": {
+        "GO": [
+          "GO-2025-3751"
+        ],
+        "CVE": [
+          "CVE-2025-4673"
+        ],
+        "CWE": [
+          "CWE-201"
+        ]
+      },
+      "packageName": "std/net/http",
+      "proprietary": false,
+      "creationTime": "2025-12-23T08:25:47.049128Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2025-06-11T16:23:58Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "golang",
+      "publicationTime": "2026-01-06T12:54:56.836227Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-07-18T15:25:35.792422Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "high",
+      "from": [
+        "snykcheck@0.0.0",
+        "golang.org/x/oauth2@0.26.0",
+        "std/net/http@1.22.3"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "std/net/http",
+      "version": "1.22.3"
+    },
+    {
+      "id": "SNYK-GOLANG-STDNETHTTP-14548597",
+      "title": "Insertion of Sensitive Information Into Sent Data",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "credit": [
+        "Kyle Seely"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.22.11",
+          ">=1.23.0-0 <1.23.5",
+          ">=1.24.0-0 <1.24.0-rc.2"
+        ],
+        "hashesRange": [
+          "<go1.22.11",
+          ">=go1.23.0-0 <go1.23.5",
+          ">=go1.24.0-0 <go1.24.0-rc.2"
+        ],
+        "vulnerableHashes": []
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.22.11",
+        "1.23.5",
+        "1.24.0-rc.2"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "golang",
+      "severity": "medium",
+      "cvssScore": 5.3,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "std/net/http",
+      "references": [
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2025-3420",
+          "title": "Go Advisory"
+        },
+        {
+          "url": "https://go.dev/cl/643100",
+          "title": "Go Commit"
+        },
+        {
+          "url": "https://go.dev/issue/70530",
+          "title": "Go Issue"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-dev/c/bG8cv1muIBM/m/G461hA6lCgAJ",
+          "title": "Google Groups Forum"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-dev/c/CAWXhan3Jww/m/bk9LAa-lCgAJ",
+          "title": "Google Groups Forum"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2025-01-24T14:13:51.419715Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2025-03-10T11:10:17.102263Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:L/VA:N/SC:L/SI:L/SA:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 5.3,
+          "cvssVersion": "4.0",
+          "modificationTime": "2026-06-26T14:06:34.623365Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.1,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-06-26T14:06:34.623365Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 5.9,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-01-24T14:13:51.419715Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "assigner": "SUSE",
+          "severity": "medium",
+          "baseScore": 5.9,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-03-10T11:10:17.102263Z"
+        }
+      ],
+      "description": "## Overview\n[std/net/http](https://pkg.go.dev/net/http) is a Go standard library package std/net/http\n\nAffected versions of this package are vulnerable to Insertion of Sensitive Information Into Sent Data. <br><br>**Go Vulnerability Report:**<br>\r\nThe HTTP client drops sensitive headers after following a cross-domain redirect. For example, a request to a.com/ containing an Authorization header which is redirected to b.com/ will not send that header to b.com.In the event that the client received a subsequent same-domain redirect, however, the sensitive headers would be restored. For example, a chain of redirects from a.com/, to b.com/1, and finally to b.com/2 would incorrectly send the Authorization header to b.com/2.\n## Remediation\nUpgrade `std/net/http` to version 1.22.11, 1.23.5, 1.24.0-rc.2 or higher.\n## References\n- [Go Advisory](https://pkg.go.dev/vuln/GO-2025-3420)\n- [Go Commit](https://go.dev/cl/643100)\n- [Go Issue](https://go.dev/issue/70530)\n- [Google Groups Forum](https://groups.google.com/g/golang-dev/c/bG8cv1muIBM/m/G461hA6lCgAJ)\n- [Google Groups Forum](https://groups.google.com/g/golang-dev/c/CAWXhan3Jww/m/bk9LAa-lCgAJ)\n",
+      "epssDetails": {
+        "percentile": "0.46326",
+        "probability": "0.00647",
+        "modelVersion": "v2026.06.15"
+      },
+      "identifiers": {
+        "GO": [
+          "GO-2025-3420"
+        ],
+        "CVE": [
+          "CVE-2024-45336"
+        ],
+        "CWE": [
+          "CWE-201"
+        ]
+      },
+      "packageName": "std/net/http",
+      "proprietary": false,
+      "creationTime": "2025-12-23T08:27:10.049913Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2025-01-28T00:47:30Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "golang",
+      "publicationTime": "2026-01-06T12:55:03.594540Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-06-26T14:06:34.623365Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "snykcheck@0.0.0",
+        "golang.org/x/oauth2@0.26.0",
+        "std/net/http@1.22.3"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "std/net/http",
+      "version": "1.22.3"
+    },
+    {
+      "id": "SNYK-GOLANG-STDNETHTTP-14548598",
+      "title": "Allocation of Resources Without Limits or Throttling",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        "Geoff Franks"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.21.12",
+          ">=1.22.0-0 <1.22.5"
+        ],
+        "hashesRange": [
+          "<go1.21.12",
+          ">=go1.22.0-0 <go1.22.5"
+        ],
+        "vulnerableHashes": []
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.21.12",
+        "1.22.5"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "golang",
+      "severity": "high",
+      "cvssScore": 8.7,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "std/net/http",
+      "references": [
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2024-2963",
+          "title": "Go Advisory"
+        },
+        {
+          "url": "https://go.dev/cl/591255",
+          "title": "Go Commit"
+        },
+        {
+          "url": "https://go.dev/issue/67555",
+          "title": "Go Issue"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-dev/c/t0rK-qHBqzY/m/6MMoAZkMAgAJ",
+          "title": "Google Groups Forum"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 6.5,
+          "modificationTime": "2024-07-06T11:01:29.979405Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2024-07-15T13:39:46.185132Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 8.7,
+          "cvssVersion": "4.0",
+          "modificationTime": "2026-06-16T02:00:37.919606Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-06-16T02:00:37.919606Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "SUSE",
+          "severity": "medium",
+          "baseScore": 6.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-07-06T11:01:29.979405Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 5.9,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-07-15T13:39:46.185132Z"
+        }
+      ],
+      "description": "## Overview\n[std/net/http](https://pkg.go.dev/net/http) is a Go standard library package std/net/http\n\nAffected versions of this package are vulnerable to Allocation of Resources Without Limits or Throttling. <br><br>**Go Vulnerability Report:**<br>\r\nThe net/http HTTP/1.1 client mishandled the case where a server responds to a request with an \"Expect: 100-continue\" header with a non-informational (200 or higher) status. This mishandling could leave a client connection in an invalid state, where the next request sent on the connection will fail.An attacker sending a request to a net/http/httputil.ReverseProxy proxy can exploit this mishandling to cause a denial of service by sending \"Expect: 100-continue\" requests which elicit a non-informational response from the backend. Each such request leaves the proxy with an invalid connection, and causes one subsequent request using that connection to fail.\n## Remediation\nUpgrade `std/net/http` to version 1.21.12, 1.22.5 or higher.\n## References\n- [Go Advisory](https://pkg.go.dev/vuln/GO-2024-2963)\n- [Go Commit](https://go.dev/cl/591255)\n- [Go Issue](https://go.dev/issue/67555)\n- [Google Groups Forum](https://groups.google.com/g/golang-dev/c/t0rK-qHBqzY/m/6MMoAZkMAgAJ)\n",
+      "epssDetails": {
+        "percentile": "0.69149",
+        "probability": "0.01414",
+        "modelVersion": "v2026.06.15"
+      },
+      "identifiers": {
+        "GO": [
+          "GO-2024-2963"
+        ],
+        "CVE": [
+          "CVE-2024-24791"
+        ],
+        "CWE": [
+          "CWE-770"
+        ]
+      },
+      "packageName": "std/net/http",
+      "proprietary": false,
+      "creationTime": "2025-12-23T08:28:02.227983Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2024-07-02T20:11:00Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "golang",
+      "publicationTime": "2026-01-06T12:55:10.001159Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-06-16T02:00:37.919606Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "high",
+      "from": [
+        "snykcheck@0.0.0",
+        "golang.org/x/oauth2@0.26.0",
+        "std/net/http@1.22.3"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "std/net/http",
+      "version": "1.22.3"
+    },
+    {
+      "id": "SNYK-GOLANG-STDNETHTTP-16535158",
+      "title": "Infinite loop",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        "Marwan Atia"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.25.10",
+          ">=1.26.0-0 <1.26.3"
+        ],
+        "hashesRange": [
+          "<go1.25.10",
+          ">=go1.26.0-0 <go1.26.3"
+        ],
+        "vulnerableHashes": []
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.25.10",
+        "1.26.3"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "golang",
+      "severity": "high",
+      "cvssScore": 8.7,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "std/net/http",
+      "references": [
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2026-4918",
+          "title": "Go Advisory"
+        },
+        {
+          "url": "https://go.dev/cl/761581",
+          "title": "Go Commit"
+        },
+        {
+          "url": "https://go.dev/cl/761640",
+          "title": "Go Commit"
+        },
+        {
+          "url": "https://go.dev/issue/78476",
+          "title": "Go Issue"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-announce/c/qcCIEXso47M",
+          "title": "Google Groups Forum"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2026-05-14T01:14:25.061596Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2026-06-24T05:50:09.067643Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2026-05-18T13:03:00.463951Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 8.7,
+          "cvssVersion": "4.0",
+          "modificationTime": "2026-07-21T15:25:50.970375Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-07-21T15:25:50.970375Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "NVD",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-05-14T01:14:25.061596Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "Red Hat",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-06-24T05:50:09.067643Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "SUSE",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-05-18T13:03:00.463951Z"
+        }
+      ],
+      "description": "## Overview\n[std/net/http](https://pkg.go.dev/net/http) is a Go standard library package std/net/http\n\nAffected versions of this package are vulnerable to Infinite loop. <br><br>**Go Vulnerability Report:**<br>\n\nWhen processing HTTP/2 SETTINGS frames, transport will enter an infinite loop of writing CONTINUATION frames if it receives a `SETTINGS_MAX_FRAME_SIZE` with a value of 0.\n## Remediation\nUpgrade `std/net/http` to version 1.25.10, 1.26.3 or higher.\n## References\n- [Go Advisory](https://pkg.go.dev/vuln/GO-2026-4918)\n- [Go Commit](https://go.dev/cl/761581)\n- [Go Commit](https://go.dev/cl/761640)\n- [Go Issue](https://go.dev/issue/78476)\n- [Google Groups Forum](https://groups.google.com/g/golang-announce/c/qcCIEXso47M)\n",
+      "epssDetails": {
+        "percentile": "0.51347",
+        "probability": "0.00781",
+        "modelVersion": "v2026.06.15"
+      },
+      "identifiers": {
+        "GO": [
+          "GO-2026-4918"
+        ],
+        "CVE": [
+          "CVE-2026-33814"
+        ],
+        "CWE": [
+          "CWE-835"
+        ]
+      },
+      "packageName": "std/net/http",
+      "proprietary": false,
+      "creationTime": "2026-05-08T07:35:59.608372Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2026-05-07T19:21:40Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "golang",
+      "publicationTime": "2026-05-08T07:35:59.838416Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-07-21T15:25:50.970375Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "high",
+      "from": [
+        "snykcheck@0.0.0",
+        "golang.org/x/oauth2@0.26.0",
+        "std/net/http@1.22.3"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "std/net/http",
+      "version": "1.22.3"
+    },
+    {
+      "id": "SNYK-GOLANG-STDNETHTTP-14546365",
+      "title": "Allocation of Resources Without Limits or Throttling",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+      "credit": [
+        "jub0bs"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.24.8",
+          ">=1.25.0 <1.25.2"
+        ],
+        "hashesRange": [
+          "<go1.24.8",
+          ">=go1.25.0 <go1.25.2"
+        ],
+        "vulnerableHashes": []
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.24.8",
+        "1.25.2"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "golang",
+      "severity": "medium",
+      "cvssScore": 6.9,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "std/net/http",
+      "references": [
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2025-4012",
+          "title": "Go Advisory"
+        },
+        {
+          "url": "https://go.dev/cl/709855",
+          "title": "Go Code Review"
+        },
+        {
+          "url": "https://go.dev/issue/75672",
+          "title": "Go Issue"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI",
+          "title": "Google Groups Forum"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "cvssV3BaseScore": 5.3,
+          "modificationTime": "2025-10-14T13:38:55.482601Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "cvssV3BaseScore": 5.3,
+          "modificationTime": "2025-12-17T13:36:18.164452Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.9,
+          "cvssVersion": "4.0",
+          "modificationTime": "2026-06-27T02:00:42.283667Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 5.3,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-06-27T02:00:42.283667Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "assigner": "SUSE",
+          "severity": "medium",
+          "baseScore": 5.3,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-10-14T13:38:55.482601Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 5.3,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-12-17T13:36:18.164452Z"
+        }
+      ],
+      "description": "## Overview\n[std/net/http](https://pkg.go.dev/net/http) is a Go standard library package std/net/http\n\nAffected versions of this package are vulnerable to Allocation of Resources Without Limits or Throttling. <br><br>**Go Vulnerability Report:**<br>Despite HTTP headers having a default limit of 1MB, the number of cookies that can be parsed does not have a limit. By sending a lot of very small cookies such as \"a=;\", an attacker can make an HTTP server allocate a large amount of structs, causing large memory consumption.\n## Remediation\nUpgrade `std/net/http` to version 1.24.8, 1.25.2 or higher.\n## References\n- [Go Advisory](https://pkg.go.dev/vuln/GO-2025-4012)\n- [Go Code Review](https://go.dev/cl/709855)\n- [Go Issue](https://go.dev/issue/75672)\n- [Google Groups Forum](https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI)\n",
+      "epssDetails": {
+        "percentile": "0.41015",
+        "probability": "0.00534",
+        "modelVersion": "v2026.06.15"
+      },
+      "identifiers": {
+        "GO": [
+          "GO-2025-4012"
+        ],
+        "CVE": [
+          "CVE-2025-58186"
+        ],
+        "CWE": [
+          "CWE-770"
+        ]
+      },
+      "packageName": "std/net/http",
+      "proprietary": false,
+      "creationTime": "2025-12-22T17:09:10.133064Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2025-10-29T21:50:05Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "golang",
+      "publicationTime": "2026-01-06T12:48:15.566583Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-06-27T02:00:42.283667Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "snykcheck@0.0.0",
+        "golang.org/x/oauth2@0.26.0",
+        "golang.org/x/oauth2/internal@0.26.0",
+        "std/net/http@1.22.3"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "std/net/http",
+      "version": "1.22.3"
+    },
+    {
+      "id": "SNYK-GOLANG-STDNETHTTP-14548596",
+      "title": "Insertion of Sensitive Information Into Sent Data",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+      "credit": [
+        "Takeshi Kaneko"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.23.10",
+          ">=1.24.0-0 <1.24.4"
+        ],
+        "hashesRange": [
+          "<go1.23.10",
+          ">=go1.24.0-0 <go1.24.4"
+        ],
+        "vulnerableHashes": []
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.23.10",
+        "1.24.4"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "golang",
+      "severity": "high",
+      "cvssScore": 8.9,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "std/net/http",
+      "references": [
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2025-3751",
+          "title": "Go Advisory"
+        },
+        {
+          "url": "https://go.dev/cl/679257",
+          "title": "Go Commit"
+        },
+        {
+          "url": "https://go.dev/issue/73816",
+          "title": "Go Issue"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A",
+          "title": "Google Groups Forum"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+          "cvssV3BaseScore": 6.8,
+          "modificationTime": "2025-06-19T15:18:25.183497Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+          "cvssV3BaseScore": 6.8,
+          "modificationTime": "2025-06-10T11:03:32.684335Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:H/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 8.9,
+          "cvssVersion": "4.0",
+          "modificationTime": "2026-07-18T15:25:35.792422Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-07-18T15:25:35.792422Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 6.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-06-19T15:18:25.183497Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N",
+          "assigner": "SUSE",
+          "severity": "medium",
+          "baseScore": 6.8,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-06-10T11:03:32.684335Z"
+        }
+      ],
+      "description": "## Overview\n[std/net/http](https://pkg.go.dev/net/http) is a Go standard library package std/net/http\n\nAffected versions of this package are vulnerable to Insertion of Sensitive Information Into Sent Data. <br><br>**Go Vulnerability Report:**<br>\r\nProxy-Authorization and Proxy-Authenticate headers persisted on cross-origin redirects potentially leaking sensitive information.\n## Remediation\nUpgrade `std/net/http` to version 1.23.10, 1.24.4 or higher.\n## References\n- [Go Advisory](https://pkg.go.dev/vuln/GO-2025-3751)\n- [Go Commit](https://go.dev/cl/679257)\n- [Go Issue](https://go.dev/issue/73816)\n- [Google Groups Forum](https://groups.google.com/g/golang-announce/c/ufZ8WpEsA3A)\n",
+      "epssDetails": {
+        "percentile": "0.43844",
+        "probability": "0.00580",
+        "modelVersion": "v2026.06.15"
+      },
+      "identifiers": {
+        "GO": [
+          "GO-2025-3751"
+        ],
+        "CVE": [
+          "CVE-2025-4673"
+        ],
+        "CWE": [
+          "CWE-201"
+        ]
+      },
+      "packageName": "std/net/http",
+      "proprietary": false,
+      "creationTime": "2025-12-23T08:25:47.049128Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2025-06-11T16:23:58Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "golang",
+      "publicationTime": "2026-01-06T12:54:56.836227Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-07-18T15:25:35.792422Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "high",
+      "from": [
+        "snykcheck@0.0.0",
+        "golang.org/x/oauth2@0.26.0",
+        "golang.org/x/oauth2/internal@0.26.0",
+        "std/net/http@1.22.3"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "std/net/http",
+      "version": "1.22.3"
+    },
+    {
+      "id": "SNYK-GOLANG-STDNETHTTP-14548597",
+      "title": "Insertion of Sensitive Information Into Sent Data",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "credit": [
+        "Kyle Seely"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.22.11",
+          ">=1.23.0-0 <1.23.5",
+          ">=1.24.0-0 <1.24.0-rc.2"
+        ],
+        "hashesRange": [
+          "<go1.22.11",
+          ">=go1.23.0-0 <go1.23.5",
+          ">=go1.24.0-0 <go1.24.0-rc.2"
+        ],
+        "vulnerableHashes": []
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.22.11",
+        "1.23.5",
+        "1.24.0-rc.2"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "golang",
+      "severity": "medium",
+      "cvssScore": 5.3,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "std/net/http",
+      "references": [
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2025-3420",
+          "title": "Go Advisory"
+        },
+        {
+          "url": "https://go.dev/cl/643100",
+          "title": "Go Commit"
+        },
+        {
+          "url": "https://go.dev/issue/70530",
+          "title": "Go Issue"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-dev/c/bG8cv1muIBM/m/G461hA6lCgAJ",
+          "title": "Google Groups Forum"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-dev/c/CAWXhan3Jww/m/bk9LAa-lCgAJ",
+          "title": "Google Groups Forum"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2025-01-24T14:13:51.419715Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2025-03-10T11:10:17.102263Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:L/VA:N/SC:L/SI:L/SA:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 5.3,
+          "cvssVersion": "4.0",
+          "modificationTime": "2026-06-26T14:06:34.623365Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.1,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-06-26T14:06:34.623365Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 5.9,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-01-24T14:13:51.419715Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "assigner": "SUSE",
+          "severity": "medium",
+          "baseScore": 5.9,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-03-10T11:10:17.102263Z"
+        }
+      ],
+      "description": "## Overview\n[std/net/http](https://pkg.go.dev/net/http) is a Go standard library package std/net/http\n\nAffected versions of this package are vulnerable to Insertion of Sensitive Information Into Sent Data. <br><br>**Go Vulnerability Report:**<br>\r\nThe HTTP client drops sensitive headers after following a cross-domain redirect. For example, a request to a.com/ containing an Authorization header which is redirected to b.com/ will not send that header to b.com.In the event that the client received a subsequent same-domain redirect, however, the sensitive headers would be restored. For example, a chain of redirects from a.com/, to b.com/1, and finally to b.com/2 would incorrectly send the Authorization header to b.com/2.\n## Remediation\nUpgrade `std/net/http` to version 1.22.11, 1.23.5, 1.24.0-rc.2 or higher.\n## References\n- [Go Advisory](https://pkg.go.dev/vuln/GO-2025-3420)\n- [Go Commit](https://go.dev/cl/643100)\n- [Go Issue](https://go.dev/issue/70530)\n- [Google Groups Forum](https://groups.google.com/g/golang-dev/c/bG8cv1muIBM/m/G461hA6lCgAJ)\n- [Google Groups Forum](https://groups.google.com/g/golang-dev/c/CAWXhan3Jww/m/bk9LAa-lCgAJ)\n",
+      "epssDetails": {
+        "percentile": "0.46326",
+        "probability": "0.00647",
+        "modelVersion": "v2026.06.15"
+      },
+      "identifiers": {
+        "GO": [
+          "GO-2025-3420"
+        ],
+        "CVE": [
+          "CVE-2024-45336"
+        ],
+        "CWE": [
+          "CWE-201"
+        ]
+      },
+      "packageName": "std/net/http",
+      "proprietary": false,
+      "creationTime": "2025-12-23T08:27:10.049913Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2025-01-28T00:47:30Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "golang",
+      "publicationTime": "2026-01-06T12:55:03.594540Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-06-26T14:06:34.623365Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "snykcheck@0.0.0",
+        "golang.org/x/oauth2@0.26.0",
+        "golang.org/x/oauth2/internal@0.26.0",
+        "std/net/http@1.22.3"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "std/net/http",
+      "version": "1.22.3"
+    },
+    {
+      "id": "SNYK-GOLANG-STDNETHTTP-14548598",
+      "title": "Allocation of Resources Without Limits or Throttling",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        "Geoff Franks"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.21.12",
+          ">=1.22.0-0 <1.22.5"
+        ],
+        "hashesRange": [
+          "<go1.21.12",
+          ">=go1.22.0-0 <go1.22.5"
+        ],
+        "vulnerableHashes": []
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.21.12",
+        "1.22.5"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "golang",
+      "severity": "high",
+      "cvssScore": 8.7,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "std/net/http",
+      "references": [
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2024-2963",
+          "title": "Go Advisory"
+        },
+        {
+          "url": "https://go.dev/cl/591255",
+          "title": "Go Commit"
+        },
+        {
+          "url": "https://go.dev/issue/67555",
+          "title": "Go Issue"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-dev/c/t0rK-qHBqzY/m/6MMoAZkMAgAJ",
+          "title": "Google Groups Forum"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 6.5,
+          "modificationTime": "2024-07-06T11:01:29.979405Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2024-07-15T13:39:46.185132Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 8.7,
+          "cvssVersion": "4.0",
+          "modificationTime": "2026-06-16T02:00:37.919606Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-06-16T02:00:37.919606Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "SUSE",
+          "severity": "medium",
+          "baseScore": 6.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-07-06T11:01:29.979405Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 5.9,
+          "cvssVersion": "3.1",
+          "modificationTime": "2024-07-15T13:39:46.185132Z"
+        }
+      ],
+      "description": "## Overview\n[std/net/http](https://pkg.go.dev/net/http) is a Go standard library package std/net/http\n\nAffected versions of this package are vulnerable to Allocation of Resources Without Limits or Throttling. <br><br>**Go Vulnerability Report:**<br>\r\nThe net/http HTTP/1.1 client mishandled the case where a server responds to a request with an \"Expect: 100-continue\" header with a non-informational (200 or higher) status. This mishandling could leave a client connection in an invalid state, where the next request sent on the connection will fail.An attacker sending a request to a net/http/httputil.ReverseProxy proxy can exploit this mishandling to cause a denial of service by sending \"Expect: 100-continue\" requests which elicit a non-informational response from the backend. Each such request leaves the proxy with an invalid connection, and causes one subsequent request using that connection to fail.\n## Remediation\nUpgrade `std/net/http` to version 1.21.12, 1.22.5 or higher.\n## References\n- [Go Advisory](https://pkg.go.dev/vuln/GO-2024-2963)\n- [Go Commit](https://go.dev/cl/591255)\n- [Go Issue](https://go.dev/issue/67555)\n- [Google Groups Forum](https://groups.google.com/g/golang-dev/c/t0rK-qHBqzY/m/6MMoAZkMAgAJ)\n",
+      "epssDetails": {
+        "percentile": "0.69149",
+        "probability": "0.01414",
+        "modelVersion": "v2026.06.15"
+      },
+      "identifiers": {
+        "GO": [
+          "GO-2024-2963"
+        ],
+        "CVE": [
+          "CVE-2024-24791"
+        ],
+        "CWE": [
+          "CWE-770"
+        ]
+      },
+      "packageName": "std/net/http",
+      "proprietary": false,
+      "creationTime": "2025-12-23T08:28:02.227983Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2024-07-02T20:11:00Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "golang",
+      "publicationTime": "2026-01-06T12:55:10.001159Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-06-16T02:00:37.919606Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "high",
+      "from": [
+        "snykcheck@0.0.0",
+        "golang.org/x/oauth2@0.26.0",
+        "golang.org/x/oauth2/internal@0.26.0",
+        "std/net/http@1.22.3"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "std/net/http",
+      "version": "1.22.3"
+    },
+    {
+      "id": "SNYK-GOLANG-STDNETHTTP-16535158",
+      "title": "Infinite loop",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        "Marwan Atia"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.25.10",
+          ">=1.26.0-0 <1.26.3"
+        ],
+        "hashesRange": [
+          "<go1.25.10",
+          ">=go1.26.0-0 <go1.26.3"
+        ],
+        "vulnerableHashes": []
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.25.10",
+        "1.26.3"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "golang",
+      "severity": "high",
+      "cvssScore": 8.7,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "std/net/http",
+      "references": [
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2026-4918",
+          "title": "Go Advisory"
+        },
+        {
+          "url": "https://go.dev/cl/761581",
+          "title": "Go Commit"
+        },
+        {
+          "url": "https://go.dev/cl/761640",
+          "title": "Go Commit"
+        },
+        {
+          "url": "https://go.dev/issue/78476",
+          "title": "Go Issue"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-announce/c/qcCIEXso47M",
+          "title": "Google Groups Forum"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2026-05-14T01:14:25.061596Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2026-06-24T05:50:09.067643Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2026-05-18T13:03:00.463951Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 8.7,
+          "cvssVersion": "4.0",
+          "modificationTime": "2026-07-21T15:25:50.970375Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-07-21T15:25:50.970375Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "NVD",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-05-14T01:14:25.061596Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "Red Hat",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-06-24T05:50:09.067643Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "SUSE",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-05-18T13:03:00.463951Z"
+        }
+      ],
+      "description": "## Overview\n[std/net/http](https://pkg.go.dev/net/http) is a Go standard library package std/net/http\n\nAffected versions of this package are vulnerable to Infinite loop. <br><br>**Go Vulnerability Report:**<br>\n\nWhen processing HTTP/2 SETTINGS frames, transport will enter an infinite loop of writing CONTINUATION frames if it receives a `SETTINGS_MAX_FRAME_SIZE` with a value of 0.\n## Remediation\nUpgrade `std/net/http` to version 1.25.10, 1.26.3 or higher.\n## References\n- [Go Advisory](https://pkg.go.dev/vuln/GO-2026-4918)\n- [Go Commit](https://go.dev/cl/761581)\n- [Go Commit](https://go.dev/cl/761640)\n- [Go Issue](https://go.dev/issue/78476)\n- [Google Groups Forum](https://groups.google.com/g/golang-announce/c/qcCIEXso47M)\n",
+      "epssDetails": {
+        "percentile": "0.51347",
+        "probability": "0.00781",
+        "modelVersion": "v2026.06.15"
+      },
+      "identifiers": {
+        "GO": [
+          "GO-2026-4918"
+        ],
+        "CVE": [
+          "CVE-2026-33814"
+        ],
+        "CWE": [
+          "CWE-835"
+        ]
+      },
+      "packageName": "std/net/http",
+      "proprietary": false,
+      "creationTime": "2026-05-08T07:35:59.608372Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2026-05-07T19:21:40Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "golang",
+      "publicationTime": "2026-05-08T07:35:59.838416Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-07-21T15:25:50.970375Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "high",
+      "from": [
+        "snykcheck@0.0.0",
+        "golang.org/x/oauth2@0.26.0",
+        "golang.org/x/oauth2/internal@0.26.0",
+        "std/net/http@1.22.3"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "std/net/http",
+      "version": "1.22.3"
+    },
+    {
+      "id": "SNYK-GOLANG-STDNETURL-14546349",
+      "title": "Exposure of Sensitive System Information to an Unauthorized Control Sphere",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+      "credit": [
+        "Enze Wang",
+        "Jingcheng Yang",
+        "Zehui Miao"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.24.8",
+          ">=1.25.0 <1.25.2"
+        ],
+        "hashesRange": [
+          "<go1.24.8",
+          ">=go1.25.0 <go1.25.2"
+        ],
+        "vulnerableHashes": []
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.24.8",
+        "1.25.2"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "golang",
+      "severity": "medium",
+      "cvssScore": 6.9,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "std/net/url",
+      "references": [
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2025-4010",
+          "title": "Go Advisory"
+        },
+        {
+          "url": "https://go.dev/cl/709857",
+          "title": "Go Code Review"
+        },
+        {
+          "url": "https://go.dev/issue/75678",
+          "title": "Go Issue"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI",
+          "title": "Google Groups Forum"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H",
+          "cvssV3BaseScore": 8.2,
+          "modificationTime": "2025-10-21T11:00:33.917620Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+          "cvssV3BaseScore": 5.3,
+          "modificationTime": "2025-11-11T13:35:05.919306Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.9,
+          "cvssVersion": "4.0",
+          "modificationTime": "2026-06-27T02:00:42.107155Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 5.3,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-06-27T02:00:42.107155Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H",
+          "assigner": "SUSE",
+          "severity": "high",
+          "baseScore": 8.2,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-10-21T11:00:33.917620Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 5.3,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-11-11T13:35:05.919306Z"
+        }
+      ],
+      "description": "## Overview\n[std/net/url](https://pkg.go.dev/net/url) is a Go standard library package std/net/url\n\nAffected versions of this package are vulnerable to Exposure of Sensitive System Information to an Unauthorized Control Sphere. <br><br>**Go Vulnerability Report:**<br>The Parse function permits values other than IPv6 addresses to be included in square brackets within the host component of a URL. RFC 3986 permits IPv6 addresses to be included within the host component, enclosed within square brackets. For example: \"http://[::1]/\". IPv4 addresses and hostnames must not appear within square brackets. Parse did not enforce this requirement.\n## Remediation\nUpgrade `std/net/url` to version 1.24.8, 1.25.2 or higher.\n## References\n- [Go Advisory](https://pkg.go.dev/vuln/GO-2025-4010)\n- [Go Code Review](https://go.dev/cl/709857)\n- [Go Issue](https://go.dev/issue/75678)\n- [Google Groups Forum](https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI)\n",
+      "epssDetails": {
+        "percentile": "0.35377",
+        "probability": "0.00443",
+        "modelVersion": "v2026.06.15"
+      },
+      "identifiers": {
+        "GO": [
+          "GO-2025-4010"
+        ],
+        "CVE": [
+          "CVE-2025-47912"
+        ],
+        "CWE": [
+          "CWE-497"
+        ]
+      },
+      "packageName": "std/net/url",
+      "proprietary": false,
+      "creationTime": "2025-12-22T16:54:28.199662Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2025-10-29T21:49:58Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "golang",
+      "publicationTime": "2026-01-06T12:47:27.505833Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-06-27T02:00:42.107155Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "snykcheck@0.0.0",
+        "golang.org/x/oauth2@0.26.0",
+        "std/net/url@1.22.3"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "std/net/url",
+      "version": "1.22.3"
+    },
+    {
+      "id": "SNYK-GOLANG-STDNETURL-15139468",
+      "title": "Allocation of Resources Without Limits or Throttling",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        "jub0bs"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.24.12",
+          ">=1.25.0 <1.25.6"
+        ],
+        "hashesRange": [
+          "<go1.24.12",
+          ">=go1.25.0 <go1.25.6"
+        ],
+        "vulnerableHashes": []
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.24.12",
+        "1.25.6"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "golang",
+      "severity": "high",
+      "cvssScore": 8.7,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "std/net/url",
+      "references": [
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2026-4341",
+          "title": "Go Advisory"
+        },
+        {
+          "url": "https://go.dev/cl/736712",
+          "title": "Go Commit"
+        },
+        {
+          "url": "https://go.dev/issue/77101",
+          "title": "Go Issue"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc",
+          "title": "Google Groups Forum"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2026-02-03T05:51:53.022820Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 6.5,
+          "modificationTime": "2026-01-23T13:09:02.735800Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 8.7,
+          "cvssVersion": "4.0",
+          "modificationTime": "2026-07-21T13:25:39.704450Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-07-21T13:25:39.704450Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "Red Hat",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-02-03T05:51:53.022820Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "assigner": "SUSE",
+          "severity": "medium",
+          "baseScore": 6.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-01-23T13:09:02.735800Z"
+        }
+      ],
+      "description": "## Overview\n[std/net/url](https://pkg.go.dev/net/url) is a Go standard library package std/net/url\n\nAffected versions of this package are vulnerable to Allocation of Resources Without Limits or Throttling. <br><br>**Go Vulnerability Report:**<br>\n\nThe net/url package does not set a limit on the number of query parameters in a query. While the maximum size of query parameters in URLs is generally limited by the maximum request header size, the net/http.Request.ParseForm method can parse large URL-encoded forms. Parsing a large form containing many unique query parameters can cause excessive memory consumption.\n## Remediation\nUpgrade `std/net/url` to version 1.24.12, 1.25.6 or higher.\n## References\n- [Go Advisory](https://pkg.go.dev/vuln/GO-2026-4341)\n- [Go Commit](https://go.dev/cl/736712)\n- [Go Issue](https://go.dev/issue/77101)\n- [Google Groups Forum](https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc)\n",
+      "epssDetails": {
+        "percentile": "0.77904",
+        "probability": "0.01945",
+        "modelVersion": "v2026.06.15"
+      },
+      "identifiers": {
+        "GO": [
+          "GO-2026-4341"
+        ],
+        "CVE": [
+          "CVE-2025-61726"
+        ],
+        "CWE": [
+          "CWE-770"
+        ]
+      },
+      "packageName": "std/net/url",
+      "proprietary": false,
+      "creationTime": "2026-01-29T12:37:21.296942Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2026-01-28T19:08:18Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "golang",
+      "publicationTime": "2026-01-29T12:37:21.488322Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-07-21T13:25:39.704450Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "high",
+      "from": [
+        "snykcheck@0.0.0",
+        "golang.org/x/oauth2@0.26.0",
+        "std/net/url@1.22.3"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "std/net/url",
+      "version": "1.22.3"
+    },
+    {
+      "id": "SNYK-GOLANG-STDNETURL-15440727",
+      "title": "Server-side Request Forgery (SSRF)",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "credit": [
+        "Masaki Hara"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.25.8",
+          ">=1.26.0-0 <1.26.1"
+        ],
+        "hashesRange": [
+          "<go1.25.8",
+          ">=go1.26.0-0 <go1.26.1"
+        ],
+        "vulnerableHashes": []
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.25.8",
+        "1.26.1"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "golang",
+      "severity": "medium",
+      "cvssScore": 6.9,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "std/net/url",
+      "references": [
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2026-4601",
+          "title": "Go Advisory"
+        },
+        {
+          "url": "https://go.dev/cl/752180",
+          "title": "Go Commit"
+        },
+        {
+          "url": "https://go.dev/issue/77578",
+          "title": "Go Issue"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk%23CVE-2026-25679",
+          "title": "Google Groups Forum"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2026-03-19T08:48:26.329665Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "low",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+          "cvssV3BaseScore": 3.3,
+          "modificationTime": "2026-03-14T23:24:13.934759Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.9,
+          "cvssVersion": "4.0",
+          "modificationTime": "2026-07-17T14:04:45.562836Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 5.3,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-07-17T14:04:45.562836Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "Red Hat",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-03-19T08:48:26.329665Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+          "assigner": "SUSE",
+          "severity": "low",
+          "baseScore": 3.3,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-03-14T23:24:13.934759Z"
+        }
+      ],
+      "description": "## Overview\n[std/net/url](https://pkg.go.dev/net/url) is a Go standard library package std/net/url\n\nAffected versions of this package are vulnerable to Server-side Request Forgery (SSRF) due to insufficient validation of the `url.Parse` process. An attacker can bypass expected URL parsing restrictions by supplying specially crafted URLs containing invalid host or authority components.\n## Remediation\nUpgrade `std/net/url` to version 1.25.8, 1.26.1 or higher.\n## References\n- [Go Advisory](https://pkg.go.dev/vuln/GO-2026-4601)\n- [Go Commit](https://go.dev/cl/752180)\n- [Go Issue](https://go.dev/issue/77578)\n- [Google Groups Forum](https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk#CVE-2026-25679)\n",
+      "epssDetails": {
+        "percentile": "0.50067",
+        "probability": "0.00728",
+        "modelVersion": "v2026.06.15"
+      },
+      "identifiers": {
+        "GO": [
+          "GO-2026-4601"
+        ],
+        "CVE": [
+          "CVE-2026-25679"
+        ],
+        "CWE": [
+          "CWE-918"
+        ]
+      },
+      "packageName": "std/net/url",
+      "proprietary": false,
+      "creationTime": "2026-03-09T12:33:50.704138Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2026-03-06T21:03:42Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "golang",
+      "publicationTime": "2026-03-09T12:33:50.902236Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-07-17T14:04:45.562836Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "snykcheck@0.0.0",
+        "golang.org/x/oauth2@0.26.0",
+        "std/net/url@1.22.3"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "std/net/url",
+      "version": "1.22.3"
+    },
+    {
+      "id": "SNYK-GOLANG-STDNETURL-14546349",
+      "title": "Exposure of Sensitive System Information to an Unauthorized Control Sphere",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+      "credit": [
+        "Enze Wang",
+        "Jingcheng Yang",
+        "Zehui Miao"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.24.8",
+          ">=1.25.0 <1.25.2"
+        ],
+        "hashesRange": [
+          "<go1.24.8",
+          ">=go1.25.0 <go1.25.2"
+        ],
+        "vulnerableHashes": []
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.24.8",
+        "1.25.2"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "golang",
+      "severity": "medium",
+      "cvssScore": 6.9,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "std/net/url",
+      "references": [
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2025-4010",
+          "title": "Go Advisory"
+        },
+        {
+          "url": "https://go.dev/cl/709857",
+          "title": "Go Code Review"
+        },
+        {
+          "url": "https://go.dev/issue/75678",
+          "title": "Go Issue"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI",
+          "title": "Google Groups Forum"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "SUSE",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H",
+          "cvssV3BaseScore": 8.2,
+          "modificationTime": "2025-10-21T11:00:33.917620Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+          "cvssV3BaseScore": 5.3,
+          "modificationTime": "2025-11-11T13:35:05.919306Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.9,
+          "cvssVersion": "4.0",
+          "modificationTime": "2026-06-27T02:00:42.107155Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 5.3,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-06-27T02:00:42.107155Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H",
+          "assigner": "SUSE",
+          "severity": "high",
+          "baseScore": 8.2,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-10-21T11:00:33.917620Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "baseScore": 5.3,
+          "cvssVersion": "3.1",
+          "modificationTime": "2025-11-11T13:35:05.919306Z"
+        }
+      ],
+      "description": "## Overview\n[std/net/url](https://pkg.go.dev/net/url) is a Go standard library package std/net/url\n\nAffected versions of this package are vulnerable to Exposure of Sensitive System Information to an Unauthorized Control Sphere. <br><br>**Go Vulnerability Report:**<br>The Parse function permits values other than IPv6 addresses to be included in square brackets within the host component of a URL. RFC 3986 permits IPv6 addresses to be included within the host component, enclosed within square brackets. For example: \"http://[::1]/\". IPv4 addresses and hostnames must not appear within square brackets. Parse did not enforce this requirement.\n## Remediation\nUpgrade `std/net/url` to version 1.24.8, 1.25.2 or higher.\n## References\n- [Go Advisory](https://pkg.go.dev/vuln/GO-2025-4010)\n- [Go Code Review](https://go.dev/cl/709857)\n- [Go Issue](https://go.dev/issue/75678)\n- [Google Groups Forum](https://groups.google.com/g/golang-announce/c/4Emdl2iQ_bI)\n",
+      "epssDetails": {
+        "percentile": "0.35377",
+        "probability": "0.00443",
+        "modelVersion": "v2026.06.15"
+      },
+      "identifiers": {
+        "GO": [
+          "GO-2025-4010"
+        ],
+        "CVE": [
+          "CVE-2025-47912"
+        ],
+        "CWE": [
+          "CWE-497"
+        ]
+      },
+      "packageName": "std/net/url",
+      "proprietary": false,
+      "creationTime": "2025-12-22T16:54:28.199662Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2025-10-29T21:49:58Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "golang",
+      "publicationTime": "2026-01-06T12:47:27.505833Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-06-27T02:00:42.107155Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "snykcheck@0.0.0",
+        "golang.org/x/oauth2@0.26.0",
+        "golang.org/x/oauth2/internal@0.26.0",
+        "std/net/url@1.22.3"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "std/net/url",
+      "version": "1.22.3"
+    },
+    {
+      "id": "SNYK-GOLANG-STDNETURL-15139468",
+      "title": "Allocation of Resources Without Limits or Throttling",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        "jub0bs"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.24.12",
+          ">=1.25.0 <1.25.6"
+        ],
+        "hashesRange": [
+          "<go1.24.12",
+          ">=go1.25.0 <go1.25.6"
+        ],
+        "vulnerableHashes": []
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.24.12",
+        "1.25.6"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "golang",
+      "severity": "high",
+      "cvssScore": 8.7,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "std/net/url",
+      "references": [
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2026-4341",
+          "title": "Go Advisory"
+        },
+        {
+          "url": "https://go.dev/cl/736712",
+          "title": "Go Commit"
+        },
+        {
+          "url": "https://go.dev/issue/77101",
+          "title": "Go Issue"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc",
+          "title": "Google Groups Forum"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2026-02-03T05:51:53.022820Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 6.5,
+          "modificationTime": "2026-01-23T13:09:02.735800Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 8.7,
+          "cvssVersion": "4.0",
+          "modificationTime": "2026-07-21T13:25:39.704450Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "Snyk",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-07-21T13:25:39.704450Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "Red Hat",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-02-03T05:51:53.022820Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+          "assigner": "SUSE",
+          "severity": "medium",
+          "baseScore": 6.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-01-23T13:09:02.735800Z"
+        }
+      ],
+      "description": "## Overview\n[std/net/url](https://pkg.go.dev/net/url) is a Go standard library package std/net/url\n\nAffected versions of this package are vulnerable to Allocation of Resources Without Limits or Throttling. <br><br>**Go Vulnerability Report:**<br>\n\nThe net/url package does not set a limit on the number of query parameters in a query. While the maximum size of query parameters in URLs is generally limited by the maximum request header size, the net/http.Request.ParseForm method can parse large URL-encoded forms. Parsing a large form containing many unique query parameters can cause excessive memory consumption.\n## Remediation\nUpgrade `std/net/url` to version 1.24.12, 1.25.6 or higher.\n## References\n- [Go Advisory](https://pkg.go.dev/vuln/GO-2026-4341)\n- [Go Commit](https://go.dev/cl/736712)\n- [Go Issue](https://go.dev/issue/77101)\n- [Google Groups Forum](https://groups.google.com/g/golang-announce/c/Vd2tYVM8eUc)\n",
+      "epssDetails": {
+        "percentile": "0.77904",
+        "probability": "0.01945",
+        "modelVersion": "v2026.06.15"
+      },
+      "identifiers": {
+        "GO": [
+          "GO-2026-4341"
+        ],
+        "CVE": [
+          "CVE-2025-61726"
+        ],
+        "CWE": [
+          "CWE-770"
+        ]
+      },
+      "packageName": "std/net/url",
+      "proprietary": false,
+      "creationTime": "2026-01-29T12:37:21.296942Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2026-01-28T19:08:18Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "golang",
+      "publicationTime": "2026-01-29T12:37:21.488322Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-07-21T13:25:39.704450Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "high",
+      "from": [
+        "snykcheck@0.0.0",
+        "golang.org/x/oauth2@0.26.0",
+        "golang.org/x/oauth2/internal@0.26.0",
+        "std/net/url@1.22.3"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "std/net/url",
+      "version": "1.22.3"
+    },
+    {
+      "id": "SNYK-GOLANG-STDNETURL-15440727",
+      "title": "Server-side Request Forgery (SSRF)",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "credit": [
+        "Masaki Hara"
+      ],
+      "semver": {
+        "vulnerable": [
+          "<1.25.8",
+          ">=1.26.0-0 <1.26.1"
+        ],
+        "hashesRange": [
+          "<go1.25.8",
+          ">=go1.26.0-0 <go1.26.1"
+        ],
+        "vulnerableHashes": []
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.25.8",
+        "1.26.1"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "golang",
+      "severity": "medium",
+      "cvssScore": 6.9,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "std/net/url",
+      "references": [
+        {
+          "url": "https://pkg.go.dev/vuln/GO-2026-4601",
+          "title": "Go Advisory"
+        },
+        {
+          "url": "https://go.dev/cl/752180",
+          "title": "Go Commit"
+        },
+        {
+          "url": "https://go.dev/issue/77578",
+          "title": "Go Issue"
+        },
+        {
+          "url": "https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk%23CVE-2026-25679",
+          "title": "Google Groups Forum"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "Red Hat",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2026-03-19T08:48:26.329665Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "low",
+          "cvssV3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+          "cvssV3BaseScore": 3.3,
+          "modificationTime": "2026-03-14T23:24:13.934759Z"
+        }
+      ],
+      "cvssSources": [
+        {
+          "type": "primary",
+          "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 6.9,
+          "cvssVersion": "4.0",
+          "modificationTime": "2026-07-17T14:04:45.562836Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+          "assigner": "Snyk",
+          "severity": "medium",
+          "baseScore": 5.3,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-07-17T14:04:45.562836Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "assigner": "Red Hat",
+          "severity": "high",
+          "baseScore": 7.5,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-03-19T08:48:26.329665Z"
+        },
+        {
+          "type": "secondary",
+          "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+          "assigner": "SUSE",
+          "severity": "low",
+          "baseScore": 3.3,
+          "cvssVersion": "3.1",
+          "modificationTime": "2026-03-14T23:24:13.934759Z"
+        }
+      ],
+      "description": "## Overview\n[std/net/url](https://pkg.go.dev/net/url) is a Go standard library package std/net/url\n\nAffected versions of this package are vulnerable to Server-side Request Forgery (SSRF) due to insufficient validation of the `url.Parse` process. An attacker can bypass expected URL parsing restrictions by supplying specially crafted URLs containing invalid host or authority components.\n## Remediation\nUpgrade `std/net/url` to version 1.25.8, 1.26.1 or higher.\n## References\n- [Go Advisory](https://pkg.go.dev/vuln/GO-2026-4601)\n- [Go Commit](https://go.dev/cl/752180)\n- [Go Issue](https://go.dev/issue/77578)\n- [Google Groups Forum](https://groups.google.com/g/golang-announce/c/EdhZqrQ98hk#CVE-2026-25679)\n",
+      "epssDetails": {
+        "percentile": "0.50067",
+        "probability": "0.00728",
+        "modelVersion": "v2026.06.15"
+      },
+      "identifiers": {
+        "GO": [
+          "GO-2026-4601"
+        ],
+        "CVE": [
+          "CVE-2026-25679"
+        ],
+        "CWE": [
+          "CWE-918"
+        ]
+      },
+      "packageName": "std/net/url",
+      "proprietary": false,
+      "creationTime": "2026-03-09T12:33:50.704138Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2026-03-06T21:03:42Z",
+      "exploitDetails": {
+        "sources": [],
+        "maturityLevels": [
+          {
+            "type": "secondary",
+            "level": "Not Defined",
+            "format": "CVSSv3"
+          },
+          {
+            "type": "primary",
+            "level": "Not Defined",
+            "format": "CVSSv4"
+          }
+        ]
+      },
+      "packageManager": "golang",
+      "publicationTime": "2026-03-09T12:33:50.902236Z",
+      "severityBasedOn": "CVSS",
+      "modificationTime": "2026-07-17T14:04:45.562836Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "snykcheck@0.0.0",
+        "golang.org/x/oauth2@0.26.0",
+        "golang.org/x/oauth2/internal@0.26.0",
+        "std/net/url@1.22.3"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "std/net/url",
+      "version": "1.22.3"
+    }
+  ],
+  "ok": false,
+  "dependencyCount": 25,
+  "org": "fatinsourav",
+  "policy": "# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.\nversion: v1.25.1\nignore: {}\npatch: {}\n",
+  "isPrivate": true,
+  "licensesPolicy": {
+    "severities": {},
+    "orgLicenseRules": {
+      "AGPL-1.0": {
+        "licenseType": "AGPL-1.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "AGPL-3.0": {
+        "licenseType": "AGPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "Artistic-1.0": {
+        "licenseType": "Artistic-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "Artistic-2.0": {
+        "licenseType": "Artistic-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CDDL-1.0": {
+        "licenseType": "CDDL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CPOL-1.02": {
+        "licenseType": "CPOL-1.02",
+        "severity": "high",
+        "instructions": ""
+      },
+      "EPL-1.0": {
+        "licenseType": "EPL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "GPL-2.0": {
+        "licenseType": "GPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "GPL-3.0": {
+        "licenseType": "GPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "LGPL-2.0": {
+        "licenseType": "LGPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-2.1": {
+        "licenseType": "LGPL-2.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-3.0": {
+        "licenseType": "LGPL-3.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-1.1": {
+        "licenseType": "MPL-1.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-2.0": {
+        "licenseType": "MPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MS-RL": {
+        "licenseType": "MS-RL",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "SimPL-2.0": {
+        "licenseType": "SimPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      }
+    }
+  },
+  "packageManager": "gomodules",
+  "ignoreSettings": {
+    "adminOnly": false,
+    "reasonRequired": false,
+    "disregardFilesystemIgnores": false
+  },
+  "summary": "26 vulnerable dependency paths",
+  "filesystemPolicy": false,
+  "filtered": {
+    "ignore": [],
+    "patch": []
+  },
+  "uniqueCount": 18,
+  "targetFile": "go.mod",
+  "projectName": "snykcheck",
+  "displayTargetFile": "go.mod",
+  "hasUnknownVersions": false,
+  "path": "/tmp/snykcheck-2938786914"
+}

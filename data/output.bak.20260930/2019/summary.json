@@ -1,0 +1,14 @@
+{
+  "by_pattern": {
+    "concentration_risk": 21,
+    "naming_similarity": 415,
+    "source_ambiguity": 430
+  },
+  "by_severity": {
+    "high": 22,
+    "medium": 844
+  },
+  "generated_at": "2026-05-02T23:45:29+02:00",
+  "total_modules": 50000,
+  "total_risks": 866
+}

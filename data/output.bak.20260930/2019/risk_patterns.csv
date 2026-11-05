@@ -1,0 +1,867 @@
+module_path,pattern_type,severity,details,detected_at
+rsc.io/quote,naming_similarity,medium,owner_a=quote owner_b=quite signal=BitSquatting,2026-05-02T21:28:16Z
+contrib.go.opencensus.io/integrations/ocsql,naming_similarity,medium,owner_a=integrations owner_b=integration signal=Omission,2026-05-02T21:28:16Z
+github.com/go-ldap/ldap,naming_similarity,medium,owner_a=go-ldap owner_b=go-leap signal=BitSquatting,2026-05-02T21:28:16Z
+sigs.k8s.io/yaml,naming_similarity,medium,owner_a=yaml owner_b=yml signal=Omission,2026-05-02T21:28:16Z
+github.com/mitchellh/mapstructure,naming_similarity,medium,owner_a=mitchellh owner_b=mitchell signal=Omission,2026-05-02T21:28:16Z
+k8s.io/klog,naming_similarity,medium,owner_a=klog owner_b=log signal=Omission,2026-05-02T21:28:16Z
+k8s.io/klog,naming_similarity,medium,owner_a=klog owner_b=mlog signal=BitSquatting,2026-05-02T21:28:16Z
+google.golang.org/grpc,naming_similarity,medium,owner_a=grpc owner_b=drpc signal=BitSquatting,2026-05-02T21:28:16Z
+gopkg.in/yaml.v2,naming_similarity,medium,owner_a=yaml.v2 owner_b=yaml.v3 signal=BitSquatting,2026-05-02T21:28:16Z
+gopkg.in/yaml.v2,naming_similarity,medium,owner_a=yaml.v2 owner_b=yaml.v1 signal=BitSquatting,2026-05-02T21:28:16Z
+github.com/client9/misspell,naming_similarity,medium,owner_a=client9 owner_b=client signal=Omission,2026-05-02T21:28:16Z
+gopkg.in/ldap.v2,naming_similarity,medium,owner_a=ldap.v2 owner_b=ldap.v3 signal=BitSquatting,2026-05-02T21:28:16Z
+gopkg.in/ldap.v2,naming_similarity,medium,owner_a=ldap.v2 owner_b=ldap.v1 signal=BitSquatting,2026-05-02T21:28:16Z
+github.com/gopherjs/gopherjs,naming_similarity,medium,owner_a=gopherjs owner_b=gophers signal=Omission,2026-05-02T21:28:16Z
+github.com/oklog/run,naming_similarity,medium,owner_a=oklog owner_b=klog signal=Omission,2026-05-02T21:28:16Z
+github.com/flynn/go-shlex,naming_similarity,medium,owner_a=flynn owner_b=blynn signal=BitSquatting,2026-05-02T21:28:16Z
+github.com/flynn/go-shlex,naming_similarity,medium,owner_a=flynn owner_b=flyin signal=BitSquatting,2026-05-02T21:28:16Z
+github.com/tv42/httpunix,naming_similarity,medium,owner_a=tv42 owner_b=tv4 signal=Omission,2026-05-02T21:28:16Z
+dmitri.shuralyov.com/state,naming_similarity,medium,owner_a=state owner_b=spate signal=BitSquatting,2026-05-02T21:28:16Z
+rsc.io/sampler,naming_similarity,medium,owner_a=sampler owner_b=samples signal=BitSquatting,2026-05-02T21:28:16Z
+gopkg.in/fsnotify.v1,naming_similarity,medium,owner_a=fsnotify.v1 owner_b=fsnotify.v0 signal=BitSquatting,2026-05-02T21:28:16Z
+gopkg.in/tomb.v1,naming_similarity,medium,owner_a=tomb.v1 owner_b=tomb.v2 signal=BitSquatting,2026-05-02T21:28:16Z
+gopkg.in/resty.v1,naming_similarity,medium,owner_a=resty.v1 owner_b=resty.v0 signal=BitSquatting,2026-05-02T21:28:16Z
+github.com/go-kit/kit,naming_similarity,medium,owner_a=go-kit owner_b=gokit signal=Omission,2026-05-02T21:28:16Z
+gopkg.in/yaml.v1,naming_similarity,medium,owner_a=yaml.v1 owner_b=yaml.v3 signal=BitSquatting,2026-05-02T21:28:16Z
+go.etcd.io/bbolt,naming_similarity,medium,owner_a=bbolt owner_b=bolt signal=Omission,2026-05-02T21:28:16Z
+github.com/eapache/go-xerial-snappy,naming_similarity,medium,owner_a=eapache owner_b=apache signal=Omission,2026-05-02T21:28:16Z
+github.com/go-stack/stack,naming_similarity,medium,owner_a=go-stack owner_b=gostack signal=Omission,2026-05-02T21:28:16Z
+github.com/afex/hystrix-go,naming_similarity,medium,owner_a=afex owner_b=abex signal=BitSquatting,2026-05-02T21:28:16Z
+github.com/gucumber/gucumber,naming_similarity,medium,owner_a=gucumber owner_b=cucumber signal=BitSquatting,2026-05-02T21:28:16Z
+github.com/ajstarks/svgo,naming_similarity,medium,owner_a=ajstarks owner_b=jstarks signal=Omission,2026-05-02T21:28:16Z
+github.com/moby/buildkit,naming_similarity,medium,owner_a=moby owner_b=mobz signal=BitSquatting,2026-05-02T21:28:16Z
+github.com/go-check/check,naming_similarity,medium,owner_a=go-check owner_b=gocheck signal=Omission,2026-05-02T21:28:16Z
+gopkg.in/ini.v1,naming_similarity,medium,owner_a=ini.v1 owner_b=ini.v0 signal=BitSquatting,2026-05-02T21:28:16Z
+gopkg.in/errgo.v2,naming_similarity,medium,owner_a=errgo.v2 owner_b=errgo.v1 signal=BitSquatting,2026-05-02T21:28:16Z
+gopkg.in/gomail.v2,naming_similarity,medium,owner_a=gomail.v2 owner_b=gomail.v1 signal=BitSquatting,2026-05-02T21:28:16Z
+k8s.io/utils,naming_similarity,medium,owner_a=utils owner_b=util signal=Omission,2026-05-02T21:28:16Z
+github.com/btcsuite/btcd,naming_similarity,medium,owner_a=btcsuite owner_b=btgsuite signal=BitSquatting,2026-05-02T21:28:16Z
+github.com/jrick/logrotate,naming_similarity,medium,owner_a=jrick owner_b=rick signal=Omission,2026-05-02T21:28:16Z
+github.com/apple/foundationdb,naming_similarity,medium,owner_a=apple owner_b=applee signal=Repetition,2026-05-02T21:28:16Z
+github.com/appc/spec,naming_similarity,medium,owner_a=appc owner_b=app signal=Omission,2026-05-02T21:28:16Z
+github.com/ssdb/gossdb,naming_similarity,medium,owner_a=ssdb owner_b=ssb signal=Omission,2026-05-02T21:28:16Z
+gopkg.in/ldap.v3,naming_similarity,medium,owner_a=ldap.v3 owner_b=ldap.v1 signal=BitSquatting,2026-05-02T21:28:16Z
+github.com/go-macaron/binding,naming_similarity,medium,owner_a=go-macaron owner_b=go-macaroon signal=Repetition,2026-05-02T21:28:16Z
+gopkg.in/macaron.v1,naming_similarity,medium,owner_a=macaron.v1 owner_b=macaroon.v1 signal=Repetition,2026-05-02T21:28:16Z
+gopkg.in/testfixtures.v2,naming_similarity,medium,owner_a=testfixtures.v2 owner_b=testfixtures.v1 signal=BitSquatting,2026-05-02T21:28:17Z
+go.pedge.io/dlog,naming_similarity,medium,owner_a=dlog owner_b=log signal=Omission,2026-05-02T21:28:17Z
+go.pedge.io/dlog,naming_similarity,medium,owner_a=dlog owner_b=flog signal=BitSquatting,2026-05-02T21:28:17Z
+github.com/moul/anonuuid,naming_similarity,medium,owner_a=moul owner_b=mouk signal=BitSquatting,2026-05-02T21:28:17Z
+crawshaw.io/sqlite,naming_similarity,medium,owner_a=sqlite owner_b=rqlite signal=BitSquatting,2026-05-02T21:28:17Z
+github.com/deis/deis,naming_similarity,medium,owner_a=deis owner_b=deiu signal=BitSquatting,2026-05-02T21:28:17Z
+gopkg.in/data-dog/go-sqlmock.v1,naming_similarity,medium,owner_a=data-dog owner_b=datadog signal=Omission,2026-05-02T21:28:17Z
+github.com/go-yaml/yaml,naming_similarity,medium,owner_a=go-yaml owner_b=goyaml signal=Omission,2026-05-02T21:28:17Z
+github.com/gocraft/web,naming_similarity,medium,owner_a=gocraft owner_b=goraft signal=Omission,2026-05-02T21:28:17Z
+github.com/goji/context,naming_similarity,medium,owner_a=goji owner_b=goki signal=BitSquatting,2026-05-02T21:28:17Z
+github.com/toolkits/net,naming_similarity,medium,owner_a=toolkits owner_b=toolkit signal=Omission,2026-05-02T21:28:17Z
+gopkg.in/amz.v1,naming_similarity,medium,owner_a=amz.v1 owner_b=amz.v3 signal=BitSquatting,2026-05-02T21:28:17Z
+gopkg.in/amz.v1,naming_similarity,medium,owner_a=amz.v1 owner_b=amz.v2 signal=BitSquatting,2026-05-02T21:28:17Z
+gopkg.in/amz.v3,naming_similarity,medium,owner_a=amz.v3 owner_b=amz.v2 signal=BitSquatting,2026-05-02T21:28:17Z
+gopkg.in/gorp.v1,naming_similarity,medium,owner_a=gorp.v1 owner_b=gorp.v2 signal=BitSquatting,2026-05-02T21:28:17Z
+gopkg.in/godo.v2,naming_similarity,medium,owner_a=godo.v2 owner_b=godo.v1 signal=BitSquatting,2026-05-02T21:28:17Z
+gopkg.in/macaroon.v1,naming_similarity,medium,owner_a=macaroon.v1 owner_b=macaroon.v2 signal=BitSquatting,2026-05-02T21:28:17Z
+gopkg.in/macaroon-bakery.v1,naming_similarity,medium,owner_a=macaroon-bakery.v1 owner_b=macaroon-bakery.v0 signal=BitSquatting,2026-05-02T21:28:17Z
+gopkg.in/macaroon-bakery.v1,naming_similarity,medium,owner_a=macaroon-bakery.v1 owner_b=macaroon-bakery.v2 signal=BitSquatting,2026-05-02T21:28:17Z
+gopkg.in/redis.v4,naming_similarity,medium,owner_a=redis.v4 owner_b=redis.v5 signal=BitSquatting,2026-05-02T21:28:17Z
+gopkg.in/redis.v4,naming_similarity,medium,owner_a=redis.v4 owner_b=redis.v6 signal=BitSquatting,2026-05-02T21:28:17Z
+gopkg.in/redis.v4,naming_similarity,medium,owner_a=redis.v4 owner_b=redis.v1 signal=BitSquatting,2026-05-02T21:28:17Z
+gopkg.in/redis.v4,naming_similarity,medium,owner_a=redis.v4 owner_b=redis.v2 signal=BitSquatting,2026-05-02T21:28:17Z
+gopkg.in/redis.v4,naming_similarity,medium,owner_a=redis.v4 owner_b=redis.v3 signal=BitSquatting,2026-05-02T21:28:17Z
+gopkg.in/redis.v3,naming_similarity,medium,owner_a=redis.v3 owner_b=redis.v2 signal=BitSquatting,2026-05-02T21:28:17Z
+gopkg.in/redis.v3,naming_similarity,medium,owner_a=redis.v3 owner_b=redis.v1 signal=BitSquatting,2026-05-02T21:28:17Z
+gopkg.in/redis.v3,naming_similarity,medium,owner_a=redis.v3 owner_b=redis.v6 signal=BitSquatting,2026-05-02T21:28:17Z
+gopkg.in/redis.v3,naming_similarity,medium,owner_a=redis.v3 owner_b=redis.v5 signal=BitSquatting,2026-05-02T21:28:17Z
+gopkg.in/redis.v2,naming_similarity,medium,owner_a=redis.v2 owner_b=redis.v1 signal=BitSquatting,2026-05-02T21:28:17Z
+gopkg.in/redis.v2,naming_similarity,medium,owner_a=redis.v2 owner_b=redis.v6 signal=BitSquatting,2026-05-02T21:28:17Z
+gopkg.in/redis.v2,naming_similarity,medium,owner_a=redis.v2 owner_b=redis.v5 signal=BitSquatting,2026-05-02T21:28:17Z
+gopkg.in/redis.v5,naming_similarity,medium,owner_a=redis.v5 owner_b=redis.v6 signal=BitSquatting,2026-05-02T21:28:17Z
+gopkg.in/redis.v5,naming_similarity,medium,owner_a=redis.v5 owner_b=redis.v1 signal=BitSquatting,2026-05-02T21:28:17Z
+gopkg.in/telegram-bot-api.v4,naming_similarity,medium,owner_a=telegram-bot-api.v4 owner_b=telegram-bot-api.v2 signal=BitSquatting,2026-05-02T21:28:17Z
+gopkg.in/telegram-bot-api.v4,naming_similarity,medium,owner_a=telegram-bot-api.v4 owner_b=telegram-bot-api.v3 signal=BitSquatting,2026-05-02T21:28:17Z
+gopkg.in/validator.v2,naming_similarity,medium,owner_a=validator.v2 owner_b=validator.v1 signal=BitSquatting,2026-05-02T21:28:17Z
+gopkg.in/xmlpath.v2,naming_similarity,medium,owner_a=xmlpath.v2 owner_b=xmlpath.v1 signal=BitSquatting,2026-05-02T21:28:17Z
+github.com/azer/crud,naming_similarity,medium,owner_a=azer owner_b=azr signal=Omission,2026-05-02T21:28:17Z
+github.com/serialx/hashring,naming_similarity,medium,owner_a=serialx owner_b=serial signal=Omission,2026-05-02T21:28:17Z
+gopkg.in/stack.v0,naming_similarity,medium,owner_a=stack.v0 owner_b=stack.v1 signal=BitSquatting,2026-05-02T21:28:17Z
+k8s.io/cri-api,naming_similarity,medium,owner_a=cri-api owner_b=csi-api signal=BitSquatting,2026-05-02T21:28:17Z
+github.com/gogs/git-module,naming_similarity,medium,owner_a=gogs owner_b=gobs signal=BitSquatting,2026-05-02T21:28:17Z
+github.com/yalp/jsonpath,naming_similarity,medium,owner_a=yalp owner_b=yelp signal=BitSquatting,2026-05-02T21:28:17Z
+github.com/imkira/go-interpol,naming_similarity,medium,owner_a=imkira owner_b=iikira signal=BitSquatting,2026-05-02T21:28:17Z
+github.com/ctdk/goiardi,naming_similarity,medium,owner_a=ctdk owner_b=cdk signal=Omission,2026-05-02T21:28:17Z
+gopkg.in/macaroon-bakery.v2,naming_similarity,medium,owner_a=macaroon-bakery.v2 owner_b=macaroon-bakery.v0 signal=BitSquatting,2026-05-02T21:28:17Z
+github.com/ssor/bom,naming_similarity,medium,owner_a=ssor owner_b=ssoor signal=Repetition,2026-05-02T21:28:17Z
+github.com/hako/durafmt,naming_similarity,medium,owner_a=hako owner_b=hamo signal=BitSquatting,2026-05-02T21:28:17Z
+github.com/xtgo/uuid,naming_similarity,medium,owner_a=xtgo owner_b=xgo signal=Omission,2026-05-02T21:28:17Z
+github.com/calmh/xdr,naming_similarity,medium,owner_a=calmh owner_b=calm signal=Omission,2026-05-02T21:28:17Z
+gopkg.in/stomp.v1,naming_similarity,medium,owner_a=stomp.v1 owner_b=stomp.v2 signal=BitSquatting,2026-05-02T21:28:17Z
+github.com/koron/go-ssdp,naming_similarity,medium,owner_a=koron owner_b=korok signal=BitSquatting,2026-05-02T21:28:17Z
+github.com/lpar/gzipped,naming_similarity,high,owner_a=lpar owner_b=plar signal=Transposition,2026-05-02T21:28:17Z
+github.com/gima/govalid,naming_similarity,medium,owner_a=gima owner_b=goma signal=BitSquatting,2026-05-02T21:28:17Z
+k8s.io/helm,naming_similarity,medium,owner_a=helm owner_b=heim signal=BitSquatting,2026-05-02T21:28:17Z
+github.com/didip/tollbooth,naming_similarity,medium,owner_a=didip owner_b=didi signal=Omission,2026-05-02T21:28:17Z
+github.com/cozy/go-git,naming_similarity,medium,owner_a=cozy owner_b=coozy signal=Repetition,2026-05-02T21:28:17Z
+github.com/zmap/zcrypto,naming_similarity,medium,owner_a=zmap owner_b=zap signal=Omission,2026-05-02T21:28:17Z
+github.com/r3labs/sse,naming_similarity,medium,owner_a=r3labs owner_b=rlabs signal=Omission,2026-05-02T21:28:17Z
+4d63.com/licenses,naming_similarity,medium,owner_a=licenses owner_b=license signal=Omission,2026-05-02T21:28:17Z
+a4.io/ssse,naming_similarity,medium,owner_a=ssse owner_b=suse signal=BitSquatting,2026-05-02T21:28:17Z
+github.com/go-logr/logr,naming_similarity,medium,owner_a=go-logr owner_b=go-log signal=Omission,2026-05-02T21:28:17Z
+arp242.net/sconfig,naming_similarity,medium,owner_a=sconfig owner_b=config signal=Omission,2026-05-02T21:28:17Z
+astuart.co/yenc,naming_similarity,medium,owner_a=yenc owner_b=yene signal=BitSquatting,2026-05-02T21:28:17Z
+azul3d.org/examples,naming_similarity,medium,owner_a=examples owner_b=example signal=Omission,2026-05-02T21:28:17Z
+bitbucket.org/ares/autoapp,naming_similarity,medium,owner_a=ares owner_b=res signal=Omission,2026-05-02T21:28:17Z
+bitbucket.org/ares/autoapp,naming_similarity,medium,owner_a=ares owner_b=args signal=BitSquatting,2026-05-02T21:28:17Z
+github.com/fiam/gounidecode,naming_similarity,medium,owner_a=fiam owner_b=iam signal=Omission,2026-05-02T21:28:17Z
+github.com/idavydov/go-lbfgsb,naming_similarity,medium,owner_a=idavydov owner_b=davydov signal=Omission,2026-05-02T21:28:17Z
+bitbucket.org/gopkgs/askconfirm,naming_similarity,medium,owner_a=gopkgs owner_b=gopkg signal=Omission,2026-05-02T21:28:17Z
+bitbucket.org/juztin/dingo,naming_similarity,medium,owner_a=juztin owner_b=juxtin signal=BitSquatting,2026-05-02T21:28:17Z
+github.com/golang-plus/errors,naming_similarity,medium,owner_a=golang-plus owner_b=golangplus signal=Omission,2026-05-02T21:28:17Z
+dmitri.shuralyov.com/text/kebabcase,naming_similarity,medium,owner_a=text owner_b=ext signal=Omission,2026-05-02T21:28:17Z
+github.com/pion/transport,naming_similarity,medium,owner_a=pion owner_b=pin signal=Omission,2026-05-02T21:28:17Z
+github.com/pion/transport,naming_similarity,medium,owner_a=pion owner_b=pioh signal=BitSquatting,2026-05-02T21:28:17Z
+gopkg.in/goracle.v2,naming_similarity,medium,owner_a=goracle.v2 owner_b=goracle.v1 signal=BitSquatting,2026-05-02T21:28:17Z
+github.com/uno-soft/soap-proxy,naming_similarity,medium,owner_a=uno-soft owner_b=unosoft signal=Omission,2026-05-02T21:28:17Z
+github.com/sbinet/npyio,naming_similarity,medium,owner_a=sbinet owner_b=binet signal=Omission,2026-05-02T21:28:17Z
+github.com/loov/plot,naming_similarity,medium,owner_a=loov owner_b=oov signal=Omission,2026-05-02T21:28:18Z
+github.com/kavu/go_reuseport,naming_similarity,medium,owner_a=kavu owner_b=lavu signal=BitSquatting,2026-05-02T21:28:18Z
+github.com/go-pg/pg,naming_similarity,medium,owner_a=go-pg owner_b=go-pa signal=BitSquatting,2026-05-02T21:28:18Z
+dmitri.shuralyov.com/font/woff2,naming_similarity,medium,owner_a=font owner_b=ont signal=Omission,2026-05-02T21:28:18Z
+github.com/yhat/scrape,naming_similarity,medium,owner_a=yhat owner_b=hat signal=Omission,2026-05-02T21:28:18Z
+github.com/dcos/dcos-log,naming_similarity,high,owner_a=dcos owner_b=dcso signal=Transposition,2026-05-02T21:28:18Z
+upper.io/db.v3,naming_similarity,medium,owner_a=db.v3 owner_b=db.v2 signal=BitSquatting,2026-05-02T21:28:18Z
+upper.io/db.v3,naming_similarity,medium,owner_a=db.v3 owner_b=db.v1 signal=BitSquatting,2026-05-02T21:28:18Z
+sigs.k8s.io/kind,naming_similarity,medium,owner_a=kind owner_b=knd signal=Omission,2026-05-02T21:28:18Z
+github.com/bndr/gotabulate,naming_similarity,medium,owner_a=bndr owner_b=bndw signal=BitSquatting,2026-05-02T21:28:18Z
+github.com/srvc/fail,naming_similarity,medium,owner_a=srvc owner_b=svc signal=Omission,2026-05-02T21:28:18Z
+github.com/srvc/fail,naming_similarity,medium,owner_a=srvc owner_b=src signal=Omission,2026-05-02T21:28:18Z
+github.com/golang-id/tour,naming_similarity,medium,owner_a=golang-id owner_b=golangid signal=Omission,2026-05-02T21:28:18Z
+github.com/luxifer/ical,naming_similarity,medium,owner_a=luxifer owner_b=luzifer signal=BitSquatting,2026-05-02T21:28:18Z
+github.com/jwkohnen/airac,naming_similarity,high,owner_a=jwkohnen owner_b=wjkohnen signal=Transposition,2026-05-02T21:28:18Z
+github.com/famz/setlocale,naming_similarity,medium,owner_a=famz owner_b=damz signal=BitSquatting,2026-05-02T21:28:18Z
+gopkg.in/goose.v1,naming_similarity,medium,owner_a=goose.v1 owner_b=goose.v2 signal=BitSquatting,2026-05-02T21:28:18Z
+github.com/1lann/juroku,naming_similarity,medium,owner_a=1lann owner_b=lann signal=Omission,2026-05-02T21:28:18Z
+github.com/tsuna/gohbase,naming_similarity,medium,owner_a=tsuna owner_b=tuna signal=Omission,2026-05-02T21:28:18Z
+go.dedis.ch/onet/v3,naming_similarity,medium,owner_a=onet owner_b=net signal=Omission,2026-05-02T21:28:18Z
+go.dedis.ch/onet/v3,naming_similarity,medium,owner_a=onet owner_b=ont signal=Omission,2026-05-02T21:28:18Z
+github.com/go-cmd/cmd,naming_similarity,medium,owner_a=go-cmd owner_b=gocmd signal=Omission,2026-05-02T21:28:18Z
+gopkg.in/rana/ora.v4,naming_similarity,medium,owner_a=rana owner_b=raja signal=BitSquatting,2026-05-02T21:28:18Z
+github.com/gookit/config,naming_similarity,medium,owner_a=gookit owner_b=gokit signal=Omission,2026-05-02T21:28:18Z
+lukechampine.com/uint128,naming_similarity,medium,owner_a=uint128 owner_b=int128 signal=Omission,2026-05-02T21:28:18Z
+github.com/kortemy/elo-go,naming_similarity,medium,owner_a=kortemy owner_b=kortem signal=Omission,2026-05-02T21:28:18Z
+github.com/tkanos/gonfig,naming_similarity,medium,owner_a=tkanos owner_b=thanos signal=BitSquatting,2026-05-02T21:28:18Z
+github.com/athom/suitecase,naming_similarity,medium,owner_a=athom owner_b=atom signal=Omission,2026-05-02T21:28:18Z
+gopkg.in/oauth2.v3,naming_similarity,medium,owner_a=oauth2.v3 owner_b=oauth2.v2 signal=BitSquatting,2026-05-02T21:28:18Z
+github.com/go-ap/jsonld,naming_similarity,high,owner_a=go-ap owner_b=go-pa signal=Transposition,2026-05-02T21:28:18Z
+github.com/spkg/zipfs,naming_similarity,medium,owner_a=spkg owner_b=pkg signal=Omission,2026-05-02T21:28:18Z
+github.com/spkg/zipfs,naming_similarity,medium,owner_a=spkg owner_b=spg signal=Omission,2026-05-02T21:28:18Z
+gopkg.in/telegram-bot-api.v2,naming_similarity,medium,owner_a=telegram-bot-api.v2 owner_b=telegram-bot-api.v3 signal=BitSquatting,2026-05-02T21:28:18Z
+github.com/goiiot/libmqtt,naming_similarity,medium,owner_a=goiiot owner_b=goiot signal=Omission,2026-05-02T21:28:18Z
+nanomsg.org/go-mangos,naming_similarity,medium,owner_a=go-mangos owner_b=go-mango signal=Omission,2026-05-02T21:28:18Z
+github.com/mjl-/sherpadoc,naming_similarity,medium,owner_a=mjl- owner_b=mjl signal=Omission,2026-05-02T21:28:18Z
+github.com/gomods/athens,naming_similarity,medium,owner_a=gomods owner_b=goods signal=Omission,2026-05-02T21:28:18Z
+github.com/antham/chyle,naming_similarity,medium,owner_a=antham owner_b=anthdm signal=BitSquatting,2026-05-02T21:28:18Z
+github.com/mbndr/figlet4go,naming_similarity,medium,owner_a=mbndr owner_b=bndr signal=Omission,2026-05-02T21:28:18Z
+github.com/johngb/langreg,naming_similarity,medium,owner_a=johngb owner_b=johng signal=Omission,2026-05-02T21:28:18Z
+github.com/4gophers/gengen,naming_similarity,medium,owner_a=4gophers owner_b=gophers signal=Omission,2026-05-02T21:28:18Z
+github.com/candig/genny,naming_similarity,medium,owner_a=candig owner_b=andig signal=Omission,2026-05-02T21:28:18Z
+gitlab.com/qor2/admin,naming_similarity,medium,owner_a=qor2 owner_b=qor signal=Omission,2026-05-02T21:28:18Z
+github.com/ucloud/ucloud-sdk-go,naming_similarity,medium,owner_a=ucloud owner_b=cloud signal=Omission,2026-05-02T21:28:18Z
+github.com/bingoohuang/gou,naming_similarity,medium,owner_a=bingoohuang owner_b=bingohuang signal=Omission,2026-05-02T21:28:18Z
+github.com/sp0x/goostest,naming_similarity,medium,owner_a=sp0x owner_b=spx signal=Omission,2026-05-02T21:28:18Z
+g.9daye.cn/base/gengine,naming_similarity,medium,owner_a=base owner_b=case signal=BitSquatting,2026-05-02T21:28:18Z
+github.com/ohko/dd,naming_similarity,medium,owner_a=ohko owner_b=oko signal=Omission,2026-05-02T21:28:18Z
+github.com/webrtc/apprtc,naming_similarity,medium,owner_a=webrtc owner_b=webrpc signal=BitSquatting,2026-05-02T21:28:18Z
+github.com/lwhile/log,naming_similarity,medium,owner_a=lwhile owner_b=iwhile signal=BitSquatting,2026-05-02T21:28:18Z
+github.com/morya/utils,naming_similarity,medium,owner_a=morya owner_b=korya signal=BitSquatting,2026-05-02T21:28:18Z
+github.com/pdok/go-eureka-client,naming_similarity,medium,owner_a=pdok owner_b=pdk signal=Omission,2026-05-02T21:28:18Z
+github.com/go-with/wxpay,naming_similarity,medium,owner_a=go-with owner_b=go-sith signal=BitSquatting,2026-05-02T21:28:18Z
+github.com/esap/wechat,naming_similarity,medium,owner_a=esap owner_b=sap signal=Omission,2026-05-02T21:28:18Z
+github.com/gopherds/gophernotes,naming_similarity,medium,owner_a=gopherds owner_b=gophers signal=Omission,2026-05-02T21:28:18Z
+github.com/go-clog/clog,naming_similarity,medium,owner_a=go-clog owner_b=go-log signal=Omission,2026-05-02T21:28:18Z
+github.com/tpng/gopkgs,naming_similarity,medium,owner_a=tpng owner_b=tpjg signal=BitSquatting,2026-05-02T21:28:18Z
+v2ray.com/core,naming_similarity,medium,owner_a=core owner_b=cose signal=BitSquatting,2026-05-02T21:28:18Z
+github.com/jander/golog,naming_similarity,high,owner_a=jander owner_b=jandre signal=Transposition,2026-05-02T21:28:18Z
+github.com/webrtcn/go-socketio-client,naming_similarity,medium,owner_a=webrtcn owner_b=webrtc signal=Omission,2026-05-02T21:28:18Z
+github.com/lonng/nanoserver,naming_similarity,medium,owner_a=lonng owner_b=lonnng signal=Repetition,2026-05-02T21:28:18Z
+github.com/vaporz/turbo,naming_similarity,medium,owner_a=vaporz owner_b=vapor signal=Omission,2026-05-02T21:28:18Z
+github.com/yakaa/grpcx,naming_similarity,medium,owner_a=yakaa owner_b=yahaa signal=BitSquatting,2026-05-02T21:28:18Z
+github.com/plar/go-adaptive-radix-tree,naming_similarity,medium,owner_a=plar owner_b=pkar signal=BitSquatting,2026-05-02T21:28:18Z
+github.com/seborama/govcr,naming_similarity,medium,owner_a=seborama owner_b=weborama signal=BitSquatting,2026-05-02T21:28:18Z
+github.com/domgoer/gotask,naming_similarity,medium,owner_a=domgoer owner_b=domoer signal=Omission,2026-05-02T21:28:18Z
+github.com/c2fo/testify,naming_similarity,medium,owner_a=c2fo owner_b=c2go signal=BitSquatting,2026-05-02T21:28:18Z
+github.com/xlstudio/wxbizdatacrypt,naming_similarity,medium,owner_a=xlstudio owner_b=xstudio signal=Omission,2026-05-02T21:28:18Z
+github.com/go-xweb/uuid,naming_similarity,medium,owner_a=go-xweb owner_b=go-web signal=Omission,2026-05-02T21:28:18Z
+github.com/gotit/go-net,naming_similarity,medium,owner_a=gotit owner_b=gott signal=Omission,2026-05-02T21:28:18Z
+github.com/pions/dtls,naming_similarity,medium,owner_a=pions owner_b=pion signal=Omission,2026-05-02T21:28:18Z
+github.com/caser/gophernews,naming_similarity,medium,owner_a=caser owner_b=case signal=Omission,2026-05-02T21:28:18Z
+github.com/dedis/protobuf,naming_similarity,medium,owner_a=dedis owner_b=deis signal=Omission,2026-05-02T21:28:18Z
+github.com/angopher/opentsdb-goclient,naming_similarity,medium,owner_a=angopher owner_b=cngopher signal=BitSquatting,2026-05-02T21:28:18Z
+github.com/pwcong/go-tools,naming_similarity,medium,owner_a=pwcong owner_b=wcong signal=Omission,2026-05-02T21:28:18Z
+go.coder.com/flog,naming_similarity,medium,owner_a=flog owner_b=log signal=Omission,2026-05-02T21:28:18Z
+github.com/gokits/stdlogger,naming_similarity,medium,owner_a=gokits owner_b=gokit signal=Omission,2026-05-02T21:28:18Z
+github.com/adrg/go-wkhtmltopdf,naming_similarity,medium,owner_a=adrg owner_b=adg signal=Omission,2026-05-02T21:28:18Z
+github.com/eleme/lindb,naming_similarity,medium,owner_a=eleme owner_b=elemc signal=BitSquatting,2026-05-02T21:28:18Z
+gopkg.in/pg.v5,naming_similarity,medium,owner_a=pg.v5 owner_b=pg.v4 signal=BitSquatting,2026-05-02T21:28:18Z
+gopkg.in/pg.v5,naming_similarity,medium,owner_a=pg.v5 owner_b=pg.v3 signal=BitSquatting,2026-05-02T21:28:18Z
+gopkg.in/session.v1,naming_similarity,medium,owner_a=session.v1 owner_b=session.v3 signal=BitSquatting,2026-05-02T21:28:18Z
+github.com/cncd/queue,naming_similarity,medium,owner_a=cncd owner_b=cncf signal=BitSquatting,2026-05-02T21:28:18Z
+gitee.com/nggs/util,naming_similarity,medium,owner_a=nggs owner_b=ngs signal=Omission,2026-05-02T21:28:18Z
+github.com/liip/sheriff,naming_similarity,medium,owner_a=liip owner_b=kiip signal=BitSquatting,2026-05-02T21:28:18Z
+github.com/im7mortal/utm,naming_similarity,medium,owner_a=im7mortal owner_b=immortal signal=Omission,2026-05-02T21:28:18Z
+github.com/cgrates/rpcclient,naming_similarity,medium,owner_a=cgrates owner_b=crates signal=Omission,2026-05-02T21:28:19Z
+github.com/gomsa/tools,naming_similarity,medium,owner_a=gomsa owner_b=goma signal=Omission,2026-05-02T21:28:19Z
+gopkg.in/pg.v4,naming_similarity,medium,owner_a=pg.v4 owner_b=pg.v3 signal=BitSquatting,2026-05-02T21:28:19Z
+github.com/xiam/resp,naming_similarity,medium,owner_a=xiam owner_b=iam signal=Omission,2026-05-02T21:28:19Z
+github.com/codyi/grabc,naming_similarity,medium,owner_a=codyi owner_b=cody signal=Omission,2026-05-02T21:28:19Z
+github.com/go-up/go-example/grpc-helloworld,naming_similarity,medium,owner_a=go-up owner_b=go-pp signal=BitSquatting,2026-05-02T21:28:19Z
+gopkg.in/redis.v6,naming_similarity,medium,owner_a=redis.v6 owner_b=redis.v1 signal=BitSquatting,2026-05-02T21:28:19Z
+gopkg.in/cas.v2,naming_similarity,medium,owner_a=cas.v2 owner_b=cas.v1 signal=BitSquatting,2026-05-02T21:28:19Z
+github.com/iotdog/json2table,naming_similarity,medium,owner_a=iotdog owner_b=iotdoc signal=BitSquatting,2026-05-02T21:28:19Z
+github.com/fluxio/multierror,naming_similarity,medium,owner_a=fluxio owner_b=fluuxio signal=Repetition,2026-05-02T21:28:19Z
+github.com/infura/go-ethlibs,naming_similarity,medium,owner_a=infura owner_b=infra signal=Omission,2026-05-02T21:28:19Z
+go.gophers.dev/pkgs/extractors,naming_similarity,medium,owner_a=pkgs owner_b=pkg signal=Omission,2026-05-02T21:28:19Z
+go.mozilla.org/cose,naming_similarity,medium,owner_a=cose owner_b=bose signal=BitSquatting,2026-05-02T21:28:19Z
+github.com/bwplotka/prometheus,naming_similarity,medium,owner_a=bwplotka owner_b=bplotka signal=Omission,2026-05-02T21:28:19Z
+github.com/gedge/graphson,naming_similarity,medium,owner_a=gedge owner_b=edge signal=Omission,2026-05-02T21:28:19Z
+github.com/jbowles/nlpt-detect,naming_similarity,medium,owner_a=jbowles owner_b=jbowes signal=Omission,2026-05-02T21:28:19Z
+github.com/go-contrib/uuid,naming_similarity,medium,owner_a=go-contrib owner_b=gocontrib signal=Omission,2026-05-02T21:28:19Z
+github.com/csigo/hbase,naming_similarity,medium,owner_a=csigo owner_b=cvigo signal=BitSquatting,2026-05-02T21:28:19Z
+github.com/gitu/table-tail,naming_similarity,medium,owner_a=gitu owner_b=git signal=Omission,2026-05-02T21:28:19Z
+github.com/matm/gocov-html,naming_similarity,medium,owner_a=matm owner_b=mat signal=Omission,2026-05-02T21:28:19Z
+go.gophers.dev/cmds/commando,naming_similarity,medium,owner_a=cmds owner_b=cmd signal=Omission,2026-05-02T21:28:19Z
+go.gophers.dev/cmds/commando,naming_similarity,medium,owner_a=cmds owner_b=cmgs signal=BitSquatting,2026-05-02T21:28:19Z
+github.com/bitgoin/address,naming_similarity,medium,owner_a=bitgoin owner_b=bitcoin signal=BitSquatting,2026-05-02T21:28:19Z
+github.com/yieldr/go-log,naming_similarity,medium,owner_a=yieldr owner_b=yields signal=BitSquatting,2026-05-02T21:28:19Z
+github.com/tulir/gopher-ace,naming_similarity,medium,owner_a=tulir owner_b=tulip signal=BitSquatting,2026-05-02T21:28:19Z
+github.com/gomodules/grpc-gateway,naming_similarity,medium,owner_a=gomodules owner_b=gomodule signal=Omission,2026-05-02T21:28:19Z
+git.sr.ht/~hokiegeek/teadb,naming_similarity,medium,owner_a=~hokiegeek owner_b=hokiegeek signal=Omission,2026-05-02T21:28:19Z
+github.com/ka2n/simple-xbrl,naming_similarity,medium,owner_a=ka2n owner_b=a2n signal=Omission,2026-05-02T21:28:19Z
+github.com/lilic/operator-sdk,naming_similarity,medium,owner_a=lilic owner_b=kilic signal=BitSquatting,2026-05-02T21:28:19Z
+github.com/liamg/furious,naming_similarity,medium,owner_a=liamg owner_b=lamg signal=Omission,2026-05-02T21:28:19Z
+github.com/prep/average,naming_similarity,medium,owner_a=prep owner_b=rep signal=Omission,2026-05-02T21:28:19Z
+github.com/prep/average,naming_similarity,medium,owner_a=prep owner_b=prp signal=Omission,2026-05-02T21:28:19Z
+github.com/golibs/uuid,naming_similarity,medium,owner_a=golibs owner_b=golib signal=Omission,2026-05-02T21:28:19Z
+github.com/didil/goblero,naming_similarity,medium,owner_a=didil owner_b=didi signal=Omission,2026-05-02T21:28:19Z
+github.com/giter/cron,naming_similarity,medium,owner_a=giter owner_b=gitter signal=Repetition,2026-05-02T21:28:19Z
+github.com/gokit/xid,naming_similarity,medium,owner_a=gokit owner_b=goki signal=Omission,2026-05-02T21:28:19Z
+github.com/jsdir/docker,naming_similarity,medium,owner_a=jsdir owner_b=sdir signal=Omission,2026-05-02T21:28:19Z
+github.com/plusplus1/logrus-extension,naming_similarity,medium,owner_a=plusplus1 owner_b=plusplus7 signal=BitSquatting,2026-05-02T21:28:19Z
+github.com/thesues/go-judy,naming_similarity,medium,owner_a=thesues owner_b=thesuess signal=Repetition,2026-05-02T21:28:19Z
+github.com/tkit/go-cmd-example,naming_similarity,medium,owner_a=tkit owner_b=kit signal=Omission,2026-05-02T21:28:19Z
+github.com/wantg/armory,naming_similarity,medium,owner_a=wantg owner_b=want signal=Omission,2026-05-02T21:28:19Z
+github.com/yiplee/structs,naming_similarity,medium,owner_a=yiplee owner_b=yilee signal=Omission,2026-05-02T21:28:19Z
+github.com/ysrc/yulong-hids,naming_similarity,medium,owner_a=ysrc owner_b=src signal=Omission,2026-05-02T21:28:19Z
+go.chromium.org/goma/server,naming_similarity,medium,owner_a=goma owner_b=goa signal=Omission,2026-05-02T21:28:19Z
+gortc.io/turnc,naming_similarity,medium,owner_a=turnc owner_b=turn signal=Omission,2026-05-02T21:28:19Z
+upper.io/db.v2,naming_similarity,medium,owner_a=db.v2 owner_b=db.v1 signal=BitSquatting,2026-05-02T21:28:19Z
+github.com/aiio/aicrypto,naming_similarity,medium,owner_a=aiio owner_b=akio signal=BitSquatting,2026-05-02T21:28:19Z
+github.com/upper/bond,naming_similarity,high,owner_a=upper owner_b=puper signal=Transposition,2026-05-02T21:28:19Z
+mynewt.apache.org/newt,naming_similarity,medium,owner_a=newt owner_b=nwt signal=Omission,2026-05-02T21:28:19Z
+mynewt.apache.org/newt,naming_similarity,medium,owner_a=newt owner_b=net signal=Omission,2026-05-02T21:28:19Z
+git.sr.ht/~robertgzr/wgtg,naming_similarity,medium,owner_a=~robertgzr owner_b=robertgzr signal=Omission,2026-05-02T21:28:19Z
+github.com/obase/center,naming_similarity,medium,owner_a=obase owner_b=base signal=Omission,2026-05-02T21:28:19Z
+github.com/sha1sum/aws_signing_client,naming_similarity,medium,owner_a=sha1sum owner_b=sha3sum signal=BitSquatting,2026-05-02T21:28:19Z
+github.com/yext/errgo,naming_similarity,medium,owner_a=yext owner_b=ext signal=Omission,2026-05-02T21:28:19Z
+golang.speech.sogou.com/apis,naming_similarity,medium,owner_a=apis owner_b=api signal=Omission,2026-05-02T21:28:19Z
+github.com/goulang/goulang,naming_similarity,medium,owner_a=goulang owner_b=golang signal=Omission,2026-05-02T21:28:19Z
+github.com/virtuald/go-ordered-json,naming_similarity,medium,owner_a=virtuald owner_b=virtual signal=Omission,2026-05-02T21:28:19Z
+go.melnyk.org/mlog,naming_similarity,medium,owner_a=mlog owner_b=log signal=Omission,2026-05-02T21:28:19Z
+gogs.doschain.org/doschain/dosd,naming_similarity,medium,owner_a=doschain owner_b=coschain signal=BitSquatting,2026-05-02T21:28:19Z
+gogs.doschain.org/doschain/dosd,naming_similarity,medium,owner_a=doschain owner_b=dotchain signal=BitSquatting,2026-05-02T21:28:19Z
+github.com/myml/cloud-blob,naming_similarity,medium,owner_a=myml owner_b=yml signal=Omission,2026-05-02T21:28:19Z
+github.com/go-chain/go-tron,naming_similarity,medium,owner_a=go-chain owner_b=gochain signal=Omission,2026-05-02T21:28:19Z
+github.com/fanatics/toast,naming_similarity,medium,owner_a=fanatics owner_b=fanatic signal=Omission,2026-05-02T21:28:19Z
+go.guoyk.net/doko,naming_similarity,medium,owner_a=doko owner_b=oko signal=Omission,2026-05-02T21:28:19Z
+go.guoyk.net/reko,naming_similarity,medium,owner_a=reko owner_b=eko signal=Omission,2026-05-02T21:28:19Z
+github.com/bwesterb/byteswriter,naming_similarity,medium,owner_a=bwesterb owner_b=bwester signal=Omission,2026-05-02T21:28:19Z
+github.com/walles/moar,naming_similarity,medium,owner_a=walles owner_b=walle signal=Omission,2026-05-02T21:28:19Z
+github.com/spdx/tools-golang,naming_similarity,medium,owner_a=spdx owner_b=spx signal=Omission,2026-05-02T21:28:19Z
+github.com/ibmdb/go_ibm_db,naming_similarity,medium,owner_a=ibmdb owner_b=ibmcb signal=BitSquatting,2026-05-02T21:28:19Z
+github.com/gonrails/gonrails,naming_similarity,medium,owner_a=gonrails owner_b=gorails signal=Omission,2026-05-02T21:28:19Z
+github.com/cuijxin/kooper-atom,naming_similarity,medium,owner_a=cuijxin owner_b=cuixin signal=Omission,2026-05-02T21:28:19Z
+github.com/xgolib/gofeed,naming_similarity,medium,owner_a=xgolib owner_b=golib signal=Omission,2026-05-02T21:28:19Z
+github.com/golangq/q,naming_similarity,medium,owner_a=golangq owner_b=golang signal=Omission,2026-05-02T21:28:19Z
+github.com/kaey/framebuffer,naming_similarity,medium,owner_a=kaey owner_b=key signal=Omission,2026-05-02T21:28:19Z
+git.sr.ht/~eliasnaur/gio,naming_similarity,medium,owner_a=~eliasnaur owner_b=eliasnaur signal=Omission,2026-05-02T21:28:19Z
+toolman.org/time/timetool,naming_similarity,medium,owner_a=time owner_b=tie signal=Omission,2026-05-02T21:28:19Z
+github.com/jmalloc/ax,naming_similarity,medium,owner_a=jmalloc owner_b=kmalloc signal=BitSquatting,2026-05-02T21:28:19Z
+github.com/johng-cn/gf,naming_similarity,medium,owner_a=johng-cn owner_b=johngcn signal=Omission,2026-05-02T21:28:19Z
+github.com/wzhs/go_dbpools,naming_similarity,medium,owner_a=wzhs owner_b=whs signal=Omission,2026-05-02T21:28:19Z
+bramp.net/antlr4,naming_similarity,medium,owner_a=antlr4 owner_b=antlr signal=Omission,2026-05-02T21:28:19Z
+github.com/vangent/strava,naming_similarity,medium,owner_a=vangent owner_b=vangen signal=Omission,2026-05-02T21:28:19Z
+go.stevenxie.me/gopkg,naming_similarity,medium,owner_a=gopkg owner_b=glpkg signal=BitSquatting,2026-05-02T21:28:19Z
+github.com/mnubo/smartobjects-go-client,naming_similarity,medium,owner_a=mnubo owner_b=nubo signal=Omission,2026-05-02T21:28:20Z
+go.hein.dev/go-version,naming_similarity,medium,owner_a=go-version owner_b=goversion signal=Omission,2026-05-02T21:28:20Z
+github.com/kenshinx/godns,naming_similarity,medium,owner_a=kenshinx owner_b=kenshin signal=Omission,2026-05-02T21:28:20Z
+github.com/rinor/jorcli,naming_similarity,medium,owner_a=rinor owner_b=rino signal=Omission,2026-05-02T21:28:20Z
+github.com/gotoolkits/authotp,naming_similarity,medium,owner_a=gotoolkits owner_b=gotoolkit signal=Omission,2026-05-02T21:28:20Z
+github.com/gomicro/steward,naming_similarity,medium,owner_a=gomicro owner_b=gmicro signal=Omission,2026-05-02T21:28:20Z
+github.com/mnvx/di,naming_similarity,medium,owner_a=mnvx owner_b=nvx signal=Omission,2026-05-02T21:28:20Z
+github.com/carlosedp/runc,naming_similarity,medium,owner_a=carlosedp owner_b=carlosdp signal=Omission,2026-05-02T21:28:20Z
+github.com/joonas/cluster-api-provider-docker,naming_similarity,medium,owner_a=joonas owner_b=jonas signal=Omission,2026-05-02T21:28:20Z
+coding.net/moss/yogo,naming_similarity,medium,owner_a=moss owner_b=oss signal=Omission,2026-05-02T21:28:20Z
+github.com/burl/go-version,naming_similarity,medium,owner_a=burl owner_b=curl signal=BitSquatting,2026-05-02T21:28:20Z
+gitlab.com/akita/akita,naming_similarity,medium,owner_a=akita owner_b=aita signal=Omission,2026-05-02T21:28:20Z
+gitlab.com/akita/akita,naming_similarity,medium,owner_a=akita owner_b=akira signal=BitSquatting,2026-05-02T21:28:20Z
+gioui.org/apps,naming_similarity,medium,owner_a=apps owner_b=app signal=Omission,2026-05-02T21:28:20Z
+github.com/acobaugh/osrelease,naming_similarity,medium,owner_a=acobaugh owner_b=cobaugh signal=Omission,2026-05-02T21:28:20Z
+github.com/jmartin82/mconfig,naming_similarity,medium,owner_a=jmartin82 owner_b=jmartin84 signal=BitSquatting,2026-05-02T21:28:20Z
+github.com/memoio/mefs-go-http-client,naming_similarity,medium,owner_a=memoio owner_b=memio signal=Omission,2026-05-02T21:28:20Z
+zvelo.io/zmage/v4,naming_similarity,medium,owner_a=zmage owner_b=mage signal=Omission,2026-05-02T21:28:20Z
+github.com/cugu/go-resources,naming_similarity,medium,owner_a=cugu owner_b=cuu signal=Omission,2026-05-02T21:28:20Z
+github.com/hmage/goexif,naming_similarity,medium,owner_a=hmage owner_b=mage signal=Omission,2026-05-02T21:28:20Z
+github.com/gebi/scryptauth,naming_similarity,medium,owner_a=gebi owner_b=gebn signal=BitSquatting,2026-05-02T21:28:20Z
+github.com/alex/beeline-go,naming_similarity,medium,owner_a=alex owner_b=lex signal=Omission,2026-05-02T21:28:20Z
+github.com/alex/beeline-go,naming_similarity,medium,owner_a=alex owner_b=alx signal=Omission,2026-05-02T21:28:20Z
+github.com/clinet/discordgo-embed,naming_similarity,high,owner_a=clinet owner_b=client signal=Transposition,2026-05-02T21:28:20Z
+github.com/jonasi/consul,naming_similarity,medium,owner_a=jonasi owner_b=jonas signal=Omission,2026-05-02T21:28:20Z
+github.com/omise/omise-go,naming_similarity,medium,owner_a=omise owner_b=omie signal=Omission,2026-05-02T21:28:20Z
+github.com/ferringb/go-grafana-api,naming_similarity,medium,owner_a=ferringb owner_b=fersingb signal=BitSquatting,2026-05-02T21:28:20Z
+github.com/peak6/messagediff,naming_similarity,medium,owner_a=peak6 owner_b=peak signal=Omission,2026-05-02T21:28:20Z
+github.com/jony4/thrift-v0.11.0,naming_similarity,medium,owner_a=jony4 owner_b=joy4 signal=Omission,2026-05-02T21:28:20Z
+livingit.de/code/versioned,naming_similarity,medium,owner_a=code owner_b=codf signal=BitSquatting,2026-05-02T21:28:20Z
+github.com/jfyne/csvd,naming_similarity,medium,owner_a=jfyne owner_b=fyne signal=Omission,2026-05-02T21:28:20Z
+github.com/hamochi/go-namecheap,naming_similarity,medium,owner_a=hamochi owner_b=haochi signal=Omission,2026-05-02T21:28:20Z
+zgo.at/zlog,naming_similarity,medium,owner_a=zlog owner_b=log signal=Omission,2026-05-02T21:28:20Z
+github.com/zavier/blog-admin-backend,naming_similarity,medium,owner_a=zavier owner_b=zapier signal=BitSquatting,2026-05-02T21:28:20Z
+github.com/rackn/gohai,naming_similarity,medium,owner_a=rackn owner_b=racin signal=BitSquatting,2026-05-02T21:28:20Z
+gitee.com/ofunc/stream,naming_similarity,medium,owner_a=ofunc owner_b=func signal=Omission,2026-05-02T21:28:20Z
+github.com/babbel/rollbar-go,naming_similarity,medium,owner_a=babbel owner_b=babel signal=Omission,2026-05-02T21:28:20Z
+github.com/kari-labs/config,naming_similarity,medium,owner_a=kari-labs owner_b=kasi-labs signal=BitSquatting,2026-05-02T21:28:20Z
+github.com/magic007/shengpay-go,naming_similarity,medium,owner_a=magic007 owner_b=magic003 signal=BitSquatting,2026-05-02T21:28:20Z
+github.com/dlion/go-odbye,naming_similarity,medium,owner_a=dlion owner_b=lion signal=Omission,2026-05-02T21:28:20Z
+go.bobheadxi.dev/zapx/zhttp,naming_similarity,medium,owner_a=zapx owner_b=zap signal=Omission,2026-05-02T21:28:20Z
+github.com/alext/tablecloth,naming_similarity,medium,owner_a=alext owner_b=alex signal=Omission,2026-05-02T21:28:20Z
+github.com/bcmob/ethrpc,naming_similarity,medium,owner_a=bcmob owner_b=bmob signal=Omission,2026-05-02T21:28:20Z
+github.com/go-mango/logy,naming_similarity,medium,owner_a=go-mango owner_b=gomango signal=Omission,2026-05-02T21:28:20Z
+github.com/coxx/refreshing,naming_similarity,medium,owner_a=coxx owner_b=oxx signal=Omission,2026-05-02T21:28:20Z
+github.com/johto/iso9660wrap,naming_similarity,medium,owner_a=johto owner_b=joho signal=Omission,2026-05-02T21:28:20Z
+gitlab.techcultivation.org/sangha/mq,naming_similarity,medium,owner_a=sangha owner_b=samgha signal=BitSquatting,2026-05-02T21:28:20Z
+github.com/jawm/binutils,naming_similarity,medium,owner_a=jawm owner_b=japm signal=BitSquatting,2026-05-02T21:28:20Z
+go.coder.com/slog,naming_similarity,medium,owner_a=slog owner_b=log signal=Omission,2026-05-02T21:28:20Z
+github.com/rgraphql/nion,naming_similarity,medium,owner_a=rgraphql owner_b=graphql signal=Omission,2026-05-02T21:28:20Z
+github.com/0chain/gosdk,naming_similarity,medium,owner_a=0chain owner_b=chain signal=Omission,2026-05-02T21:28:20Z
+github.com/mintel/k8s-yaml-splitter,naming_similarity,medium,owner_a=mintel owner_b=intel signal=Omission,2026-05-02T21:28:20Z
+github.com/gabrielf/gnock,naming_similarity,medium,owner_a=gabrielf owner_b=gabriel signal=Omission,2026-05-02T21:28:20Z
+gopkg.in/gf.v1,naming_similarity,medium,owner_a=gf.v1 owner_b=gf.v2 signal=BitSquatting,2026-05-02T21:28:20Z
+github.com/scan/pandafolder-api,naming_similarity,medium,owner_a=scan owner_b=can signal=Omission,2026-05-02T21:28:20Z
+github.com/go-gf/gf,naming_similarity,medium,owner_a=go-gf owner_b=gogf signal=Omission,2026-05-02T21:28:20Z
+github.com/fabianwe/etherpadlite-golang,naming_similarity,medium,owner_a=fabianwe owner_b=fabiante signal=BitSquatting,2026-05-02T21:28:20Z
+github.com/vonc/godbg,naming_similarity,medium,owner_a=vonc owner_b=voc signal=Omission,2026-05-02T21:28:20Z
+github.com/jbowens/pqtest,naming_similarity,medium,owner_a=jbowens owner_b=jbowes signal=Omission,2026-05-02T21:28:20Z
+github.com/steeve/broadcaster,naming_similarity,medium,owner_a=steeve owner_b=steevee signal=Repetition,2026-05-02T21:28:20Z
+github.com/rjansen/logrus-graylog-hook,naming_similarity,medium,owner_a=rjansen owner_b=sjansen signal=BitSquatting,2026-05-02T21:28:20Z
+github.com/pvik/go-whd,naming_similarity,medium,owner_a=pvik owner_b=qvik signal=BitSquatting,2026-05-02T21:28:20Z
+github.com/dhax/go-base,naming_similarity,medium,owner_a=dhax owner_b=ddhax signal=Repetition,2026-05-02T21:28:20Z
+github.com/bcaldwell/go-printer,naming_similarity,medium,owner_a=bcaldwell owner_b=caldwell signal=Omission,2026-05-02T21:28:20Z
+bitbucket.org/mr-zen/tms,naming_similarity,medium,owner_a=mr-zen owner_b=mrzen signal=Omission,2026-05-02T21:28:20Z
+github.com/xtda/goose,naming_similarity,medium,owner_a=xtda owner_b=xta signal=Omission,2026-05-02T21:28:20Z
+github.com/go-jira/jira,naming_similarity,medium,owner_a=go-jira owner_b=go-kira signal=BitSquatting,2026-05-02T21:28:20Z
+gitlab.com/usvc/modules/go/log,naming_similarity,medium,owner_a=usvc owner_b=svc signal=Omission,2026-05-02T21:28:20Z
+gopkg.in/chi.v3,naming_similarity,medium,owner_a=chi.v3 owner_b=chi.v4 signal=BitSquatting,2026-05-02T21:28:20Z
+github.com/tobie/ua-parser,naming_similarity,medium,owner_a=tobie owner_b=tobi signal=Omission,2026-05-02T21:28:20Z
+github.com/isbm/go-asciitable,naming_similarity,medium,owner_a=isbm owner_b=ibm signal=Omission,2026-05-02T21:28:20Z
+github.com/ibrt/enc,naming_similarity,medium,owner_a=ibrt owner_b=mbrt signal=BitSquatting,2026-05-02T21:28:20Z
+github.com/go-amz/amz,naming_similarity,medium,owner_a=go-amz owner_b=goamz signal=Omission,2026-05-02T21:28:20Z
+gortc.io/gortcd,naming_similarity,medium,owner_a=gortcd owner_b=gortc signal=Omission,2026-05-02T21:28:20Z
+github.com/gmicro/web,naming_similarity,medium,owner_a=gmicro owner_b=micro signal=Omission,2026-05-02T21:28:20Z
+github.com/go-rtc/stun,naming_similarity,medium,owner_a=go-rtc owner_b=gortc signal=Omission,2026-05-02T21:28:20Z
+github.com/japm/goscript,naming_similarity,medium,owner_a=japm owner_b=apm signal=Omission,2026-05-02T21:28:21Z
+savo.la/gate/localhost,naming_similarity,medium,owner_a=gate owner_b=gae signal=Omission,2026-05-02T21:28:21Z
+gogs.rickbassham.com/rick/database,naming_similarity,medium,owner_a=rick owner_b=rck signal=Omission,2026-05-02T21:28:21Z
+github.com/sapk/docker-volume-helpers,naming_similarity,medium,owner_a=sapk owner_b=sap signal=Omission,2026-05-02T21:28:21Z
+github.com/gobasics/log,naming_similarity,medium,owner_a=gobasics owner_b=gobasis signal=Omission,2026-05-02T21:28:21Z
+github.com/goodes/go-json-rest-middleware-jwt,naming_similarity,medium,owner_a=goodes owner_b=goods signal=Omission,2026-05-02T21:28:21Z
+github.com/nuxt/nuxt.js,naming_similarity,medium,owner_a=nuxt owner_b=nxt signal=Omission,2026-05-02T21:28:21Z
+github.com/icron/go-confluence,naming_similarity,medium,owner_a=icron owner_b=cron signal=Omission,2026-05-02T21:28:21Z
+github.com/daved/sandbox,naming_similarity,medium,owner_a=daved owner_b=dave signal=Omission,2026-05-02T21:28:21Z
+github.com/0proto/rpc,naming_similarity,medium,owner_a=0proto owner_b=proto signal=Omission,2026-05-02T21:28:21Z
+code.cloudfoundry.org/silk,naming_similarity,medium,owner_a=silk owner_b=ilk signal=Omission,2026-05-02T21:28:21Z
+github.com/edge/fsm,naming_similarity,medium,owner_a=edge owner_b=ede signal=Omission,2026-05-02T21:28:21Z
+github.com/benji-vesterby/validator,naming_similarity,medium,owner_a=benji-vesterby owner_b=benjivesterby signal=Omission,2026-05-02T21:28:21Z
+github.com/rtfd/godocjson,naming_similarity,medium,owner_a=rtfd owner_b=rtfb signal=BitSquatting,2026-05-02T21:28:21Z
+github.com/gates/gates,naming_similarity,medium,owner_a=gates owner_b=gate signal=Omission,2026-05-02T21:28:21Z
+github.com/milk/nsscache-go,naming_similarity,medium,owner_a=milk owner_b=ilk signal=Omission,2026-05-02T21:28:21Z
+github.com/k14s/ytt/pkg/yamlmeta/internal/yaml.v2,naming_similarity,medium,owner_a=k14s owner_b=k4s signal=Omission,2026-05-02T21:28:21Z
+github.com/invoiced/invoiced-go,naming_similarity,medium,owner_a=invoiced owner_b=invoice signal=Omission,2026-05-02T21:28:21Z
+github.com/go-libs/progress,naming_similarity,medium,owner_a=go-libs owner_b=golibs signal=Omission,2026-05-02T21:28:21Z
+github.com/babiel/oras,naming_similarity,medium,owner_a=babiel owner_b=babel signal=Omission,2026-05-02T21:28:21Z
+github.com/dimes/dihedral,naming_similarity,medium,owner_a=dimes owner_b=dims signal=Omission,2026-05-02T21:28:21Z
+github.com/log4go/log4go,naming_similarity,medium,owner_a=log4go owner_b=loggo signal=Omission,2026-05-02T21:28:21Z
+go.pennock.tech/hmetrics,naming_similarity,medium,owner_a=hmetrics owner_b=metrics signal=Omission,2026-05-02T21:28:21Z
+github.com/remko/go-mkvparse,naming_similarity,medium,owner_a=remko owner_b=reko signal=Omission,2026-05-02T21:28:21Z
+go.nuvuli.com/logz,naming_similarity,medium,owner_a=logz owner_b=log signal=Omission,2026-05-02T21:28:21Z
+gitlab.com/tokend/regources,naming_similarity,medium,owner_a=tokend owner_b=token signal=Omission,2026-05-02T21:28:21Z
+gitlab.com/dimus/solanum,naming_similarity,medium,owner_a=dimus owner_b=dims signal=Omission,2026-05-02T21:28:21Z
+github.com/morbz/gosmonaut,naming_similarity,medium,owner_a=morbz owner_b=mobz signal=Omission,2026-05-02T21:28:21Z
+github.com/zedge/prom-aggregation-gateway,naming_similarity,medium,owner_a=zedge owner_b=edge signal=Omission,2026-05-02T21:28:21Z
+git.sr.ht/~detaoin/sql2http,naming_similarity,medium,owner_a=~detaoin owner_b=detaoin signal=Omission,2026-05-02T21:28:21Z
+github.com/darkren/go-config,naming_similarity,medium,owner_a=darkren owner_b=darren signal=Omission,2026-05-02T21:28:21Z
+github.com/cbron/spec,naming_similarity,medium,owner_a=cbron owner_b=cron signal=Omission,2026-05-02T21:28:21Z
+github.com/cncf/udpa,naming_similarity,medium,owner_a=cncf owner_b=cnf signal=Omission,2026-05-02T21:28:21Z
+git.sr.ht/~emersion/go-drm,naming_similarity,medium,owner_a=~emersion owner_b=emersion signal=Omission,2026-05-02T21:28:21Z
+github.com/gongo/9t,naming_similarity,medium,owner_a=gongo owner_b=gogo signal=Omission,2026-05-02T21:28:21Z
+klaidliadon.dev/next,naming_similarity,medium,owner_a=next owner_b=ext signal=Omission,2026-05-02T21:28:21Z
+klaidliadon.dev/next,naming_similarity,medium,owner_a=next owner_b=nxt signal=Omission,2026-05-02T21:28:21Z
+klaidliadon.dev/next,naming_similarity,medium,owner_a=next owner_b=net signal=Omission,2026-05-02T21:28:21Z
+klaidliadon.dev/next,naming_similarity,medium,owner_a=next owner_b=nexr signal=BitSquatting,2026-05-02T21:28:21Z
+github.com/devi/chap,naming_similarity,medium,owner_a=devi owner_b=dev signal=Omission,2026-05-02T21:28:21Z
+github.com/tusf/base,naming_similarity,medium,owner_a=tusf owner_b=tus signal=Omission,2026-05-02T21:28:21Z
+github.com/geek-go/getui,naming_similarity,medium,owner_a=geek-go owner_b=gee-go signal=Omission,2026-05-02T21:28:21Z
+sire.run/awsc,naming_similarity,medium,owner_a=awsc owner_b=wsc signal=Omission,2026-05-02T21:28:21Z
+sire.run/awsc,naming_similarity,medium,owner_a=awsc owner_b=aws signal=Omission,2026-05-02T21:28:21Z
+github.com/trezorg/go-lingualeo,naming_similarity,medium,owner_a=trezorg owner_b=trezor signal=Omission,2026-05-02T21:28:21Z
+code.cloudfoundry.org/groot,naming_similarity,medium,owner_a=groot owner_b=root signal=Omission,2026-05-02T21:28:21Z
+github.com/adyatlov/bun,naming_similarity,medium,owner_a=adyatlov owner_b=dyatlov signal=Omission,2026-05-02T21:28:21Z
+github.com/raykov/test-helpers-go,naming_similarity,medium,owner_a=raykov owner_b=rykov signal=Omission,2026-05-02T21:28:21Z
+software.sslmate.com/src/go-pkcs12,source_ambiguity,medium,domain=software.sslmate.com issue=untrusted_domain,2026-05-02T21:28:21Z
+git.apache.org/thrift.git,source_ambiguity,medium,domain=git.apache.org issue=untrusted_domain,2026-05-02T21:28:21Z
+gocloud.dev,source_ambiguity,medium,domain=gocloud.dev issue=untrusted_domain,2026-05-02T21:28:21Z
+honnef.co/go/tools,source_ambiguity,medium,domain=honnef.co issue=untrusted_domain,2026-05-02T21:28:21Z
+go.etcd.io/etcd,source_ambiguity,medium,domain=go.etcd.io issue=untrusted_domain,2026-05-02T21:28:21Z
+layeh.com/radius,source_ambiguity,medium,domain=layeh.com issue=untrusted_domain,2026-05-02T21:28:21Z
+pack.ag/amqp,source_ambiguity,medium,domain=pack.ag issue=untrusted_domain,2026-05-02T21:28:21Z
+gotest.tools,source_ambiguity,medium,domain=gotest.tools issue=untrusted_domain,2026-05-02T21:28:21Z
+dmitri.shuralyov.com/service/change,source_ambiguity,medium,domain=dmitri.shuralyov.com issue=untrusted_domain,2026-05-02T21:28:21Z
+sourcegraph.com/sourcegraph/go-diff,source_ambiguity,medium,domain=sourcegraph.com issue=untrusted_domain,2026-05-02T21:28:21Z
+go4.org,source_ambiguity,medium,domain=go4.org issue=untrusted_domain,2026-05-02T21:28:21Z
+grpc.go4.org,source_ambiguity,medium,domain=grpc.go4.org issue=untrusted_domain,2026-05-02T21:28:21Z
+gonum.org/v1/gonum,source_ambiguity,medium,domain=gonum.org issue=untrusted_domain,2026-05-02T21:28:21Z
+istio.io/gogo-genproto,source_ambiguity,medium,domain=istio.io issue=untrusted_domain,2026-05-02T21:28:21Z
+collectd.org,source_ambiguity,medium,domain=collectd.org issue=untrusted_domain,2026-05-02T21:28:21Z
+bazil.org/fuse,source_ambiguity,medium,domain=bazil.org issue=untrusted_domain,2026-05-02T21:28:21Z
+vbom.ml/util,source_ambiguity,high,domain=vbom.ml issue=suspicious_tld_.ml,2026-05-02T21:28:21Z
+vbom.ml/util,source_ambiguity,medium,domain=vbom.ml issue=untrusted_domain,2026-05-02T21:28:21Z
+launchpad.net/gocheck,source_ambiguity,medium,domain=launchpad.net issue=untrusted_domain,2026-05-02T21:28:21Z
+labix.org/v2/mgo,source_ambiguity,medium,domain=labix.org issue=untrusted_domain,2026-05-02T21:28:21Z
+code.gitea.io/git,source_ambiguity,medium,domain=code.gitea.io issue=untrusted_domain,2026-05-02T21:28:21Z
+strk.kbt.io/projects/go/libravatar,source_ambiguity,medium,domain=strk.kbt.io issue=untrusted_domain,2026-05-02T21:28:21Z
+go.pedge.io/env,source_ambiguity,medium,domain=go.pedge.io issue=untrusted_domain,2026-05-02T21:28:21Z
+camlistore.org,source_ambiguity,medium,domain=camlistore.org issue=untrusted_domain,2026-05-02T21:28:21Z
+crawshaw.io/iox,source_ambiguity,medium,domain=crawshaw.io issue=untrusted_domain,2026-05-02T21:28:21Z
+code.cloudfoundry.org/bytefmt,source_ambiguity,medium,domain=code.cloudfoundry.org issue=untrusted_domain,2026-05-02T21:28:21Z
+docker.io/go-docker,source_ambiguity,medium,domain=docker.io issue=untrusted_domain,2026-05-02T21:28:21Z
+goji.io,source_ambiguity,medium,domain=goji.io issue=untrusted_domain,2026-05-02T21:28:21Z
+modernc.org/xc,source_ambiguity,medium,domain=modernc.org issue=untrusted_domain,2026-05-02T21:28:21Z
+go.mongodb.org/mongo-driver,source_ambiguity,medium,domain=go.mongodb.org issue=untrusted_domain,2026-05-02T21:28:21Z
+howett.net/plist,source_ambiguity,medium,domain=howett.net issue=untrusted_domain,2026-05-02T21:28:21Z
+myitcv.io,source_ambiguity,medium,domain=myitcv.io issue=untrusted_domain,2026-05-02T21:28:21Z
+mvdan.cc/sh,source_ambiguity,medium,domain=mvdan.cc issue=untrusted_domain,2026-05-02T21:28:21Z
+gitea.com/lunny/log,source_ambiguity,high,domain=gitea.com issue=domain_similar_to_gitlab.com,2026-05-02T21:28:21Z
+go.bug.st/serial.v1,source_ambiguity,medium,domain=go.bug.st issue=untrusted_domain,2026-05-02T21:28:22Z
+periph.io/x/periph,source_ambiguity,medium,domain=periph.io issue=untrusted_domain,2026-05-02T21:28:22Z
+gobot.io/x/gobot,source_ambiguity,medium,domain=gobot.io issue=untrusted_domain,2026-05-02T21:28:22Z
+gocv.io/x/gocv,source_ambiguity,medium,domain=gocv.io issue=untrusted_domain,2026-05-02T21:28:22Z
+willnorris.com/go/imageproxy,source_ambiguity,medium,domain=willnorris.com issue=untrusted_domain,2026-05-02T21:28:22Z
+blainsmith.com/go/seahash,source_ambiguity,medium,domain=blainsmith.com issue=untrusted_domain,2026-05-02T21:28:22Z
+git.fd.io/govpp.git,source_ambiguity,medium,domain=git.fd.io issue=untrusted_domain,2026-05-02T21:28:22Z
+stathat.com/c/ramcache,source_ambiguity,medium,domain=stathat.com issue=untrusted_domain,2026-05-02T21:28:22Z
+kmodules.xyz/client-go,source_ambiguity,high,domain=kmodules.xyz issue=suspicious_tld_.xyz,2026-05-02T21:28:22Z
+kmodules.xyz/client-go,source_ambiguity,medium,domain=kmodules.xyz issue=untrusted_domain,2026-05-02T21:28:22Z
+arp242.net/singlepage,source_ambiguity,medium,domain=arp242.net issue=untrusted_domain,2026-05-02T21:28:22Z
+barista.run,source_ambiguity,medium,domain=barista.run issue=untrusted_domain,2026-05-02T21:28:22Z
+acln.ro/vanity,source_ambiguity,medium,domain=acln.ro issue=untrusted_domain,2026-05-02T21:28:22Z
+4d63.com/biblepassageapi,source_ambiguity,medium,domain=4d63.com issue=untrusted_domain,2026-05-02T21:28:22Z
+9fans.net/go,source_ambiguity,medium,domain=9fans.net issue=untrusted_domain,2026-05-02T21:28:22Z
+a4.io/blobsfile,source_ambiguity,medium,domain=a4.io issue=untrusted_domain,2026-05-02T21:28:22Z
+aahframe.work,source_ambiguity,medium,domain=aahframe.work issue=untrusted_domain,2026-05-02T21:28:22Z
+aahframework.org/aah.v0,source_ambiguity,medium,domain=aahframework.org issue=untrusted_domain,2026-05-02T21:28:22Z
+admiralty.io/multicluster-controller,source_ambiguity,medium,domain=admiralty.io issue=untrusted_domain,2026-05-02T21:28:22Z
+agamigo.io/material,source_ambiguity,medium,domain=agamigo.io issue=untrusted_domain,2026-05-02T21:28:22Z
+agones.dev/agones,source_ambiguity,medium,domain=agones.dev issue=untrusted_domain,2026-05-02T21:28:22Z
+fortio.org/fortio,source_ambiguity,medium,domain=fortio.org issue=untrusted_domain,2026-05-02T21:28:22Z
+airdispat.ch,source_ambiguity,medium,domain=airdispat.ch issue=untrusted_domain,2026-05-02T21:28:22Z
+akhil.cc/mexdown,source_ambiguity,medium,domain=akhil.cc issue=untrusted_domain,2026-05-02T21:28:22Z
+antiklimax.se/go-colproximate,source_ambiguity,medium,domain=antiklimax.se issue=untrusted_domain,2026-05-02T21:28:22Z
+aqwari.net/cmd/gogive,source_ambiguity,medium,domain=aqwari.net issue=untrusted_domain,2026-05-02T21:28:22Z
+arnested.dk/go/dsupdate,source_ambiguity,medium,domain=arnested.dk issue=untrusted_domain,2026-05-02T21:28:22Z
+astuart.co/edgeos-rest,source_ambiguity,medium,domain=astuart.co issue=untrusted_domain,2026-05-02T21:28:22Z
+augie.upspin.io,source_ambiguity,medium,domain=augie.upspin.io issue=untrusted_domain,2026-05-02T21:28:22Z
+upspin.io,source_ambiguity,medium,domain=upspin.io issue=untrusted_domain,2026-05-02T21:28:22Z
+aws.upspin.io,source_ambiguity,medium,domain=aws.upspin.io issue=untrusted_domain,2026-05-02T21:28:22Z
+azul3d.org/engine,source_ambiguity,medium,domain=azul3d.org issue=untrusted_domain,2026-05-02T21:28:22Z
+badc0de.net/pkg/apitest,source_ambiguity,medium,domain=badc0de.net issue=untrusted_domain,2026-05-02T21:28:22Z
+baliance.com/gooxml,source_ambiguity,medium,domain=baliance.com issue=untrusted_domain,2026-05-02T21:28:22Z
+firebase.google.com/go,source_ambiguity,medium,domain=firebase.google.com issue=untrusted_domain,2026-05-02T21:28:22Z
+ronoaldo.gopkg.net/aetools,source_ambiguity,medium,domain=ronoaldo.gopkg.net issue=untrusted_domain,2026-05-02T21:28:22Z
+gitlab.com/nyarla/go-crypt,source_ambiguity,high,domain=gitlab.com issue=domain_similar_to_github.com,2026-05-02T21:28:22Z
+v.io/x/lib,source_ambiguity,medium,domain=v.io issue=untrusted_domain,2026-05-02T21:28:22Z
+go.starlark.net,source_ambiguity,medium,domain=go.starlark.net issue=untrusted_domain,2026-05-02T21:28:22Z
+go.thethings.network/lorawan-stack-legacy,source_ambiguity,medium,domain=go.thethings.network issue=untrusted_domain,2026-05-02T21:28:22Z
+perkeep.org,source_ambiguity,medium,domain=perkeep.org issue=untrusted_domain,2026-05-02T21:28:22Z
+go-hep.org/x/exp,source_ambiguity,medium,domain=go-hep.org issue=untrusted_domain,2026-05-02T21:28:22Z
+bou.ke/monkey,source_ambiguity,medium,domain=bou.ke issue=untrusted_domain,2026-05-02T21:28:22Z
+jaytaylor.com/html2text,source_ambiguity,medium,domain=jaytaylor.com issue=untrusted_domain,2026-05-02T21:28:22Z
+resenje.org/web,source_ambiguity,medium,domain=resenje.org issue=untrusted_domain,2026-05-02T21:28:22Z
+anus.io,source_ambiguity,medium,domain=anus.io issue=untrusted_domain,2026-05-02T21:28:22Z
+go.mercari.io/datastore,source_ambiguity,medium,domain=go.mercari.io issue=untrusted_domain,2026-05-02T21:28:22Z
+fyne.io/fyne,source_ambiguity,medium,domain=fyne.io issue=untrusted_domain,2026-05-02T21:28:22Z
+golang-modproxy-test.googlesource.com/prober-target.git,source_ambiguity,medium,domain=golang-modproxy-test.googlesource.com issue=untrusted_domain,2026-05-02T21:28:22Z
+xojoc.pw/useragent,source_ambiguity,medium,domain=xojoc.pw issue=untrusted_domain,2026-05-02T21:28:22Z
+kkn.fi/base62,source_ambiguity,medium,domain=kkn.fi issue=untrusted_domain,2026-05-02T21:28:22Z
+mellium.im/sasl,source_ambiguity,medium,domain=mellium.im issue=untrusted_domain,2026-05-02T21:28:22Z
+zombiezen.com/go/log,source_ambiguity,medium,domain=zombiezen.com issue=untrusted_domain,2026-05-02T21:28:22Z
+gorgonia.org/cu,source_ambiguity,medium,domain=gorgonia.org issue=untrusted_domain,2026-05-02T21:28:22Z
+pault.ag/go/sniff,source_ambiguity,medium,domain=pault.ag issue=untrusted_domain,2026-05-02T21:28:22Z
+bosun.org,source_ambiguity,medium,domain=bosun.org issue=untrusted_domain,2026-05-02T21:28:23Z
+code.avct.io/uasurfer,source_ambiguity,medium,domain=code.avct.io issue=untrusted_domain,2026-05-02T21:28:23Z
+htdvisser.dev/slash,source_ambiguity,medium,domain=htdvisser.dev issue=untrusted_domain,2026-05-02T21:28:23Z
+go.elastic.co/fastjson,source_ambiguity,medium,domain=go.elastic.co issue=untrusted_domain,2026-05-02T21:28:23Z
+googlemaps.github.io/maps,source_ambiguity,medium,domain=googlemaps.github.io issue=untrusted_domain,2026-05-02T21:28:23Z
+zvelo.io/ttlru,source_ambiguity,medium,domain=zvelo.io issue=untrusted_domain,2026-05-02T21:28:23Z
+tinygo.org/x/go-llvm,source_ambiguity,medium,domain=tinygo.org issue=untrusted_domain,2026-05-02T21:28:23Z
+upper.io/db.v3,source_ambiguity,medium,domain=upper.io issue=untrusted_domain,2026-05-02T21:28:23Z
+nhooyr.io/websocket,source_ambiguity,medium,domain=nhooyr.io issue=untrusted_domain,2026-05-02T21:28:23Z
+go.coder.com/go-tools,source_ambiguity,medium,domain=go.coder.com issue=untrusted_domain,2026-05-02T21:28:23Z
+newreleases.io/newreleases,source_ambiguity,medium,domain=newreleases.io issue=untrusted_domain,2026-05-02T21:28:23Z
+goa.design/goa,source_ambiguity,medium,domain=goa.design issue=untrusted_domain,2026-05-02T21:28:23Z
+tmthrgd.dev/go/vfshash,source_ambiguity,medium,domain=tmthrgd.dev issue=untrusted_domain,2026-05-02T21:28:23Z
+humungus.tedunangst.com/r/go-sqlite3,source_ambiguity,medium,domain=humungus.tedunangst.com issue=untrusted_domain,2026-05-02T21:28:23Z
+moul.io/zapgorm,source_ambiguity,medium,domain=moul.io issue=untrusted_domain,2026-05-02T21:28:23Z
+go.rpcplugin.org/rpcplugin,source_ambiguity,medium,domain=go.rpcplugin.org issue=untrusted_domain,2026-05-02T21:28:23Z
+marwan.io/moddoc,source_ambiguity,medium,domain=marwan.io issue=untrusted_domain,2026-05-02T21:28:23Z
+tideland.dev/go,source_ambiguity,medium,domain=tideland.dev issue=untrusted_domain,2026-05-02T21:28:23Z
+lukechampine.com/us,source_ambiguity,medium,domain=lukechampine.com issue=untrusted_domain,2026-05-02T21:28:23Z
+storj.io/storj,source_ambiguity,medium,domain=storj.io issue=untrusted_domain,2026-05-02T21:28:23Z
+cirello.io/errors,source_ambiguity,medium,domain=cirello.io issue=untrusted_domain,2026-05-02T21:28:23Z
+go.mozilla.org/sops,source_ambiguity,medium,domain=go.mozilla.org issue=untrusted_domain,2026-05-02T21:28:23Z
+go.atrox.dev/env,source_ambiguity,medium,domain=go.atrox.dev issue=untrusted_domain,2026-05-02T21:28:23Z
+gopl.io,source_ambiguity,medium,domain=gopl.io issue=untrusted_domain,2026-05-02T21:28:23Z
+go.melnyk.org/hufid,source_ambiguity,medium,domain=go.melnyk.org issue=untrusted_domain,2026-05-02T21:28:23Z
+go.googlesource.com/go.git/src/cmd,source_ambiguity,medium,domain=go.googlesource.com issue=untrusted_domain,2026-05-02T21:28:23Z
+go.dedis.ch/onet/v3,source_ambiguity,medium,domain=go.dedis.ch issue=untrusted_domain,2026-05-02T21:28:23Z
+within.website/ln,source_ambiguity,medium,domain=within.website issue=untrusted_domain,2026-05-02T21:28:23Z
+gioui.org,source_ambiguity,medium,domain=gioui.org issue=untrusted_domain,2026-05-02T21:28:23Z
+scientificgo.org/testutil,source_ambiguity,medium,domain=scientificgo.org issue=untrusted_domain,2026-05-02T21:28:23Z
+syreclabs.com/go/faker,source_ambiguity,medium,domain=syreclabs.com issue=untrusted_domain,2026-05-02T21:28:23Z
+trimmer.io/go-xmp,source_ambiguity,medium,domain=trimmer.io issue=untrusted_domain,2026-05-02T21:28:23Z
+gomodules.xyz/version,source_ambiguity,high,domain=gomodules.xyz issue=suspicious_tld_.xyz,2026-05-02T21:28:23Z
+gomodules.xyz/version,source_ambiguity,medium,domain=gomodules.xyz issue=untrusted_domain,2026-05-02T21:28:23Z
+git.makaay.nl/mauricem/go-parsekit,source_ambiguity,medium,domain=git.makaay.nl issue=untrusted_domain,2026-05-02T21:28:23Z
+sevki.org/x,source_ambiguity,medium,domain=sevki.org issue=untrusted_domain,2026-05-02T21:28:23Z
+lib.hemtjan.st,source_ambiguity,medium,domain=lib.hemtjan.st issue=untrusted_domain,2026-05-02T21:28:23Z
+toolman.org/net/peercredlistener,source_ambiguity,medium,domain=toolman.org issue=untrusted_domain,2026-05-02T21:28:23Z
+stash.appscode.dev/stash,source_ambiguity,medium,domain=stash.appscode.dev issue=untrusted_domain,2026-05-02T21:28:23Z
+git.schwanenlied.me/yawning/bsaes.git,source_ambiguity,medium,domain=git.schwanenlied.me issue=untrusted_domain,2026-05-02T21:28:23Z
+nanomsg.org/go-mangos,source_ambiguity,medium,domain=nanomsg.org issue=untrusted_domain,2026-05-02T21:28:23Z
+go.tmthrgd.dev/vfshash,source_ambiguity,medium,domain=go.tmthrgd.dev issue=untrusted_domain,2026-05-02T21:28:23Z
+robpike.io/ivy,source_ambiguity,medium,domain=robpike.io issue=untrusted_domain,2026-05-02T21:28:23Z
+golang.zx2c4.com/wireguard/windows,source_ambiguity,medium,domain=golang.zx2c4.com issue=untrusted_domain,2026-05-02T21:28:23Z
+neugram.io/ng,source_ambiguity,medium,domain=neugram.io issue=untrusted_domain,2026-05-02T21:28:23Z
+git.lukeshu.com/go/libsystemd,source_ambiguity,medium,domain=git.lukeshu.com issue=untrusted_domain,2026-05-02T21:28:23Z
+maunium.net/go/mautrix-whatsapp,source_ambiguity,medium,domain=maunium.net issue=untrusted_domain,2026-05-02T21:28:23Z
+go.pennock.tech/swallowjson,source_ambiguity,medium,domain=go.pennock.tech issue=untrusted_domain,2026-05-02T21:28:23Z
+leb.io/lispylist,source_ambiguity,medium,domain=leb.io issue=untrusted_domain,2026-05-02T21:28:23Z
+cda.icu/rfc2047,source_ambiguity,medium,domain=cda.icu issue=untrusted_domain,2026-05-02T21:28:23Z
+code.fbi.h-da.de/its/goipa,source_ambiguity,medium,domain=code.fbi.h-da.de issue=untrusted_domain,2026-05-02T21:28:23Z
+mindoktor.io/sqlx,source_ambiguity,medium,domain=mindoktor.io issue=untrusted_domain,2026-05-02T21:28:23Z
+gitee.com/chencanxin/goose,source_ambiguity,medium,domain=gitee.com issue=untrusted_domain,2026-05-02T21:28:23Z
+git.chuangxin1.com/cx/util,source_ambiguity,medium,domain=git.chuangxin1.com issue=untrusted_domain,2026-05-02T21:28:23Z
+go.universe.tf/tcpproxy,source_ambiguity,medium,domain=go.universe.tf issue=untrusted_domain,2026-05-02T21:28:23Z
+git.sr.ht/~sircmpwn/getopt,source_ambiguity,medium,domain=git.sr.ht issue=untrusted_domain,2026-05-02T21:28:23Z
+boscoin.io/sebak,source_ambiguity,medium,domain=boscoin.io issue=untrusted_domain,2026-05-02T21:28:23Z
+g.9daye.cn/base/gengine,source_ambiguity,medium,domain=g.9daye.cn issue=untrusted_domain,2026-05-02T21:28:23Z
+simonwaldherr.de/go/gwv,source_ambiguity,medium,domain=simonwaldherr.de issue=untrusted_domain,2026-05-02T21:28:23Z
+sqlflow.org/gohive,source_ambiguity,medium,domain=sqlflow.org issue=untrusted_domain,2026-05-02T21:28:23Z
+go.zoe.im/x,source_ambiguity,medium,domain=go.zoe.im issue=untrusted_domain,2026-05-02T21:28:23Z
+sofastack.io/sofa-mosn,source_ambiguity,medium,domain=sofastack.io issue=untrusted_domain,2026-05-02T21:28:23Z
+h12.io/socks,source_ambiguity,medium,domain=h12.io issue=untrusted_domain,2026-05-02T21:28:23Z
+limbo.services/version,source_ambiguity,medium,domain=limbo.services issue=untrusted_domain,2026-05-02T21:28:23Z
+go.zenithar.org/protoc-gen-cobra,source_ambiguity,medium,domain=go.zenithar.org issue=untrusted_domain,2026-05-02T21:28:23Z
+git.torproject.org/pluggable-transports/obfs4.git,source_ambiguity,medium,domain=git.torproject.org issue=untrusted_domain,2026-05-02T21:28:23Z
+gogs.blitter.com/rlabs/goutmp,source_ambiguity,medium,domain=gogs.blitter.com issue=untrusted_domain,2026-05-02T21:28:23Z
+kubevirt.io/kubevirt,source_ambiguity,medium,domain=kubevirt.io issue=untrusted_domain,2026-05-02T21:28:23Z
+v2ray.com/ext,source_ambiguity,medium,domain=v2ray.com issue=untrusted_domain,2026-05-02T21:28:23Z
+winterdrache.de/goformat,source_ambiguity,medium,domain=winterdrache.de issue=untrusted_domain,2026-05-02T21:28:23Z
+coding.net/yundkyy/cybexgolib,source_ambiguity,medium,domain=coding.net issue=untrusted_domain,2026-05-02T21:28:23Z
+iohub.cn/wohuitao/protobuf,source_ambiguity,medium,domain=iohub.cn issue=untrusted_domain,2026-05-02T21:28:23Z
+berty.tech/go-ipfs-log,source_ambiguity,medium,domain=berty.tech issue=untrusted_domain,2026-05-02T21:28:24Z
+gosrc.io/xmpp,source_ambiguity,medium,domain=gosrc.io issue=untrusted_domain,2026-05-02T21:28:24Z
+korok.io/korok,source_ambiguity,medium,domain=korok.io issue=untrusted_domain,2026-05-02T21:28:24Z
+olympos.io/encoding/edn,source_ambiguity,medium,domain=olympos.io issue=untrusted_domain,2026-05-02T21:28:24Z
+gvisor.dev/gvisor,source_ambiguity,medium,domain=gvisor.dev issue=untrusted_domain,2026-05-02T21:28:24Z
+go.gitbaidu.com/micro/config-srv,source_ambiguity,medium,domain=go.gitbaidu.com issue=untrusted_domain,2026-05-02T21:28:24Z
+code.soquee.net/testlog,source_ambiguity,medium,domain=code.soquee.net issue=untrusted_domain,2026-05-02T21:28:24Z
+vitess.io/vitess,source_ambiguity,medium,domain=vitess.io issue=untrusted_domain,2026-05-02T21:28:24Z
+xorm.io/builder,source_ambiguity,medium,domain=xorm.io issue=untrusted_domain,2026-05-02T21:28:24Z
+git.coding.net/napos_openapi/eleme-openapi-go-sdk.git,source_ambiguity,medium,domain=git.coding.net issue=untrusted_domain,2026-05-02T21:28:24Z
+code.sajari.com/storage,source_ambiguity,medium,domain=code.sajari.com issue=untrusted_domain,2026-05-02T21:28:24Z
+vimagination.zapto.org/memio,source_ambiguity,medium,domain=vimagination.zapto.org issue=untrusted_domain,2026-05-02T21:28:24Z
+git.k2software.com.cn/go/beego,source_ambiguity,medium,domain=git.k2software.com.cn issue=untrusted_domain,2026-05-02T21:28:24Z
+hidevops.io/hiboot,source_ambiguity,medium,domain=hidevops.io issue=untrusted_domain,2026-05-02T21:28:24Z
+cuelang.org/go,source_ambiguity,medium,domain=cuelang.org issue=untrusted_domain,2026-05-02T21:28:24Z
+go.knocknote.io/octillery,source_ambiguity,medium,domain=go.knocknote.io issue=untrusted_domain,2026-05-02T21:28:24Z
+yunion.io/x/sqlchemy,source_ambiguity,medium,domain=yunion.io issue=untrusted_domain,2026-05-02T21:28:24Z
+go.htdvisser.nl/eui,source_ambiguity,medium,domain=go.htdvisser.nl issue=untrusted_domain,2026-05-02T21:28:24Z
+gcp.upspin.io,source_ambiguity,medium,domain=gcp.upspin.io issue=untrusted_domain,2026-05-02T21:28:24Z
+knative.dev/pkg,source_ambiguity,medium,domain=knative.dev issue=untrusted_domain,2026-05-02T21:28:24Z
+go.cryptoscope.co/muxrpc,source_ambiguity,medium,domain=go.cryptoscope.co issue=untrusted_domain,2026-05-02T21:28:24Z
+oss.indeed.com/go/taggit,source_ambiguity,medium,domain=oss.indeed.com issue=untrusted_domain,2026-05-02T21:28:24Z
+vcs-test.golang.org/hg/vgotest1.hg,source_ambiguity,medium,domain=vcs-test.golang.org issue=untrusted_domain,2026-05-02T21:28:24Z
+go.gophers.dev/pkgs/extractors,source_ambiguity,medium,domain=go.gophers.dev issue=untrusted_domain,2026-05-02T21:28:24Z
+margo.sh,source_ambiguity,medium,domain=margo.sh issue=untrusted_domain,2026-05-02T21:28:24Z
+v2.staffjoy.com,source_ambiguity,medium,domain=v2.staffjoy.com issue=untrusted_domain,2026-05-02T21:28:24Z
+go.guoyk.net/redcon,source_ambiguity,medium,domain=go.guoyk.net issue=untrusted_domain,2026-05-02T21:28:24Z
+git.imooc.com/wendell1000/resk,source_ambiguity,medium,domain=git.imooc.com issue=untrusted_domain,2026-05-02T21:28:24Z
+go.i3wm.org/i3,source_ambiguity,medium,domain=go.i3wm.org issue=untrusted_domain,2026-05-02T21:28:24Z
+kubepack.dev/onessl,source_ambiguity,medium,domain=kubepack.dev issue=untrusted_domain,2026-05-02T21:28:24Z
+pharmer.dev/cloud,source_ambiguity,medium,domain=pharmer.dev issue=untrusted_domain,2026-05-02T21:28:24Z
+miniflux.app,source_ambiguity,medium,domain=miniflux.app issue=untrusted_domain,2026-05-02T21:28:24Z
+kubevault.dev/operator,source_ambiguity,medium,domain=kubevault.dev issue=untrusted_domain,2026-05-02T21:28:24Z
+go.kelfa.io/elf,source_ambiguity,medium,domain=go.kelfa.io issue=untrusted_domain,2026-05-02T21:28:24Z
+kubedb.dev/apimachinery,source_ambiguity,medium,domain=kubedb.dev issue=untrusted_domain,2026-05-02T21:28:24Z
+emperror.dev/emperror,source_ambiguity,medium,domain=emperror.dev issue=untrusted_domain,2026-05-02T21:28:24Z
+blitiri.com.ar/go/chasquid,source_ambiguity,medium,domain=blitiri.com.ar issue=untrusted_domain,2026-05-02T21:28:24Z
+gophers.dev/pkgs/atomicfs,source_ambiguity,medium,domain=gophers.dev issue=untrusted_domain,2026-05-02T21:28:24Z
+gitlab.eazytec-cloud.com/zhanglv/okdtools,source_ambiguity,medium,domain=gitlab.eazytec-cloud.com issue=untrusted_domain,2026-05-02T21:28:24Z
+go.chromium.org/goma/server,source_ambiguity,medium,domain=go.chromium.org issue=untrusted_domain,2026-05-02T21:28:24Z
+goftp.io/ftpd,source_ambiguity,medium,domain=goftp.io issue=untrusted_domain,2026-05-02T21:28:24Z
+gortc.io/stun,source_ambiguity,medium,domain=gortc.io issue=untrusted_domain,2026-05-02T21:28:24Z
+ekyu.moe/base91,source_ambiguity,medium,domain=ekyu.moe issue=untrusted_domain,2026-05-02T21:28:24Z
+facette.io/natsort,source_ambiguity,medium,domain=facette.io issue=untrusted_domain,2026-05-02T21:28:24Z
+zenhack.net/go/docker-spk,source_ambiguity,medium,domain=zenhack.net issue=untrusted_domain,2026-05-02T21:28:24Z
+go.stevenxie.me/vaingogh,source_ambiguity,medium,domain=go.stevenxie.me issue=untrusted_domain,2026-05-02T21:28:24Z
+hkjn.me/tau,source_ambiguity,medium,domain=hkjn.me issue=untrusted_domain,2026-05-02T21:28:24Z
+mynewt.apache.org/newt,source_ambiguity,medium,domain=mynewt.apache.org issue=untrusted_domain,2026-05-02T21:28:24Z
+lab.nexedi.com/kirr/go123,source_ambiguity,medium,domain=lab.nexedi.com issue=untrusted_domain,2026-05-02T21:28:24Z
+helm.sh/helm,source_ambiguity,medium,domain=helm.sh issue=untrusted_domain,2026-05-02T21:28:24Z
+gitlab.goalongtravels.com/open-source/couchdb-golang,source_ambiguity,medium,domain=gitlab.goalongtravels.com issue=untrusted_domain,2026-05-02T21:28:24Z
+go.gnzler.io/xap,source_ambiguity,medium,domain=go.gnzler.io issue=untrusted_domain,2026-05-02T21:28:24Z
+kubesphere.io/kubesphere,source_ambiguity,medium,domain=kubesphere.io issue=untrusted_domain,2026-05-02T21:28:24Z
+golang.speech.sogou.com/apis,source_ambiguity,medium,domain=golang.speech.sogou.com issue=untrusted_domain,2026-05-02T21:28:24Z
+git.ywwxhz.com/ywwxhz/intellijideaportable,source_ambiguity,medium,domain=git.ywwxhz.com issue=untrusted_domain,2026-05-02T21:28:24Z
+gogs.doschain.org/doschain/dosd,source_ambiguity,medium,domain=gogs.doschain.org issue=untrusted_domain,2026-05-02T21:28:24Z
+go.awsmlabs.co.uk/rounding,source_ambiguity,medium,domain=go.awsmlabs.co.uk issue=untrusted_domain,2026-05-02T21:28:24Z
+git.psu.edu/swe-golang/buildversion,source_ambiguity,medium,domain=git.psu.edu issue=untrusted_domain,2026-05-02T21:28:24Z
+go.okkur.org/torproxy,source_ambiguity,medium,domain=go.okkur.org issue=untrusted_domain,2026-05-02T21:28:24Z
+tianwei.pro/beego,source_ambiguity,medium,domain=tianwei.pro issue=untrusted_domain,2026-05-02T21:28:24Z
+cgt.name/pkg/go-mwclient,source_ambiguity,medium,domain=cgt.name issue=untrusted_domain,2026-05-02T21:28:24Z
+go.opentelemetry.io,source_ambiguity,medium,domain=go.opentelemetry.io issue=untrusted_domain,2026-05-02T21:28:24Z
+go.mindeco.de/ssb-gabbygrove,source_ambiguity,medium,domain=go.mindeco.de issue=untrusted_domain,2026-05-02T21:28:24Z
+crawler.club/crawler,source_ambiguity,high,domain=crawler.club issue=suspicious_tld_.club,2026-05-02T21:28:24Z
+crawler.club/crawler,source_ambiguity,medium,domain=crawler.club issue=untrusted_domain,2026-05-02T21:28:24Z
+zliu.org/q,source_ambiguity,medium,domain=zliu.org issue=untrusted_domain,2026-05-02T21:28:24Z
+tchaik.com,source_ambiguity,medium,domain=tchaik.com issue=untrusted_domain,2026-05-02T21:28:24Z
+gitea.kkspace.cn/fzkun/demo,source_ambiguity,medium,domain=gitea.kkspace.cn issue=untrusted_domain,2026-05-02T21:28:24Z
+go.dutchsec.com/beagle,source_ambiguity,medium,domain=go.dutchsec.com issue=untrusted_domain,2026-05-02T21:28:24Z
+git.ratafee.nl/fangdingjun/jsonrpc.git,source_ambiguity,medium,domain=git.ratafee.nl issue=untrusted_domain,2026-05-02T21:28:24Z
+go.linecorp.com/centraldogma,source_ambiguity,medium,domain=go.linecorp.com issue=untrusted_domain,2026-05-02T21:28:24Z
+gitlab.fs.eckler.ca/life-2/common-go,source_ambiguity,medium,domain=gitlab.fs.eckler.ca issue=untrusted_domain,2026-05-02T21:28:24Z
+go.1password.io/spg,source_ambiguity,medium,domain=go.1password.io issue=untrusted_domain,2026-05-02T21:28:24Z
+bramp.net/antlr4,source_ambiguity,medium,domain=bramp.net issue=untrusted_domain,2026-05-02T21:28:24Z
+go-home.io/x/server/plugins,source_ambiguity,medium,domain=go-home.io issue=untrusted_domain,2026-05-02T21:28:24Z
+logur.dev/adapter/logrus,source_ambiguity,medium,domain=logur.dev issue=untrusted_domain,2026-05-02T21:28:24Z
+go.hein.dev/go-version,source_ambiguity,medium,domain=go.hein.dev issue=untrusted_domain,2026-05-02T21:28:24Z
+cwtch.im/cwtch,source_ambiguity,medium,domain=cwtch.im issue=untrusted_domain,2026-05-02T21:28:24Z
+git.openprivacy.ca/openprivacy/libricochet-go,source_ambiguity,medium,domain=git.openprivacy.ca issue=untrusted_domain,2026-05-02T21:28:24Z
+code.aliyun.com/go-mirror/bbolt,source_ambiguity,medium,domain=code.aliyun.com issue=untrusted_domain,2026-05-02T21:28:24Z
+git.wow.st/gmp/giowrap,source_ambiguity,medium,domain=git.wow.st issue=untrusted_domain,2026-05-02T21:28:24Z
+ultre.me/moi-j-aime-generator,source_ambiguity,medium,domain=ultre.me issue=untrusted_domain,2026-05-02T21:28:25Z
+git.scc.kit.edu/heiko.reese/xor-decrypt,source_ambiguity,medium,domain=git.scc.kit.edu issue=untrusted_domain,2026-05-02T21:28:25Z
+lesterpig.com/tirelire,source_ambiguity,medium,domain=lesterpig.com issue=untrusted_domain,2026-05-02T21:28:25Z
+aaronlindsay.com/go/pkg/pso2,source_ambiguity,medium,domain=aaronlindsay.com issue=untrusted_domain,2026-05-02T21:28:25Z
+code.witches.io/go/sdl2,source_ambiguity,medium,domain=code.witches.io issue=untrusted_domain,2026-05-02T21:28:25Z
+code.choerodon.com.cn/12480/go-get,source_ambiguity,medium,domain=code.choerodon.com.cn issue=untrusted_domain,2026-05-02T21:28:25Z
+eaglesong.dev/hls,source_ambiguity,medium,domain=eaglesong.dev issue=untrusted_domain,2026-05-02T21:28:25Z
+src.techknowlogick.com/xgo,source_ambiguity,medium,domain=src.techknowlogick.com issue=untrusted_domain,2026-05-02T21:28:25Z
+code.dllexport.com/mario/goex,source_ambiguity,medium,domain=code.dllexport.com issue=untrusted_domain,2026-05-02T21:28:25Z
+roughtime.googlesource.com/roughtime.git,source_ambiguity,medium,domain=roughtime.googlesource.com issue=untrusted_domain,2026-05-02T21:28:25Z
+git.srelab.cn/go/resty,source_ambiguity,medium,domain=git.srelab.cn issue=untrusted_domain,2026-05-02T21:28:25Z
+go.aporeto.io/netlink-go,source_ambiguity,medium,domain=go.aporeto.io issue=untrusted_domain,2026-05-02T21:28:25Z
+flamingo.me/flamingo/v3,source_ambiguity,medium,domain=flamingo.me issue=untrusted_domain,2026-05-02T21:28:25Z
+ktkr.us/pkg/fmtutil,source_ambiguity,medium,domain=ktkr.us issue=untrusted_domain,2026-05-02T21:28:25Z
+go.soon.build/kit,source_ambiguity,medium,domain=go.soon.build issue=untrusted_domain,2026-05-02T21:28:25Z
+muzzammil.xyz/jsonc,source_ambiguity,high,domain=muzzammil.xyz issue=suspicious_tld_.xyz,2026-05-02T21:28:25Z
+muzzammil.xyz/jsonc,source_ambiguity,medium,domain=muzzammil.xyz issue=untrusted_domain,2026-05-02T21:28:25Z
+lukeshu.com/git/go/libgnulinux.git,source_ambiguity,medium,domain=lukeshu.com issue=untrusted_domain,2026-05-02T21:28:25Z
+scatter.im,source_ambiguity,medium,domain=scatter.im issue=untrusted_domain,2026-05-02T21:28:25Z
+salsa.debian.org/vasudev/gospake2,source_ambiguity,medium,domain=salsa.debian.org issue=untrusted_domain,2026-05-02T21:28:25Z
+git.elyxon.de/tobikris/buildvers,source_ambiguity,medium,domain=git.elyxon.de issue=untrusted_domain,2026-05-02T21:28:25Z
+open-match.dev/open-match,source_ambiguity,medium,domain=open-match.dev issue=untrusted_domain,2026-05-02T21:28:25Z
+s32x.com/httpclient,source_ambiguity,medium,domain=s32x.com issue=untrusted_domain,2026-05-02T21:28:25Z
+gitlab.silkrode.com.tw/golang/goose,source_ambiguity,medium,domain=gitlab.silkrode.com.tw issue=untrusted_domain,2026-05-02T21:28:25Z
+lab.weave.nl/forks/gorma,source_ambiguity,medium,domain=lab.weave.nl issue=untrusted_domain,2026-05-02T21:28:25Z
+git.noc.ruhr-uni-bochum.de/danieljankowski/gomatrix,source_ambiguity,medium,domain=git.noc.ruhr-uni-bochum.de issue=untrusted_domain,2026-05-02T21:28:25Z
+gerrit.o-ran-sc.org/r/com/golog.git,source_ambiguity,medium,domain=gerrit.o-ran-sc.org issue=untrusted_domain,2026-05-02T21:28:25Z
+revas.io/revas-platform/animo-service,source_ambiguity,medium,domain=revas.io issue=untrusted_domain,2026-05-02T21:28:25Z
+www.velocidex.com/golang/vtypes,source_ambiguity,medium,domain=www.velocidex.com issue=untrusted_domain,2026-05-02T21:28:25Z
+go.txtdirect.org/txtdirect,source_ambiguity,medium,domain=go.txtdirect.org issue=untrusted_domain,2026-05-02T21:28:25Z
+src.userspace.com.au/bitarray,source_ambiguity,medium,domain=src.userspace.com.au issue=untrusted_domain,2026-05-02T21:28:25Z
+code.bankrs.com/bosgo,source_ambiguity,medium,domain=code.bankrs.com issue=untrusted_domain,2026-05-02T21:28:25Z
+halkyon.io/api,source_ambiguity,medium,domain=halkyon.io issue=untrusted_domain,2026-05-02T21:28:25Z
+decred.org/cspp,source_ambiguity,medium,domain=decred.org issue=untrusted_domain,2026-05-02T21:28:25Z
+go.reizu.org/servemux,source_ambiguity,medium,domain=go.reizu.org issue=untrusted_domain,2026-05-02T21:28:25Z
+go.fuchsia.dev/tools,source_ambiguity,medium,domain=go.fuchsia.dev issue=untrusted_domain,2026-05-02T21:28:25Z
+go.skia.org/infra,source_ambiguity,medium,domain=go.skia.org issue=untrusted_domain,2026-05-02T21:28:25Z
+git.fractalqb.de/fractalqb/sllm,source_ambiguity,medium,domain=git.fractalqb.de issue=untrusted_domain,2026-05-02T21:28:25Z
+lab.madbox.synology.me/gophers/clog,source_ambiguity,medium,domain=lab.madbox.synology.me issue=untrusted_domain,2026-05-02T21:28:25Z
+code.cryptowat.ch/clock,source_ambiguity,medium,domain=code.cryptowat.ch issue=untrusted_domain,2026-05-02T21:28:25Z
+go.tianon.xyz/progress,source_ambiguity,high,domain=go.tianon.xyz issue=suspicious_tld_.xyz,2026-05-02T21:28:25Z
+go.tianon.xyz/progress,source_ambiguity,medium,domain=go.tianon.xyz issue=untrusted_domain,2026-05-02T21:28:25Z
+gnorm.org/gnorm,source_ambiguity,medium,domain=gnorm.org issue=untrusted_domain,2026-05-02T21:28:25Z
+gopkg.daemonl.com/envconf,source_ambiguity,medium,domain=gopkg.daemonl.com issue=untrusted_domain,2026-05-02T21:28:25Z
+corelab.mkcl.org/mkclos/coredevelopmentplatform/corepkgv2,source_ambiguity,medium,domain=corelab.mkcl.org issue=untrusted_domain,2026-05-02T21:28:25Z
+livingit.de/code/versioned,source_ambiguity,medium,domain=livingit.de issue=untrusted_domain,2026-05-02T21:28:25Z
+zgo.at/zhttp,source_ambiguity,medium,domain=zgo.at issue=untrusted_domain,2026-05-02T21:28:25Z
+kylelemons.net/go/esource,source_ambiguity,medium,domain=kylelemons.net issue=untrusted_domain,2026-05-02T21:28:25Z
+rogchap.com/v8go,source_ambiguity,medium,domain=rogchap.com issue=untrusted_domain,2026-05-02T21:28:25Z
+go.otter.engineering/test,source_ambiguity,medium,domain=go.otter.engineering issue=untrusted_domain,2026-05-02T21:28:25Z
+go.spiff.io/expand,source_ambiguity,medium,domain=go.spiff.io issue=untrusted_domain,2026-05-02T21:28:25Z
+go.larrymyers.com/protoc-gen-twirp_typescript,source_ambiguity,medium,domain=go.larrymyers.com issue=untrusted_domain,2026-05-02T21:28:25Z
+howl.moe/claws,source_ambiguity,medium,domain=howl.moe issue=untrusted_domain,2026-05-02T21:28:25Z
+git.darknebu.la/satellite/tle,source_ambiguity,medium,domain=git.darknebu.la issue=untrusted_domain,2026-05-02T21:28:25Z
+go.jonnrb.io/vanity,source_ambiguity,medium,domain=go.jonnrb.io issue=untrusted_domain,2026-05-02T21:28:25Z
+kythe.io,source_ambiguity,medium,domain=kythe.io issue=untrusted_domain,2026-05-02T21:28:25Z
+devt.de/krotik/common,source_ambiguity,medium,domain=devt.de issue=untrusted_domain,2026-05-02T21:28:25Z
+getsum.pub,source_ambiguity,medium,domain=getsum.pub issue=untrusted_domain,2026-05-02T21:28:25Z
+stash.kopano.io/kgol/caddy-prometheus,source_ambiguity,medium,domain=stash.kopano.io issue=untrusted_domain,2026-05-02T21:28:25Z
+0xacab.org/leap/go-dialog,source_ambiguity,medium,domain=0xacab.org issue=untrusted_domain,2026-05-02T21:28:25Z
+pkg.pnha.io/petnet/defaultfields,source_ambiguity,medium,domain=pkg.pnha.io issue=untrusted_domain,2026-05-02T21:28:25Z
+git.ultraware.nl/nisevoid/qb,source_ambiguity,medium,domain=git.ultraware.nl issue=untrusted_domain,2026-05-02T21:28:25Z
+git.fuyu.moe/fuyu/assert,source_ambiguity,medium,domain=git.fuyu.moe issue=untrusted_domain,2026-05-02T21:28:25Z
+hawx.me/code/serve,source_ambiguity,medium,domain=hawx.me issue=untrusted_domain,2026-05-02T21:28:25Z
+samhofi.us/x/keybase,source_ambiguity,medium,domain=samhofi.us issue=untrusted_domain,2026-05-02T21:28:25Z
+go.bobheadxi.dev/gobenchdata,source_ambiguity,medium,domain=go.bobheadxi.dev issue=untrusted_domain,2026-05-02T21:28:25Z
+git-wip-us.apache.org/repos/asf/thrift.git,source_ambiguity,medium,domain=git-wip-us.apache.org issue=untrusted_domain,2026-05-02T21:28:25Z
+git.stephensearles.com/stephen/idleshut,source_ambiguity,medium,domain=git.stephensearles.com issue=untrusted_domain,2026-05-02T21:28:25Z
+gist.github.com/9c94283d6be930087d8814cd5453cee4.git,source_ambiguity,medium,domain=gist.github.com issue=untrusted_domain,2026-05-02T21:28:25Z
+code.vikunja.io/web,source_ambiguity,medium,domain=code.vikunja.io issue=untrusted_domain,2026-05-02T21:28:25Z
+code.as/core/socks,source_ambiguity,medium,domain=code.as issue=untrusted_domain,2026-05-02T21:28:25Z
+nimona.io,source_ambiguity,medium,domain=nimona.io issue=untrusted_domain,2026-05-02T21:28:25Z
+go.isomorphicgo.org/go/isokit,source_ambiguity,medium,domain=go.isomorphicgo.org issue=untrusted_domain,2026-05-02T21:28:25Z
+gitgud.io/softashell/rpgmaker-patch-translator,source_ambiguity,medium,domain=gitgud.io issue=untrusted_domain,2026-05-02T21:28:25Z
+maze.io/x/secureshell,source_ambiguity,medium,domain=maze.io issue=untrusted_domain,2026-05-02T21:28:25Z
+git.connectplay.co.nz/open-cplay/rethinkdb-adapter,source_ambiguity,medium,domain=git.connectplay.co.nz issue=untrusted_domain,2026-05-02T21:28:25Z
+go.undefinedlabs.com/scopeagent,source_ambiguity,medium,domain=go.undefinedlabs.com issue=untrusted_domain,2026-05-02T21:28:26Z
+opendev.org/airship/airshipctl,source_ambiguity,medium,domain=opendev.org issue=untrusted_domain,2026-05-02T21:28:26Z
+volcano.sh/volcano,source_ambiguity,medium,domain=volcano.sh issue=untrusted_domain,2026-05-02T21:28:26Z
+fknsrs.biz/p/hl7,source_ambiguity,high,domain=fknsrs.biz issue=suspicious_tld_.biz,2026-05-02T21:28:26Z
+fknsrs.biz/p/hl7,source_ambiguity,medium,domain=fknsrs.biz issue=untrusted_domain,2026-05-02T21:28:26Z
+go.evanpurkhiser.com/prolink,source_ambiguity,medium,domain=go.evanpurkhiser.com issue=untrusted_domain,2026-05-02T21:28:26Z
+gitlab.techcultivation.org/sangha/mq,source_ambiguity,medium,domain=gitlab.techcultivation.org issue=untrusted_domain,2026-05-02T21:28:26Z
+go.artemisc.eu/godium,source_ambiguity,medium,domain=go.artemisc.eu issue=untrusted_domain,2026-05-02T21:28:26Z
+git.parallelcoin.io/dev/utl,source_ambiguity,medium,domain=git.parallelcoin.io issue=untrusted_domain,2026-05-02T21:28:26Z
+gitlab.omwave.me/gfyrag/go-curl,source_ambiguity,medium,domain=gitlab.omwave.me issue=untrusted_domain,2026-05-02T21:28:26Z
+comail.io/go/colog,source_ambiguity,medium,domain=comail.io issue=untrusted_domain,2026-05-02T21:28:26Z
+schneider.vip/problem,source_ambiguity,medium,domain=schneider.vip issue=untrusted_domain,2026-05-02T21:28:26Z
+gavincabbage.com/stegosaurus,source_ambiguity,medium,domain=gavincabbage.com issue=untrusted_domain,2026-05-02T21:28:26Z
+metagit.org/blizzlike/cmangos-website,source_ambiguity,medium,domain=metagit.org issue=untrusted_domain,2026-05-02T21:28:26Z
+xorkevin.dev/hunter2,source_ambiguity,medium,domain=xorkevin.dev issue=untrusted_domain,2026-05-02T21:28:26Z
+ilya.app/dnsprober,source_ambiguity,medium,domain=ilya.app issue=untrusted_domain,2026-05-02T21:28:26Z
+gitbox.apache.org/repos/asf/thrift.git,source_ambiguity,medium,domain=gitbox.apache.org issue=untrusted_domain,2026-05-02T21:28:26Z
+kubeform.dev/kubeform,source_ambiguity,medium,domain=kubeform.dev issue=untrusted_domain,2026-05-02T21:28:26Z
+git.bella.network/playground/golang,source_ambiguity,medium,domain=git.bella.network issue=untrusted_domain,2026-05-02T21:28:26Z
+src.d10.dev/command,source_ambiguity,medium,domain=src.d10.dev issue=untrusted_domain,2026-05-02T21:28:26Z
+gitlab.glueckkanja.net/florianholzapfel/azure-sdk-for-go,source_ambiguity,medium,domain=gitlab.glueckkanja.net issue=untrusted_domain,2026-05-02T21:28:26Z
+git.afpro.net/micro/log,source_ambiguity,medium,domain=git.afpro.net issue=untrusted_domain,2026-05-02T21:28:26Z
+gitlab.nabbar.eu/gopkg/njs-certif,source_ambiguity,medium,domain=gitlab.nabbar.eu issue=untrusted_domain,2026-05-02T21:28:26Z
+meow.tf/streamdeck/sdk,source_ambiguity,medium,domain=meow.tf issue=untrusted_domain,2026-05-02T21:28:26Z
+git.alhur.es/fiatjaf/lntxbot,source_ambiguity,medium,domain=git.alhur.es issue=untrusted_domain,2026-05-02T21:28:26Z
+dim13.org/acme,source_ambiguity,medium,domain=dim13.org issue=untrusted_domain,2026-05-02T21:28:26Z
+git.lug.ustc.edu.cn/github.com/rzh/gotest,source_ambiguity,medium,domain=git.lug.ustc.edu.cn issue=untrusted_domain,2026-05-02T21:28:26Z
+gitlab.ttsing.com/changdao/framework/third_extension/phachon/go-logger,source_ambiguity,medium,domain=gitlab.ttsing.com issue=untrusted_domain,2026-05-02T21:28:26Z
+euphoria.io/heim,source_ambiguity,medium,domain=euphoria.io issue=untrusted_domain,2026-05-02T21:28:26Z
+bardes.org/go/rmq,source_ambiguity,medium,domain=bardes.org issue=untrusted_domain,2026-05-02T21:28:26Z
+go.ajitem.com/feeds,source_ambiguity,medium,domain=go.ajitem.com issue=untrusted_domain,2026-05-02T21:28:26Z
+cloudtui.com/key/xiao,source_ambiguity,medium,domain=cloudtui.com issue=untrusted_domain,2026-05-02T21:28:26Z
+lang.yottadb.com/go/yottadb,source_ambiguity,medium,domain=lang.yottadb.com issue=untrusted_domain,2026-05-02T21:28:26Z
+gitlab.softpark.kz/arman.zhilkaidarov/mvc,source_ambiguity,medium,domain=gitlab.softpark.kz issue=untrusted_domain,2026-05-02T21:28:26Z
+git.zx2c4.com/wireguard-go,source_ambiguity,medium,domain=git.zx2c4.com issue=untrusted_domain,2026-05-02T21:28:26Z
+qpid.apache.org,source_ambiguity,medium,domain=qpid.apache.org issue=untrusted_domain,2026-05-02T21:28:26Z
+gitlab.oit.duke.edu/obge/shibduke,source_ambiguity,medium,domain=gitlab.oit.duke.edu issue=untrusted_domain,2026-05-02T21:28:26Z
+dev.rcrai.com/rcrai/gocelery,source_ambiguity,medium,domain=dev.rcrai.com issue=untrusted_domain,2026-05-02T21:28:26Z
+pkg.glorieux.io/slice,source_ambiguity,medium,domain=pkg.glorieux.io issue=untrusted_domain,2026-05-02T21:28:26Z
+git.dagestad.fr/~nicolai/gofeed-fork,source_ambiguity,medium,domain=git.dagestad.fr issue=untrusted_domain,2026-05-02T21:28:26Z
+develop.pztrn.name/pztrn/gorum,source_ambiguity,medium,domain=develop.pztrn.name issue=untrusted_domain,2026-05-02T21:28:26Z
+code.funccloud.dev/formautomator,source_ambiguity,medium,domain=code.funccloud.dev issue=untrusted_domain,2026-05-02T21:28:26Z
+m4o.io/pbf,source_ambiguity,medium,domain=m4o.io issue=untrusted_domain,2026-05-02T21:28:26Z
+git.sci4me.com/sci4me/yakvs,source_ambiguity,medium,domain=git.sci4me.com issue=untrusted_domain,2026-05-02T21:28:26Z
+git.trj.tw/golang/utils,source_ambiguity,medium,domain=git.trj.tw issue=untrusted_domain,2026-05-02T21:28:26Z
+go.rbn.im/neinp,source_ambiguity,medium,domain=go.rbn.im issue=untrusted_domain,2026-05-02T21:28:26Z
+go.octolab.org,source_ambiguity,medium,domain=go.octolab.org issue=untrusted_domain,2026-05-02T21:28:26Z
+n0st.ac/n0stack,source_ambiguity,medium,domain=n0st.ac issue=untrusted_domain,2026-05-02T21:28:26Z
+gobasics.dev/env.git,source_ambiguity,medium,domain=gobasics.dev issue=untrusted_domain,2026-05-02T21:28:26Z
+code.uplex.de/uplex-varnish/varnishapi,source_ambiguity,medium,domain=code.uplex.de issue=untrusted_domain,2026-05-02T21:28:26Z
+go.alexhamlin.co/slackio,source_ambiguity,medium,domain=go.alexhamlin.co issue=untrusted_domain,2026-05-02T21:28:26Z
+heckel.io/natter,source_ambiguity,medium,domain=heckel.io issue=untrusted_domain,2026-05-02T21:28:26Z
+savo.la/gate/localhost,source_ambiguity,medium,domain=savo.la issue=untrusted_domain,2026-05-02T21:28:26Z
+gogs.rickbassham.com/rick/database,source_ambiguity,medium,domain=gogs.rickbassham.com issue=untrusted_domain,2026-05-02T21:28:26Z
+gofer.dev/airly,source_ambiguity,medium,domain=gofer.dev issue=untrusted_domain,2026-05-02T21:28:26Z
+meera.tech/kit,source_ambiguity,medium,domain=meera.tech issue=untrusted_domain,2026-05-02T21:28:26Z
+git.ethfans.org/weishuyu/cosmos-for-pool,source_ambiguity,medium,domain=git.ethfans.org issue=untrusted_domain,2026-05-02T21:28:26Z
+git.aiterp.net/rpdata/api,source_ambiguity,medium,domain=git.aiterp.net issue=untrusted_domain,2026-05-02T21:28:26Z
+mooncamp.com/dgx,source_ambiguity,medium,domain=mooncamp.com issue=untrusted_domain,2026-05-02T21:28:26Z
+git.saucisseroyale.cc/delthas/opus-without-opusfile,source_ambiguity,medium,domain=git.saucisseroyale.cc issue=untrusted_domain,2026-05-02T21:28:26Z
+nt.web.ve/go/ntgo,source_ambiguity,medium,domain=nt.web.ve issue=untrusted_domain,2026-05-02T21:28:26Z
+tildegit.org/sloum/mailcap,source_ambiguity,medium,domain=tildegit.org issue=untrusted_domain,2026-05-02T21:28:26Z
+go.roman.zone/go-bomb,source_ambiguity,medium,domain=go.roman.zone issue=untrusted_domain,2026-05-02T21:28:26Z
+git.tipsy.coffee/tipsy-coffee/go-utils,source_ambiguity,medium,domain=git.tipsy.coffee issue=untrusted_domain,2026-05-02T21:28:26Z
+git.gvk.idi.ntnu.no/charleyv/imt2681,source_ambiguity,medium,domain=git.gvk.idi.ntnu.no issue=untrusted_domain,2026-05-02T21:28:26Z
+victorz.ca/grammar,source_ambiguity,medium,domain=victorz.ca issue=untrusted_domain,2026-05-02T21:28:26Z
+openpitrix.io/openpitrix,source_ambiguity,medium,domain=openpitrix.io issue=untrusted_domain,2026-05-02T21:28:26Z
+codeberg.org/momar/ternary,source_ambiguity,medium,domain=codeberg.org issue=untrusted_domain,2026-05-02T21:28:26Z
+git.xeserv.us/xena/jvozba,source_ambiguity,medium,domain=git.xeserv.us issue=untrusted_domain,2026-05-02T21:28:26Z
+gitlab.webbankir.team/public-sources/terraform-provider-gitlab,source_ambiguity,medium,domain=gitlab.webbankir.team issue=untrusted_domain,2026-05-02T21:28:26Z
+go.bmvs.io/ynab,source_ambiguity,medium,domain=go.bmvs.io issue=untrusted_domain,2026-05-02T21:28:26Z
+pathwar.land,source_ambiguity,medium,domain=pathwar.land issue=untrusted_domain,2026-05-02T21:28:26Z
+jsouthworth.net/go/curry,source_ambiguity,medium,domain=jsouthworth.net issue=untrusted_domain,2026-05-02T21:28:26Z
+paste.ee/go,source_ambiguity,medium,domain=paste.ee issue=untrusted_domain,2026-05-02T21:28:26Z
+klaidliadon.dev/provider,source_ambiguity,medium,domain=klaidliadon.dev issue=untrusted_domain,2026-05-02T21:28:26Z
+golift.io/ffmpeg,source_ambiguity,medium,domain=golift.io issue=untrusted_domain,2026-05-02T21:28:26Z
+batou.dev/fantask,source_ambiguity,medium,domain=batou.dev issue=untrusted_domain,2026-05-02T21:28:26Z
+git.what.codes/go/quickfix,source_ambiguity,medium,domain=git.what.codes issue=untrusted_domain,2026-05-02T21:28:26Z
+justanother.org/justanotherbotkit/commands,source_ambiguity,medium,domain=justanother.org issue=untrusted_domain,2026-05-02T21:28:27Z
+golang.leonklingele.de/securetemp,source_ambiguity,medium,domain=golang.leonklingele.de issue=untrusted_domain,2026-05-02T21:28:27Z
+jgquinn.com/handygo,source_ambiguity,medium,domain=jgquinn.com issue=untrusted_domain,2026-05-02T21:28:27Z
+go.nuvuli.com/logz,source_ambiguity,medium,domain=go.nuvuli.com issue=untrusted_domain,2026-05-02T21:28:27Z
+git.openstack.org/openstack/golang-client,source_ambiguity,medium,domain=git.openstack.org issue=untrusted_domain,2026-05-02T21:28:27Z
+git.biz.tm/go/dbbolt,source_ambiguity,medium,domain=git.biz.tm issue=untrusted_domain,2026-05-02T21:28:27Z
+kilobit.ca/args,source_ambiguity,medium,domain=kilobit.ca issue=untrusted_domain,2026-05-02T21:28:27Z
+go101.org/skia,source_ambiguity,medium,domain=go101.org issue=untrusted_domain,2026-05-02T21:28:27Z
+git.pofilo.fr/mirrors/getopt,source_ambiguity,medium,domain=git.pofilo.fr issue=untrusted_domain,2026-05-02T21:28:27Z
+tawesoft.co.uk/go/dialog,source_ambiguity,medium,domain=tawesoft.co.uk issue=untrusted_domain,2026-05-02T21:28:27Z
+dfir.software/fslib,source_ambiguity,medium,domain=dfir.software issue=untrusted_domain,2026-05-02T21:28:27Z
+go.medium.engineering/picchu,source_ambiguity,medium,domain=go.medium.engineering issue=untrusted_domain,2026-05-02T21:28:27Z
+go.einride.tech/can,source_ambiguity,medium,domain=go.einride.tech issue=untrusted_domain,2026-05-02T21:28:27Z
+tryffel.net/pkg/base,source_ambiguity,medium,domain=tryffel.net issue=untrusted_domain,2026-05-02T21:28:27Z
+eliasnaur.com/giologo,source_ambiguity,medium,domain=eliasnaur.com issue=untrusted_domain,2026-05-02T21:28:27Z
+git.xbudex.com/buddy/update-dns,source_ambiguity,medium,domain=git.xbudex.com issue=untrusted_domain,2026-05-02T21:28:27Z
+go.niquid.tech/civic-sip-api,source_ambiguity,medium,domain=go.niquid.tech issue=untrusted_domain,2026-05-02T21:28:27Z
+gitlab.turtlecoding.de/turtlecoding/common/server-common,source_ambiguity,medium,domain=gitlab.turtlecoding.de issue=untrusted_domain,2026-05-02T21:28:27Z
+go.pyspa.org/brbundle,source_ambiguity,medium,domain=go.pyspa.org issue=untrusted_domain,2026-05-02T21:28:27Z
+sire.run/encoding,source_ambiguity,medium,domain=sire.run issue=untrusted_domain,2026-05-02T21:28:27Z
+go.gazette.dev/core,source_ambiguity,medium,domain=go.gazette.dev issue=untrusted_domain,2026-05-02T21:28:27Z
+mae.earth/pkg/numcat,source_ambiguity,medium,domain=mae.earth issue=untrusted_domain,2026-05-02T21:28:27Z
+git.packetlostandfound.us/chiefnoah/goalpost,source_ambiguity,medium,domain=git.packetlostandfound.us issue=untrusted_domain,2026-05-02T21:28:27Z
+git.rootprojects.org/root/go-gitver,source_ambiguity,medium,domain=git.rootprojects.org issue=untrusted_domain,2026-05-02T21:28:27Z
+git.sgu.ru/sgu/gosnmp,source_ambiguity,medium,domain=git.sgu.ru issue=untrusted_domain,2026-05-02T21:28:27Z
+git.jba.io/go/httputils,source_ambiguity,medium,domain=git.jba.io issue=untrusted_domain,2026-05-02T21:28:27Z
+go.felesatra.moe/anidb,source_ambiguity,medium,domain=go.felesatra.moe issue=untrusted_domain,2026-05-02T21:28:27Z
+git.dtluna.net/dtluna/go-mastodon,source_ambiguity,medium,domain=git.dtluna.net issue=untrusted_domain,2026-05-02T21:28:27Z
+git.crumpington.com/public/am,source_ambiguity,medium,domain=git.crumpington.com issue=untrusted_domain,2026-05-02T21:28:27Z
+gitlab.nautilus.optiputer.net/prp/k8s_portal,source_ambiguity,medium,domain=gitlab.nautilus.optiputer.net issue=untrusted_domain,2026-05-02T21:28:27Z
+novit.nc/direktil/pkg,source_ambiguity,medium,domain=novit.nc issue=untrusted_domain,2026-05-02T21:28:27Z
+qvl.io/promplot,source_ambiguity,medium,domain=qvl.io issue=untrusted_domain,2026-05-02T21:28:27Z
+blockwatch.cc/packdb,source_ambiguity,medium,domain=blockwatch.cc issue=untrusted_domain,2026-05-02T21:28:27Z
+git.trafficking.agency/t.eddy/gdms,source_ambiguity,medium,domain=git.trafficking.agency issue=untrusted_domain,2026-05-02T21:28:27Z
+github.com/stretchr/testify,concentration_risk,high,dependent_count=236 issue=depended_upon_by_236_modules,2026-05-02T21:45:29Z
+golang.org/x/net,concentration_risk,high,dependent_count=187 issue=depended_upon_by_187_modules,2026-05-02T21:45:29Z
+golang.org/x/sys,concentration_risk,high,dependent_count=169 issue=depended_upon_by_169_modules,2026-05-02T21:45:29Z
+github.com/pkg/errors,concentration_risk,high,dependent_count=154 issue=depended_upon_by_154_modules,2026-05-02T21:45:29Z
+github.com/davecgh/go-spew,concentration_risk,high,dependent_count=138 issue=depended_upon_by_138_modules,2026-05-02T21:45:29Z
+golang.org/x/crypto,concentration_risk,high,dependent_count=131 issue=depended_upon_by_131_modules,2026-05-02T21:45:29Z
+github.com/golang/protobuf,concentration_risk,medium,dependent_count=97 issue=depended_upon_by_97_modules,2026-05-02T21:45:29Z
+github.com/pmezard/go-difflib,concentration_risk,medium,dependent_count=95 issue=depended_upon_by_95_modules,2026-05-02T21:45:29Z
+gopkg.in/yaml.v2,concentration_risk,medium,dependent_count=89 issue=depended_upon_by_89_modules,2026-05-02T21:45:29Z
+golang.org/x/sync,concentration_risk,medium,dependent_count=89 issue=depended_upon_by_89_modules,2026-05-02T21:45:29Z
+golang.org/x/tools,concentration_risk,medium,dependent_count=73 issue=depended_upon_by_73_modules,2026-05-02T21:45:29Z
+golang.org/x/text,concentration_risk,medium,dependent_count=70 issue=depended_upon_by_70_modules,2026-05-02T21:45:29Z
+github.com/gogo/protobuf,concentration_risk,medium,dependent_count=69 issue=depended_upon_by_69_modules,2026-05-02T21:45:29Z
+google.golang.org/grpc,concentration_risk,medium,dependent_count=64 issue=depended_upon_by_64_modules,2026-05-02T21:45:29Z
+github.com/sirupsen/logrus,concentration_risk,medium,dependent_count=61 issue=depended_upon_by_61_modules,2026-05-02T21:45:29Z
+github.com/mattn/go-isatty,concentration_risk,medium,dependent_count=56 issue=depended_upon_by_56_modules,2026-05-02T21:45:29Z
+golang.org/x/oauth2,concentration_risk,medium,dependent_count=55 issue=depended_upon_by_55_modules,2026-05-02T21:45:29Z
+github.com/google/go-cmp,concentration_risk,medium,dependent_count=53 issue=depended_upon_by_53_modules,2026-05-02T21:45:29Z
+github.com/spf13/pflag,concentration_risk,medium,dependent_count=53 issue=depended_upon_by_53_modules,2026-05-02T21:45:29Z
+github.com/spf13/cobra,concentration_risk,medium,dependent_count=52 issue=depended_upon_by_52_modules,2026-05-02T21:45:29Z
+github.com/kr/pretty,concentration_risk,medium,dependent_count=51 issue=depended_upon_by_51_modules,2026-05-02T21:45:29Z

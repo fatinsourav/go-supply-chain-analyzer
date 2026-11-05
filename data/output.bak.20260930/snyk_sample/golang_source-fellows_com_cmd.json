@@ -1,0 +1,5 @@
+{
+  "ok": false,
+  "error": "'go list -json -deps ./...' command failed with error: deps.go:3:8: import \"golang.source-fellows.com/cmd\" is a program, not an importable package\n",
+  "path": "/tmp/snyksample-1173386512"
+}

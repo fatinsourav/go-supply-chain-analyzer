@@ -1,0 +1,5 @@
+{
+  "ok": false,
+  "error": "'go list -json -deps ./...' command failed with error: deps.go:3:8: import \"github.com/yaiio/ea-messenger\" is a program, not an importable package\n",
+  "path": "/tmp/snyksample-2845404080"
+}
