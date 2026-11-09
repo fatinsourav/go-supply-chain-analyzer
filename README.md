@@ -1,282 +1,170 @@
 # Go Supply Chain Risk Analyzer
 
-A metadata-driven tool for measuring software supply chain risk patterns in the Go ecosystem.
-Built as part of a Master's thesis in Information Security at Stockholm University (Spring 2026).
+Metadata-based detection and evaluation of software supply-chain risk patterns in the Go module ecosystem.
 
-## Research Context
+This repository contains the code and data for the Master's thesis
+**"Measuring Software Supply Chain Risk Patterns in the Go Ecosystem: A Metadata-Driven Quantitative Analysis of Open-Source Dependencies"**
+(MSc Information Security, Department of Computer and Systems Sciences, Stockholm University, Autumn 2026).
 
-**Thesis:** Measuring Software Supply Chain Risk Patterns in the Go Ecosystem
-**Author:** Md Fatin Sirat
-**Supervisor:** Nicolas Harrand
-**Institution:** Stockholm University, Department of Computer and Systems Sciences
+- **Author:** Md Fatin Sirat
+- **Supervisor:** Nicolas Harrand
 
-### Research Questions
+## Research questions
 
-- **RQ1:** What types of software supply chain risk patterns exist in the Go ecosystem?
-- **RQ2:** How prevalent are these risk patterns based on metadata analysis?
+- **RQ1.** To what extent can a package-metadata approach identify software supply-chain risk in the Go module ecosystem?
+- **RQ2.** Which metadata patterns correspond to independently documented vulnerabilities and attacks, and which reflect only package popularity?
+- **RQ3.** What is the security significance of the modules flagged by these metadata patterns?
 
-## Overview
+## Approach
 
-This tool analyzes Go modules collected from the Go Module Index and detects four categories
-of supply chain risk patterns using metadata-based analysis. The approach is designed to be
-scalable and reproducible without requiring source code execution.
+1. **Collection.** Module records are collected from the Go module index (`index.golang.org`) for 2019–2025, querying each year chronologically from 1 January until 50,000 unique modules are recorded. The combined corpus holds 285,895 records (265,479 distinct module paths). No module source code is downloaded or executed.
+2. **Detection.** Five metadata patterns are applied to the corpus (table below).
+3. **Authoritative verification.** Facts inferred from the crawled corpus are confirmed against the Go module proxy (`proxy.golang.org`): latest release dates for abandonment, and the tagged-version list for pseudo-version dependence.
+4. **Evaluation.**
+   - *Context:* each pattern's match rate against the Go vulnerability database, compared with the ecosystem base rate (1,136 of 285,895 records, 0.40%).
+   - *Risk-signal evaluation:* each pattern is tested against a risk outcome that scrutiny alone does not produce, in a comparison with unflagged modules from the same population. Supply-chain risk is defined as the exposure of a dependent to code it cannot trust or cannot get fixed, with **likelihood** and **impact** as its components.
 
-The dataset spans 7 years (2019-2025) with 285,895 unique modules collected from the
-Go Module Index, enabling longitudinal analysis of how risk patterns evolve over time.
+## Patterns
 
-## Risk Patterns
+| Pattern | What it flags | Key parameters | Script / component |
+|---|---|---|---|
+| Dependency concentration | Modules with many dependents in the corpus dependency graph (impact) | ≥ 3 dependents; > 6 = highest severity | `cmd/main.go` (`internal/detectors/concentration_risk.go`) |
+| Abandonment | Widely used modules without a recent release; score = dependents × years since last release | ≥ 5 dependents, ≥ 2 years since release (reference date 30 Sep 2026); release dates from the proxy | `scripts/abandonment_v2` |
+| Pseudo-version-only dependence | Widely used modules that have never published a tagged release | ≥ 5 dependents; confirmed against the proxy's `@v/list` | `scripts/pseudoversion_v1` |
+| Source ambiguity | Source domains showing impersonation signals (lookalike host, embedded brand, subdomain spoof, IP-literal or punycode host), probed for their `go-import` document | — | `scripts/source_ambiguity_v2` |
+| Naming similarity | Modules one structured edit (substitution, omission, insertion, transposition, separator, case, affix) from one of the 1,000 most depended-upon modules, on the package name or the owner | target segment ≥ 5 characters; candidate must not itself be a target | `scripts/naming_v2`, post-processed by `scripts/naming_v2_enrich` |
 
-| Pattern | Description | Grounded In |
-|---------|-------------|-------------|
-| Naming Similarity | Detects typosquatting via owner-level permutations using pkgtwist approach | Taylor et al. (2020), Vu et al. (2020) |
-| Dependency Source Ambiguity | Flags modules from untrusted or suspicious domains | Cappos et al. (2008) |
-| Suspicious Update Behavior | Identifies abnormal release frequency and burst updates | Garrett et al. (2019) |
-| Dependency Concentration Risk | Finds modules depended upon by many others via go.mod graph | Zimmermann et al. (2019), Decan et al. (2018) |
+## Results
 
-## Key Findings
+### Detection
 
-### Year-over-Year Comparison (50,000 modules per year)
+| Pattern | Flagged |
+|---|---|
+| Concentration | 3,383 modules |
+| Abandonment | 1,745 modules |
+| Pseudo-version-only | 518 modules (the proxy found tagged releases for 1,031 of 1,549 corpus candidates) |
+| Source ambiguity | 12 domains, 54 modules |
+| Naming similarity | 10,092 candidate pairs; 3,977 rows (3,960 distinct pairs) after removing structurally implausible pairs |
 
-| Pattern | 2019 | 2024 | Change |
-|---------|------|------|--------|
-| Naming Similarity | 415 | 253 | -39% |
-| Source Ambiguity | 430 | 555 | +29% |
-| Suspicious Update Behavior | 0 | 0 | - |
-| Concentration Risk | 21 | 651 | +3,000% |
-| **Total** | **866** | **1,459** | **+68%** |
+### Risk-signal evaluation
 
-### Combined Dataset Results (285,895 modules, 2019-2025)
+| Pattern | Risk outcome | Flagged | Comparison | p (Fisher) | Verdict |
+|---|---|---|---|---|---|
+| Abandonment | Advisory with no fixed version¹ | 40.2% (33/82) | 12.8% (28/218) | < 10⁻⁶ | Detects risk |
+| Pseudo-version | Advisory with no fixed version¹ | 33.3% (4/12) | 19.8% (57/288) | 0.27 | Not shown |
+| Source ambiguity | Domain registrable by anyone | 8.3% (1/12) | 5.0% (5/100)² | 0.50 | Not detected |
+| Naming (random sample) | Confirmed impersonation | 0/48 | — | — | Not detected |
+| Naming (owner-level census) | Confirmed impersonation | 1/6 | — | — | One case³ |
+| Concentration | Advisory with no fixed version¹ | 20.5% (60/292) | 40.2% (561/1,396)⁴ | 7 × 10⁻¹¹ | Impact, not likelihood |
 
-| Pattern | Findings | Prevalence Rate |
-|---------|----------|-----------------|
-| Naming Similarity | 3,688 | 1.29% |
-| Source Ambiguity | 1,864 | 0.65% |
-| Suspicious Update Behavior | 0 | 0.00% |
-| Concentration Risk | 71 | 0.02% |
-| **Total** | **5,623** | **1.97%** |
+¹ Among modules with at least one advisory; advisories published after 30 Sep 2026 or withdrawn are ignored, and those published in the preceding 90 days are excluded.
+² Random sample (seed 42) of 100 registrable domains drawn from unflagged vanity domains.
+³ `github.com/siruspen/logrus`, an owner-level typosquat of `github.com/sirupsen/logrus` whose cached code adds an `init()` that runs on import. It had already been reported to the Go project in March 2025 ([golang/go#72116](https://github.com/golang/go/issues/72116), golang/vulndb#3502).
+⁴ Compared against the rest of the corpus.
 
-### Notable Concentration Risk Findings (2019)
+## Repository structure
 
-| Module | Dependents | Severity |
-|--------|-----------|----------|
-| github.com/stretchr/testify | 236 | HIGH |
-| golang.org/x/net | 187 | HIGH |
-| golang.org/x/sys | 169 | HIGH |
-| github.com/pkg/errors | 154 | HIGH |
-| github.com/golang/protobuf | 97 | MEDIUM |
-
-## Tech Stack
-
-| Component | Technology |
-|-----------|-----------|
-| Language | Go 1.22 |
-| Data Source | Go Module Index + Go Proxy API |
-| Storage | SQLite |
-| Output | CSV + JSON |
-| Container | Docker |
-
-## Project Structure
-
-    go-supply-chain-analyzer/
-    cmd/
-        main.go                         Entry point and pipeline orchestration
-    internal/
-        collector/
-            collector.go                Go Module Index fetcher
-            gomod_fetcher.go            go.mod fetcher for dependency graph
-        pipeline/
-            preprocessor.go             Deduplication and normalization
-        detectors/
-            naming_similarity.go        Pattern 1 - Naming Similarity
-            source_ambiguity.go         Pattern 2 - Source Ambiguity
-            update_behavior.go          Pattern 3 - Suspicious Update Behavior
-            concentration_risk.go       Pattern 4 - Concentration Risk
-        storage/
-            storage.go                  SQLite layer with batch insert support
-            models.go                   Data models
-        exporter/
-            exporter.go                 CSV and JSON export
+    cmd/main.go                  Core pipeline: collection input, preprocessing, concentration (and legacy) detectors, export
+    internal/                    Collector, go.mod fetcher, preprocessing, detectors, SQLite storage, exporters
     scripts/
-        collect/main.go                 Basic collector
-        collect_full/main.go            Full 2019 collector
-        collect_2024/main.go            2024 dataset collector
-        collect_2025/main.go            2025 dataset collector
-        collect_all_years/main.go       Multi-year collector with auto-combine
-    configs/
-        config.env.example              Configuration template
-    data/
-        dataset_full.txt                2019 dataset (gitignored)
-        dataset_2020.txt                2020 dataset (gitignored)
-        dataset_2021.txt                2021 dataset (gitignored)
-        dataset_2022.txt                2022 dataset (gitignored)
-        dataset_2023.txt                2023 dataset (gitignored)
-        dataset_2024.txt                2024 dataset (gitignored)
-        dataset_2025.txt                2025 dataset (gitignored)
-        dataset_combined.txt            Combined 2019-2025 (gitignored)
-        output/                         Analysis results (gitignored)
-    docker/
-        Dockerfile                      Multi-stage Docker build
-    docker-compose.yml
-    go.mod
-    go.sum
-    README.md
+      collect*/                  Year-wise corpus collectors
+      abandonment_v2/            Abandonment pattern with proxy release dates
+      abandonment_sample/        Stratified sample of abandonment findings, enriched with repository metadata
+      abandonment_classify/      Rule-based classification of the abandonment sample
+      pseudoversion_v1/          Pseudo-version-only pattern with proxy tag verification
+      source_ambiguity_v2/       Source-ambiguity pattern with go-import probe
+      naming_v2/                 Naming-similarity candidate generation
+      naming_v2_enrich/          Exclusion of structurally implausible pairs, first-seen timestamps, ranking
+      verify_ground_truth/       Matching of flagged modules against the Go vulnerability database
+      remediation/               Risk-signal evaluation: fixed vs unfixed advisories per group
+    data/output/                 Results used in the thesis (see below)
+    data/vulndb_dates/           First-added date of each advisory in golang/vulndb (see below)
+    docker/, docker-compose.yml  Container build
 
-## Prerequisites
+`internal/detectors/update_behavior.go` is a legacy detector that is not part of the thesis evaluation.
 
-- Go 1.22+ (for running without Docker)
-- Docker and Docker Compose (for containerized run)
-- Git
+## Data used in the thesis
 
-## Installation
+| File | Contents |
+|---|---|
+| `data/output/concentration_ground_truth.csv` | Flagged modules with their advisory matches (all patterns from the core pipeline) |
+| `data/output/abandonment_rerun.csv`, `abandonment_gt_rerun.csv` | Abandonment findings (1,745) and their advisory matches |
+| `data/output/pseudoversion_rerun.csv`, `pseudoversion_gt_rerun.csv` | Pseudo-version-only findings (518) and their advisory matches |
+| `data/output/source_ambiguity_v2_candidates.csv` | Flagged source domains with probe results |
+| `data/output/vanity_sample_domains.txt`, `vanity_whois_sample.txt` | Random sample of unflagged vanity domains and their `whois` output |
+| `data/output.bak.20260930/` | Naming candidates and enrichment, popular targets, `modules.csv`, abandonment sample and classification |
 
-    git clone git@github.com:fatinsourav/go-supply-chain-analyzer.git
+The raw index dumps (`data/dataset*.txt`) are not committed because of their size; they can be regenerated with the collectors.
+
+## Reproducing the analysis
+
+Requirements: Go 1.22+, Git, network access to `index.golang.org` and `proxy.golang.org`.
+
+    git clone https://github.com/fatinsourav/go-supply-chain-analyzer.git
     cd go-supply-chain-analyzer
-    go mod download
-
-## Configuration
-
-Copy the example config and adjust as needed:
-
     cp configs/config.env.example configs/config.env
 
-Key configuration options:
+**1. Collect the corpus and run the core pipeline.** For the thesis run, set `GOMOD_FETCH_LIMIT=0` (full dependency graph) and `CONCENTRATION_THRESHOLD=3` in `configs/config.env`.
 
-    DATASET_PATH=./data/dataset_combined.txt
-    PROXY_URL=https://proxy.golang.org
-    LEVENSHTEIN_THRESHOLD=2
-    UPDATE_FREQUENCY_THRESHOLD=3
-    CONCENTRATION_THRESHOLD=3
-    GOMOD_FETCH_LIMIT=5000
-    DB_PATH=./data/output/analyzer.db
-    CSV_OUTPUT_PATH=./data/output
+    go run ./scripts/collect_all_years
+    go run ./cmd
 
-## Dataset Collection
+**2. Run the pattern scripts.** Each script lists its flags with `-h`.
 
-### Collect a single year
+    go run ./scripts/abandonment_v2 -h
+    go run ./scripts/pseudoversion_v1 -h
+    go run ./scripts/source_ambiguity_v2 -h
+    go run ./scripts/naming_v2 -h
+    go run ./scripts/naming_v2_enrich -h
 
-    go run scripts/collect_2024/main.go
+**3. Match against the Go vulnerability database.**
 
-### Collect all years (2020-2023) and combine
+    git clone https://github.com/golang/vulndb.git
+    go run ./scripts/verify_ground_truth -patterns data/output/risk_patterns.csv -osv-dir vulndb/data/osv
 
-    go run scripts/collect_all_years/main.go
+**4. Risk-signal evaluation.** The `published` field in the vulndb repository is a placeholder, so each advisory is dated by the commit that first added it:
 
-This will collect 50,000 unique modules per year for 2020-2023,
-then combine with existing 2019, 2024, and 2025 datasets into
-dataset_combined.txt.
+    cd vulndb && git log --diff-filter=A --format='C %cs' --name-only -- data/osv | python3 -c "
+    import sys
+    d={};cur=None
+    for l in sys.stdin:
+        l=l.strip()
+        if l.startswith('C '): cur=l[2:]
+        elif l.endswith('.json'):
+            i=l.split('/')[-1][:-5]; d[i]=min(d.get(i,cur),cur)
+    print('id,added')
+    for k in sorted(d): print(f'{k},{d[k]}')
+    " > ../data/vulndb_dates/osv_added.csv && cd ..
 
-### Dataset Summary
+    go run ./scripts/remediation \
+      -parent data/output/concentration_ground_truth.csv \
+      -abandoned data/output/abandonment_rerun.csv \
+      -pseudo data/output/pseudoversion_rerun.csv \
+      -corpus data/output.bak.20260930/modules.csv \
+      -osv-dir vulndb/data/osv -dates data/vulndb_dates/osv_added.csv \
+      -asof 2026-09-30 -grace 90 -out data/output/remediation
 
-| Year | File | Modules | Period |
-|------|------|---------|--------|
-| 2019 | dataset_full.txt | 50,000 | Apr-Oct 2019 |
-| 2020 | dataset_2020.txt | 50,000 | Jan 2020 |
-| 2021 | dataset_2021.txt | 50,000 | Jan-Feb 2021 |
-| 2022 | dataset_2022.txt | 50,000 | Jan 2022 |
-| 2023 | dataset_2023.txt | 50,000 | Jan 2023 |
-| 2024 | dataset_2024.txt | 50,000 | Jan 2024 |
-| 2025 | dataset_2025.txt | 50,000 | Jan 2025 |
-| **Combined** | **dataset_combined.txt** | **285,895** | **2019-2025** |
+Add `-exact` for exact module-path matching; vary `-grace` (0, 90, 365) for the robustness checks.
 
-Note: Combined total is less than 350,000 because popular modules
-appear across multiple years and are deduplicated.
+## Responsible disclosure
 
-## Usage
+The analysis only reads public metadata; requests to source domains were limited to those the Go toolchain itself would make. The one impersonating module identified (`github.com/siruspen/logrus`) had already been reported to the Go project; further details were added to [golang/go#72116](https://github.com/golang/go/issues/72116).
 
-### Run with Go directly
+## Key references
 
-    go run cmd/main.go
+- Cesarano et al. (2024). GoSurf: Identifying Software Supply Chain Attack Vectors in Go. SCORED '24.
+- Taylor et al. (2020). Defending Against Package Typosquatting. NSS 2020.
+- Zimmermann et al. (2019). Small World with High Risks: A Study of Security Threats in the npm Ecosystem. USENIX Security.
+- Decan, Mens & Constantinou (2018). On the Impact of Security Vulnerabilities in the npm Package Dependency Network. MSR.
+- Duan et al. (2021). Towards Measuring Supply Chain Attacks on Package Managers for Interpreted Languages. NDSS.
+- Zahan et al. (2022). What Are Weak Links in the npm Supply Chain? ICSE-SEIP.
 
-### Run a specific year
-
-    DATASET_PATH=./data/dataset_2024.txt \
-    DB_PATH=./data/output/2024/analyzer_2024.db \
-    CSV_OUTPUT_PATH=./data/output/2024 \
-    go run cmd/main.go
-
-### Run with Docker
-
-    docker compose up
-
-### Run with Docker for a specific year
-
-    docker run -v $(pwd)/data:/app/data \
-      -e DATASET_PATH=/app/data/dataset_2024.txt \
-      -e DB_PATH=/app/data/output/2024/analyzer_2024.db \
-      go-supply-chain-analyzer
-
-## Output
-
-Results are written to data/output/:
-
-| File | Description |
-|------|-------------|
-| modules.csv | All analyzed modules with metadata |
-| risk_patterns.csv | All detected risk patterns with severity |
-| summary.json | Aggregated counts by pattern type and severity |
-
-### Example summary.json
-
-    {
-      "generated_at": "2026-05-02T23:45:29+02:00",
-      "total_modules": 50000,
-      "total_risks": 5623,
-      "by_pattern": {
-        "concentration_risk": 21,
-        "naming_similarity": 415,
-        "source_ambiguity": 430
-      },
-      "by_severity": {
-        "high": 22,
-        "medium": 844
-      }
-    }
-
-## Analysis Pipeline
-
-    Go Module Index
-          |
-          v
-    Year-wise Data Collection (50,000 modules per year)
-          |
-          v
-    Cross-year Deduplication and Combination
-          |
-          v
-    Preprocessing (normalization)
-          |
-          v
-    Pattern Detection
-    |           |           |           |
-    Pattern 1   Pattern 2   Pattern 3   Pattern 4
-    Naming      Source      Update      Concentration
-    Similarity  Ambiguity   Behavior    Risk
-          |
-          v
-    Aggregation + Export (SQLite / CSV / JSON)
-
-## References
-
-- Taylor et al. (2020) SpellBound: Defending Against Package Typosquatting
-- Vu et al. (2020) Typosquatting and Combosquatting Attacks on the Python Ecosystem
-- Cappos et al. (2008) A Look in the Mirror: Attacks on Package Managers
-- Zimmermann et al. (2019) Small World with High Risks
-- Decan et al. (2018) On the Impact of Security Vulnerabilities in the npm Dependency Network
-- Garrett et al. (2019) Detecting Suspicious Package Updates
-- Duan et al. (2021) Measuring and Preventing Supply Chain Attacks on Package Managers
-- Henriksen (2021) Finding Evil Go Packages
+The full reference list is in the thesis.
 
 ## License
 
-MIT License
+MIT License.
 
 ## Disclaimer
 
-This tool was developed solely for academic research purposes as part of a Master's thesis in Information Security at Stockholm University. It is intended to measure and analyze software supply chain risk patterns in the Go ecosystem using publicly available metadata.
-
-**The author is not responsible for any misuse of this tool or its findings.** This tool does not exploit vulnerabilities, execute malicious code, or perform any harmful operations. It only analyzes publicly available metadata from the Go Module Index and Go Proxy API.
-
-The findings produced by this tool are intended to raise awareness of potential supply chain risks and support academic research. They should not be used to target, attack, or harm any individual, organization, or software project.
-
-By using this tool, you agree to use it responsibly and ethically, in compliance with applicable laws and regulations.
-
-For responsible disclosure of any security concerns identified using this tool, please follow the appropriate responsible disclosure guidelines of the relevant platform or organization.
+This tool was developed for academic research. It analyses publicly available metadata from the Go module index and module proxy; it does not exploit vulnerabilities or execute module code. Its findings are intended to support research and raise awareness of supply-chain risk, and must not be used to target or harm any individual, organisation or project.
