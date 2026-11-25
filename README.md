@@ -168,3 +168,10 @@ MIT License.
 ## Disclaimer
 
 This tool was developed for academic research. It analyses publicly available metadata from the Go module index and module proxy; it does not exploit vulnerabilities or execute module code. Its findings are intended to support research and raise awareness of supply-chain risk, and must not be used to target or harm any individual, organisation or project.
+
+## Data versions
+
+The risk-signal tests (Tables 4.7 and 4.8 of the thesis) use the Go vulnerability
+database at commit `a2082f757c2551694285855180b2d17666d7bcd6` (2 November 2026),
+pinned in `vulndb/`. A different vulndb version gives slightly different counts.
+To reproduce: `git -C vulndb checkout a2082f757c2551694285855180b2d17666d7bcd6`.
