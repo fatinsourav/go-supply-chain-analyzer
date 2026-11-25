@@ -234,6 +234,7 @@ type record struct {
 	candidate    string
 	candSeg      string
 	target       string
+	reportedTgt  string // target as reported by naming_v2, before owner re-targeting
 	targetSeg    string
 	technique    string
 	crossHost    bool
@@ -274,6 +275,23 @@ func main() {
 		os.Exit(1)
 	}
 	fmt.Fprintf(os.Stderr, "targets: %d ranked popular modules\n", len(ranks))
+
+	// naming_v2 maps each target OWNER to a single target module (last write
+	// wins), so for owner-level techniques the target it reports is arbitrary
+	// whenever that owner publishes several popular modules (labstack owns
+	// both echo and gommon).  Index every popular package each owner
+	// publishes, so an owner-level match can be checked against all of them.
+	ownerSegs := map[string]map[string]string{} // host/owner -> package -> target path
+	for t := range ranks {
+		k := host(t) + "/" + repoOwner(t)
+		if ownerSegs[k] == nil {
+			ownerSegs[k] = map[string]string{}
+		}
+		seg := lastSegment(t)
+		if prev, ok := ownerSegs[k][seg]; !ok || ranks[t] < ranks[prev] {
+			ownerSegs[k][seg] = t
+		}
+	}
 
 	var deps map[string]int
 	if *depsPath != "" {
@@ -323,6 +341,17 @@ func main() {
 			rec.crossHost = strings.EqualFold(strings.TrimSpace(row[5]), "true")
 		}
 
+		rec.reportedTgt = rec.target
+		ownerSegOK := false
+		if strings.HasPrefix(rec.technique, "owner-") {
+			k := host(rec.target) + "/" + repoOwner(rec.target)
+			if t, ok := ownerSegs[k][lastSegment(rec.candidate)]; ok {
+				rec.target = t // the popular module the candidate actually shadows
+				rec.targetSeg = lastSegment(t)
+				ownerSegOK = true
+			}
+		}
+
 		ck := strings.ToLower(rec.candidate)
 		tk := strings.ToLower(rec.target)
 
@@ -359,8 +388,7 @@ func main() {
 		case forgeHosts[host(rec.target)] && depth(rec.target) > *maxDepth:
 			rec.excluded = "deep_path_target"
 
-		case strings.HasPrefix(rec.technique, "owner-") &&
-			lastSegment(rec.candidate) != lastSegment(rec.target):
+		case strings.HasPrefix(rec.technique, "owner-") && !ownerSegOK:
 			// An owner-level edit is only an impersonation attempt if the
 			// package name is preserved: the developer types the package
 			// name, so a squat must keep it and vary only the account.  The
@@ -428,7 +456,7 @@ func main() {
 		"candidate_module", "candidate_segment", "target_module", "target_segment",
 		"technique", "cross_host", "candidate_first_seen", "target_first_seen",
 		"lag_days", "postdates_target", "candidate_versions", "target_rank",
-		"candidate_deps", "target_deps", "score", "excluded_reason",
+		"candidate_deps", "target_deps", "score", "excluded_reason", "reported_target",
 	})
 	fmtTime := func(t time.Time) string {
 		if t.IsZero() {
@@ -444,7 +472,7 @@ func main() {
 			strconv.Itoa(rec.lagDays), strconv.FormatBool(rec.postdates),
 			strconv.Itoa(rec.candVersions), strconv.Itoa(rec.targetRank),
 			strconv.Itoa(rec.candDeps), strconv.Itoa(rec.targDeps),
-			strconv.FormatFloat(rec.score, 'f', 2, 64), rec.excluded,
+			strconv.FormatFloat(rec.score, 'f', 2, 64), rec.excluded, rec.reportedTgt,
 		})
 	}
 	w.Flush()
